@@ -4,15 +4,17 @@ import StarBorder from "./Reactbits/StarBorder";
 import { BsArrowRight } from "react-icons/bs";
 const Header = () => {
   return (
-    <header className="px-28">
-      <div className="relative h-screen flex flex-col">
+    <header className="px-8 mb-24 md:px-28">
+      <div className="relative flex flex-col">
         <div className="absolute top-0 w-full flex justify-center">
           <Navbar />
         </div>
 
-        <div className="mt-44 flex items-center justify-between  ">
-          <h1 className="text-8xl  font-bold text-white">Full-stack</h1>
-          <div className="developer flex items-center gap-2">
+        <div className="mt-36 md:mt-44 flex items-center justify-between  ">
+          <h1 className="text-5xl md:text-8xl  font-bold text-white">
+            Full-stack
+          </h1>
+          <div className="hidden developer md:flex items-center gap-2">
             <div className="px-24 text-base  py-2.5 border bg-[#f5f5f5] text-[#121212] rounded-full">
               <i>About Me</i>
             </div>
@@ -22,7 +24,15 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="items-end flex justify-between ">
+        <div className="md:items-end flex gap-9 md:gap-0 flex-col-reverse md:flex-row justify-between ">
+          <div className="flex  developer md:hidden items-center gap-2">
+            <div className="px-10  md:px-24 text-base  py-2.5 border bg-[#f5f5f5] text-[#121212] rounded-full">
+              <i>About Me</i>
+            </div>
+            <div className="p-3 text-base border bg-[#f5f5f5] text-[#121212] rounded-full">
+              <BsArrowRight className="text-lg" />
+            </div>
+          </div>
           <blockquote className="max-w-sm developer text-[#a6a6a6] italic">
             "You’re not going to be <span className="text-white">perfect</span>,
             but the important thing is to{" "}
@@ -34,10 +44,12 @@ const Header = () => {
             </span>
           </blockquote>
 
-          <h1 className="text-8xl text-end font-bold text-white">Developer</h1>
+          <h1 className="text-5xl md:text-8xl text-end font-bold text-white">
+            Developer
+          </h1>
         </div>
 
-        <div className="mt-20 flex items-center justify-center gap-10">
+        <div className="mt-16 flex-1 space-x-5 flex-col space-y-5 md:flex-row md:flex md:space-x-10 md:items-center md:justify-center">
           <StarBorder
             as="button"
             color="white"

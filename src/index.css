@@ -6,15 +6,6 @@ body {
 }
 
 @font-face {
-  font-family: "tapography";
-  src: local("Fira Code"),
-    url("https://fonts.gstatic.com/s/firacode/v21/uU9PCBUR8oakM2BQieJ3Qx58f0lS0H4.ttf")
-      format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "developer";
   src: local("Open Sans"),
     url("https://fonts.gstatic.com/s/opensans/v34/mem8YaGs126MiZpBA-UFVZ0e.ttf")
@@ -30,11 +21,6 @@ body {
     100% {
       background-position: 200% center;
     }
-  }
-
-  /* Styling font */
-  .tapography {
-    font-family: "tapography", monospace;
   }
 
   .developer {

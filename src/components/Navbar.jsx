@@ -4,12 +4,12 @@ const Navbar = () => {
   return (
     <nav className="flex w-full py-6 developer text-sm items-center justify-between">
       <div className="text-left">
-        <h1 className="text-left text-sm">
+        <h1 className="text-left text-base">
           Khitan Hesthi <br></br> Kuncoro
         </h1>
       </div>
 
-      <div className="w-full absolute text-xs flex justify-center text-white">
+      <div className="w-full hidden absolute text-xs md:flex justify-center text-white">
         <div className="flex items-center gap-7">
           <div>About Me</div>
           <div>Projects</div>

@@ -1,6 +1,24 @@
+import { useState, useEffect } from "react";
 import LightRays from "./Reactbits/LightRays";
 
 const Light = () => {
+  const [rayLength, setRayLength] = useState(3);
+
+  useEffect(() => {
+    const updateRayLength = () => {
+      if (window.innerWidth <= 768) {
+        setRayLength(2); // mobile
+      } else {
+        setRayLength(3); // desktop
+      }
+    };
+
+    updateRayLength(); // set awal
+    window.addEventListener("resize", updateRayLength);
+
+    return () => window.removeEventListener("resize", updateRayLength);
+  }, []);
+
   return (
     <div style={{ width: "100%", height: "600px", position: "relative" }}>
       <LightRays
@@ -8,7 +26,7 @@ const Light = () => {
         raysColor="#ffffff"
         raysSpeed={1}
         lightSpread={2}
-        rayLength={3}
+        rayLength={rayLength}
         followMouse={true}
         mouseInfluence={0.1}
         noiseAmount={0.1}
