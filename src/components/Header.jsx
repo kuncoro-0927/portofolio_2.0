@@ -4,16 +4,21 @@ import StarBorder from "./Reactbits/StarBorder";
 import { BsArrowRight } from "react-icons/bs";
 const Header = () => {
   return (
-    <header className="px-8 mb-24 md:px-28">
+    <header className="px-8 md:px-28">
       <div className="relative flex flex-col">
         <div className="absolute top-0 w-full flex justify-center">
           <Navbar />
         </div>
 
         <div className="mt-36 md:mt-44 flex items-center justify-between  ">
-          <h1 className="text-5xl md:text-8xl  font-bold text-white">
+          <h1
+            className="text-5xl md:text-8xl font-bold 
+  bg-gradient-to-r from-[#636363] via-[#f5f5f5] to-white
+  bg-clip-text text-transparent"
+          >
             Full-stack
           </h1>
+
           <div className="hidden developer md:flex items-center gap-2">
             <div className="px-24 text-base  py-2.5 border bg-[#f5f5f5] text-[#121212] rounded-full">
               <i>About Me</i>
@@ -44,12 +49,17 @@ const Header = () => {
             </span>
           </blockquote>
 
-          <h1 className="text-5xl md:text-8xl text-end font-bold text-white">
+          <h1
+            className="text-5xl md:text-8xl text-end font-bold 
+  bg-gradient-to-r from-[#414040] via-[#f5f5f5] to-white 
+  bg-clip-text text-transparent 
+  md:text-white md:bg-none md:bg-clip-border"
+          >
             Developer
           </h1>
         </div>
 
-        <div className="mt-16 flex-1 space-x-5 flex-col space-y-5 md:flex-row md:flex md:space-x-10 md:items-center md:justify-center">
+        <div className="mt-16 flex-1 space-x-5 flex-col space-y-5 md:space-y-0 md:flex-row md:flex md:space-x-10 md:items-center md:justify-center">
           <StarBorder
             as="button"
             color="white"

@@ -7,9 +7,9 @@ const Light = () => {
   useEffect(() => {
     const updateRayLength = () => {
       if (window.innerWidth <= 768) {
-        setRayLength(2); // mobile
+        setRayLength(1); // mobile
       } else {
-        setRayLength(3); // desktop
+        setRayLength(1.5); // desktop
       }
     };
 

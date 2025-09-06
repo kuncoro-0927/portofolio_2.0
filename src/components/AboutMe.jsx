@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { BsArrowUpRight } from "react-icons/bs";
 const AboutMe = () => {
   return (
-    <section className=" px-8 md:px-28 font-bold">
+    <section id="about" className=" md:mt-24 px-8 md:px-28 font-bold">
       <div className="md:flex items-start">
         <h1 className="text-3xl md:text-5xl ">About Me</h1>
         <div className="mt-4 md:mt-0 md:ml-40 max-w-sm">

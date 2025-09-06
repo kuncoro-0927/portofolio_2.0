@@ -24,7 +24,7 @@ const ImageCard = () => {
   return (
     <div
       ref={containerRef}
-      className=" w-full flex justify-center md:justify-end"
+      className=" w-full  flex justify-center md:justify-end"
     >
       <TiltedCard
         imageSrc="/images/kuncoro3.jpg"
