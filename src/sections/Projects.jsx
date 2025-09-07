@@ -60,15 +60,17 @@ const Projects = () => {
               hover:bg-white hover:text-[#3d3d3d]"
               >
                 {/* Year */}
-                <p className="text-[#a6a6a6] group-hover:text-[#3d3d3d] transition-colors duration-300">
+                <p className="text-sm md:text-base text-[#a6a6a6] group-hover:text-[#3d3d3d] transition-colors duration-300">
                   {project.year}
                 </p>
 
-                <p className="developer  transition-colors duration-300">
+                <p className="text-sm md:text-base developer  transition-colors duration-300">
                   <span>{project.title}</span>
                 </p>
 
-                <p className="transition-colors duration-300">{project.desc}</p>
+                <p className="text-sm md:text-base transition-colors duration-300">
+                  {project.desc}
+                </p>
               </li>
             </NavLink>
           ))}
