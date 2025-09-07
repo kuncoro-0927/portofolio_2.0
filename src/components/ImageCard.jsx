@@ -28,8 +28,8 @@ const ImageCard = () => {
     >
       <TiltedCard
         imageSrc="/images/kuncoro3.jpg"
-        altText="Kendrick Lamar - GNX Album Cover"
-        captionText="Kendrick Lamar - GNX"
+        altText="Kuncoro - Fullstack Developer"
+        captionText="Kuncoro - Fullstack Developer"
         containerHeight={cardSize}
         containerWidth={cardSize}
         imageHeight={cardSize}
