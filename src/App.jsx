@@ -13,10 +13,8 @@ export default function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Tunggu semua asset selesai load
-    window.addEventListener("load", () => {
-      setTimeout(() => setLoading(false), 1000); // kasih delay biar smooth
-    });
+    const timer = setTimeout(() => setLoading(false), 1000);
+    return () => clearTimeout(timer);
   }, []);
 
   if (loading) {
