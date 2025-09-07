@@ -1,11 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 
-import Header from "./components/Header";
-import Background from "./components/Background";
-import AboutMe from "./components/AboutMe";
+import Background from "./components/background";
+import Header from "./sections/Header";
+import AboutMe from "./sections/AboutMe";
+import Projects from "./sections/Projects";
+import Courses from "./sections/Courses";
 import Light from "./components/Light";
 import FloatingButton from "./components/FloatingButton";
-import Projects from "./components/Projects";
 import DetailProject from "./pages/DetailProject";
 
 export default function App() {
@@ -31,6 +32,7 @@ export default function App() {
               <Header />
               <AboutMe />
               <Projects />
+              <Courses />
             </div>
           }
         />

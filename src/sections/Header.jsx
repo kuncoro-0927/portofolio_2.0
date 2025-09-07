@@ -1,6 +1,6 @@
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
-import StarBorder from "./Reactbits/StarBorder";
+import StarBorder from "../components/Reactbits/StarBorder";
 import { BsArrowRight } from "react-icons/bs";
 const Header = () => {
   return (

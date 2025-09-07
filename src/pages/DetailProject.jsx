@@ -16,14 +16,14 @@ export default function DetailProject() {
           />
         </div>
 
-        <h1 className="text-4xl md:text-5xl developer border-b border-[#a6a6a6] pb-4 mt-10 font-bold">
+        <h1 className="text-3xl md:text-5xl border-b border-[#a6a6a6] pb-4 mt-10 font-bold">
           {project.title}
         </h1>
 
         <div className="mt-6  md:flex items-start justify-between space-y-7 md:space-y-2">
           <div className="space-y-5 mr-14  w-full">
             <div className="flex items-start justify-between ">
-              <h1 className="font-semibold   max-w-[130px]  w-full  developer text-lg md:text-xl">
+              <h1 className="font-semibold   max-w-[130px]  w-full   text-lg md:text-xl">
                 Category
               </h1>
               <p className="text-base w-full   max-w-[180px] developer  text-[#a6a6a6]">
