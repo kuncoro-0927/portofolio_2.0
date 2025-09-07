@@ -15,7 +15,7 @@ export default function App() {
   useEffect(() => {
     // Tunggu semua asset selesai load
     window.addEventListener("load", () => {
-      setTimeout(() => setLoading(false), 10000); // kasih delay biar smooth
+      setTimeout(() => setLoading(false), 1000); // kasih delay biar smooth
     });
   }, []);
 
