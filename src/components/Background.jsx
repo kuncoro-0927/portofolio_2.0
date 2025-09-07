@@ -1,5 +1,5 @@
 import Particles from "./OrbReactBits";
-const background = () => {
+const Background = () => {
   return (
     <div style={{ width: "100%", height: "600px", position: "relative" }}>
       <Particles
@@ -16,4 +16,4 @@ const background = () => {
   );
 };
 
-export default background;
+export default Background;
