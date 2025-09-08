@@ -2,6 +2,7 @@ import React from "react";
 import ImageCard from "../components/ImageCard";
 import { FaGithub } from "react-icons/fa";
 import { BsArrowUpRight } from "react-icons/bs";
+import ScrollReveal from "../components/Reactbits/ScrollReveal";
 const AboutMe = () => {
   return (
     <section id="about" className="mt-10 md:mt-24 px-8 md:px-28 font-bold">
