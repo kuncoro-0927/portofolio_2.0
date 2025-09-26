@@ -7,7 +7,7 @@ const Contact = () => {
     <section className="mt-20 ">
       <div className="relative  text-white flex items-center overflow-hidden">
         {/* Buletan */}
-        <div className="absolute md:top-0 -translate-y-20 -right-45 md:-left-24 w-[350px] h-[350px]  md:w-[700px] md:h-[700px]   border-[0.1px] border-[#a6a6a6] rounded-full" />
+        <div className="absolute md:top-0 -translate-y-20 md:-translate-y-0 -right-45 md:-left-24 w-[350px] h-[350px]  md:w-[700px] md:h-[700px]   border-[0.1px] border-[#a6a6a6] rounded-full" />
 
         {/* Konten */}
         <div className="pb-10 md:pt-36 w-full px-8 md:px-28">
