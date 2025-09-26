@@ -45,7 +45,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="relative md:w-fit flex flex-wrap justify-between items-center mt-16  space-y-3 md:space-y-0 md:flex-row md:flex md:space-x-10 md:items-center md:justify-center">
+            <div className="relative md:w-fit flex flex-wrap justify-between items-center mt-16 gap-y-3 md:space-y-0 md:flex-row md:flex md:space-x-10 md:items-center md:justify-center">
               <StarBorder
                 as="button"
                 color="white"

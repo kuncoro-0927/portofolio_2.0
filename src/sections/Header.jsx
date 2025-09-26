@@ -16,7 +16,7 @@ const Header = () => {
           <Navbar />
         </div>
 
-        <div className="mt-36 md:mt-48 flex items-center justify-between  ">
+        <div className="mt-36  md:mt-48 flex items-center justify-between  ">
           {/* <h1
             className="text-5xl md:text-8xl font-bold 
   bg-gradient-to-r from-[#636363] via-[#f5f5f5] to-white
@@ -51,7 +51,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="md:items-end flex gap-9 md:gap-0 flex-col-reverse md:flex-row justify-between ">
+        <div className="md:items-end  flex gap-9 md:gap-0 flex-col-reverse md:flex-row justify-between ">
           <div className="flex  developer md:hidden items-center gap-2">
             <div className="px-10  md:px-24 text-base  py-2.5 border bg-[#f5f5f5] text-[#121212] rounded-full">
               <i>About Me</i>
@@ -96,7 +96,7 @@ const Header = () => {
 
           <SplitText
             text="Developer"
-            className="text-5xl md:text-8xl font-bold 
+            className="text-5xl ml-auto md:text-8xl font-bold 
   
   "
             delay={100}
