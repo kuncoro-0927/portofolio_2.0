@@ -43,7 +43,7 @@ const Header = () => {
 
           <div className="hidden developer md:flex items-center gap-2">
             <div className="px-24 text-base  py-2.5 border bg-[#f5f5f5] text-[#121212] rounded-full">
-              <i>About Me</i>
+              <i>Projects</i>
             </div>
             <div className="p-3 text-base border bg-[#f5f5f5] text-[#121212] rounded-full">
               <BsArrowRight className="text-lg" />

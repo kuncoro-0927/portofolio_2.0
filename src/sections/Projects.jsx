@@ -1,12 +1,15 @@
 import { NavLink } from "react-router-dom";
+import Carousel from "../components/Carousel";
+import "../css/embla.css";
 const Projects = () => {
   const projects = [
     {
       id: 1,
       year: "2025",
       title: "React AI Chatbot",
-      desc: "Personal |  React",
+      desc: "Personal | React",
       slug: "react-ai-chatbot",
+      image: "/images/cultivo/homepage4.png",
     },
     {
       id: 2,
@@ -14,6 +17,7 @@ const Projects = () => {
       title: "E-Commerce - Faza Frame",
       desc: "Final Project | React / Express / MySQL / Midtrans",
       slug: "e-commerce-faza-frame",
+      image: "https://picsum.photos/600/350?random=2",
     },
     {
       id: 3,
@@ -21,31 +25,44 @@ const Projects = () => {
       title: "Cultivo",
       desc: "Intern | React / Express / MySQL / Midtrans",
       slug: "cultivo",
+      image: "https://picsum.photos/600/350?random=3",
     },
-
     {
       id: 4,
       year: "2024",
       title: "Portfolio Website",
       desc: "Personal Project | React / Tailwind",
+      slug: "portfolio-website",
+      image: "https://picsum.photos/600/350?random=4",
     },
     {
       id: 5,
       year: "2024",
       title: "iTern - Company Profile",
-      desc: "Project Based Learning |  Laravel / Tailwind / MySQL",
+      desc: "Project Based Learning | Laravel / Tailwind / MySQL",
+      slug: "itern",
+      image: "https://picsum.photos/600/350?random=5",
     },
     {
       id: 6,
       year: "2023",
       title: "E-Notulensi",
-      desc: "Project Based Learning |  Laravel / Bootstrap  / MySQL",
+      desc: "Project Based Learning | Laravel / Bootstrap / MySQL",
       slug: "e-notulensi",
+      image: "https://picsum.photos/600/350?random=6",
     },
   ];
-
+  // const OPTIONS = {
+  //   loop: true,
+  //   align: "center",
+  //   skipSnaps: false,
+  // };
   return (
     <>
+      {/* <section className="md:mx-28">
+        <Carousel slides={projects} options={OPTIONS} />
+      </section> */}
+
       <section className="mt-10 md:mt-28">
         <div className="mx-8 md:mx-28">
           <h1 className="text-3xl md:text-5xl font-bold">Projects</h1>

@@ -7,8 +7,8 @@ const AboutMe = () => {
   return (
     <section id="about" className="mt-10 md:mt-24 px-8 md:px-28 font-bold">
       <div className="md:flex items-start">
-        <h1 className="text-3xl md:text-5xl ">About Me</h1>
-        <div className="mt-4 md:mt-0 md:ml-40 max-w-sm">
+        <h1 className="text-xl md:text-xl ">.../About Me...</h1>
+        <div className="mt-4 md:mt-0 md:ml-50 max-w-sm">
           <p className="text-base text-[#a6a6a6] font-normal developer">
             Hi, I’m Kuncoro. I am a <i className="text-white">fresh graduate</i>{" "}
             in Information Technology with a strong interest in{" "}
@@ -51,7 +51,7 @@ const AboutMe = () => {
               Back-end
             </h1>
             <span className="">
-              PHP / Laravel / Node / Express / Flask / Golang / MySQL /
+              Laravel / Express / Golang / MySQL /
               <br /> PostgreSQL / MongoDb
             </span>
           </div>
