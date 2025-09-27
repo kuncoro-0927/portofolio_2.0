@@ -10,6 +10,7 @@ export default function DetailProject() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true); // reset tiap kali slug berubah
     const timer = setTimeout(() => setLoading(false), 1500);
     return () => clearTimeout(timer);
   }, [slug]);
@@ -23,7 +24,13 @@ export default function DetailProject() {
               variant="rectangular"
               width="100%"
               height={450}
-              sx={{ borderRadius: 2 }}
+              animation="wave"
+              sx={{
+                borderBottomLeftRadius: 20,
+                borderBottomRightRadius: 20,
+
+                bgcolor: "grey.700",
+              }} // biar jelas di dark mode
             />
           ) : (
             <img
@@ -85,14 +92,14 @@ export default function DetailProject() {
               <Skeleton
                 variant="rectangular"
                 width="100%"
-                height={200}
-                sx={{ borderRadius: 2 }}
+                height={1000}
+                sx={{ borderRadius: 2, bgcolor: "grey.700" }}
               />
               <Skeleton
                 variant="rectangular"
                 width="100%"
-                height={200}
-                sx={{ borderRadius: 2, mt: 2 }}
+                height={1000}
+                sx={{ borderRadius: 2, mt: 2, bgcolor: "grey.700" }}
               />
             </>
           ) : (
