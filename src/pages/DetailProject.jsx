@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { Skeleton } from "antd";
+import Skeleton from "@mui/material/Skeleton";
 import projects from "../data/dataproject";
 
 export default function DetailProject() {
@@ -10,7 +10,6 @@ export default function DetailProject() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // simulasi fetch / tunggu gambar
     const timer = setTimeout(() => setLoading(false), 1500);
     return () => clearTimeout(timer);
   }, [slug]);
@@ -20,9 +19,11 @@ export default function DetailProject() {
       <section className="px-6 mt-10 md:mt-0 md:px-64 pb-20 text-white">
         <div className="flex justify-center mb-6">
           {loading ? (
-            <Skeleton.Image
-              active
-              style={{ width: "100%", height: 450, borderRadius: 12 }}
+            <Skeleton
+              variant="rectangular"
+              width="100%"
+              height={450}
+              sx={{ borderRadius: 2 }}
             />
           ) : (
             <img
@@ -35,7 +36,7 @@ export default function DetailProject() {
 
         <h1 className="text-3xl md:text-5xl border-b border-[#a6a6a6] pb-4 mt-10 font-bold">
           {loading ? (
-            <Skeleton.Input active size="large" block />
+            <Skeleton variant="text" width="60%" height={50} />
           ) : (
             project.title
           )}
@@ -50,7 +51,7 @@ export default function DetailProject() {
                     {label}
                   </h1>
                   {loading ? (
-                    <Skeleton.Input active size="small" className="w-[120px]" />
+                    <Skeleton variant="text" width={120} height={30} />
                   ) : (
                     <p className="text-base w-full max-w-[180px] text-[#a6a6a6]">
                       {project[label.toLowerCase().replace(" ", "")]}
@@ -63,7 +64,12 @@ export default function DetailProject() {
 
           <div className="md:max-w-xs text-[#a6a6a6] text-justify">
             {loading ? (
-              <Skeleton active paragraph={{ rows: 4 }} />
+              <>
+                <Skeleton variant="text" height={30} />
+                <Skeleton variant="text" height={30} />
+                <Skeleton variant="text" height={30} />
+                <Skeleton variant="text" height={30} />
+              </>
             ) : (
               project.desc
             )}
@@ -74,21 +80,19 @@ export default function DetailProject() {
       <section className="pb-20 mx-6 md:mx-64">
         <div className="space-y-14">
           {loading ? (
-            // skeleton untuk section preview
             <>
-              <Skeleton.Input active block size="large" className="mb-4" />
-              <Skeleton.Image
-                active
-                style={{ width: "100%", height: 200, borderRadius: 8 }}
+              <Skeleton variant="text" width="40%" height={40} />
+              <Skeleton
+                variant="rectangular"
+                width="100%"
+                height={200}
+                sx={{ borderRadius: 2 }}
               />
-              <Skeleton.Image
-                active
-                style={{
-                  width: "100%",
-                  height: 200,
-                  borderRadius: 8,
-                  marginTop: 12,
-                }}
+              <Skeleton
+                variant="rectangular"
+                width="100%"
+                height={200}
+                sx={{ borderRadius: 2, mt: 2 }}
               />
             </>
           ) : (
