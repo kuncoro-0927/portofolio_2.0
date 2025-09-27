@@ -1,52 +1,23 @@
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
-import Skeleton from "@mui/material/Skeleton";
 import projects from "../data/dataproject";
 
 export default function DetailProject() {
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
 
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setLoading(true); // reset tiap kali slug berubah
-    const timer = setTimeout(() => setLoading(false), 1500);
-    return () => clearTimeout(timer);
-  }, [slug]);
-
   return (
     <>
       <section className="px-6 mt-10 md:mt-0 md:px-64 pb-20 text-white">
         <div className="flex justify-center mb-6">
-          {loading ? (
-            <Skeleton
-              variant="rectangular"
-              width="100%"
-              height={450}
-              animation="wave"
-              sx={{
-                borderBottomLeftRadius: 20,
-                borderBottomRightRadius: 20,
-
-                bgcolor: "grey.700",
-              }} // biar jelas di dark mode
-            />
-          ) : (
-            <img
-              src={project.mockup}
-              alt={`${project.title} mockup`}
-              className="w-full h-[250px] md:h-[450px] object-cover rounded-xl md:-translate-y-3 md:rounded-b-4xl"
-            />
-          )}
+          <img
+            src={project.mockup}
+            alt={`${project.title} mockup`}
+            className="w-full h-[250px] md:h-[450px] object-cover rounded-xl md:-translate-y-3 md:rounded-b-4xl"
+          />
         </div>
 
         <h1 className="text-3xl md:text-5xl border-b border-[#a6a6a6] pb-4 mt-10 font-bold">
-          {loading ? (
-            <Skeleton variant="text" width="60%" height={50} />
-          ) : (
-            project.title
-          )}
+          {project.title}
         </h1>
 
         <div className="mt-6 md:flex items-start justify-between space-y-7 md:space-y-2">
@@ -57,70 +28,39 @@ export default function DetailProject() {
                   <h1 className="font-semibold max-w-[130px] w-full text-lg md:text-xl">
                     {label}
                   </h1>
-                  {loading ? (
-                    <Skeleton variant="text" width={120} height={30} />
-                  ) : (
-                    <p className="text-base w-full max-w-[180px] text-[#a6a6a6]">
-                      {project[label.toLowerCase().replace(" ", "")]}
-                    </p>
-                  )}
+                  <p className="text-base w-full max-w-[180px] text-[#a6a6a6]">
+                    {project[label.toLowerCase().replace(" ", "")]}
+                  </p>
                 </div>
               )
             )}
           </div>
 
           <div className="md:max-w-xs text-[#a6a6a6] text-justify">
-            {loading ? (
-              <>
-                <Skeleton variant="text" height={30} />
-                <Skeleton variant="text" height={30} />
-                <Skeleton variant="text" height={30} />
-                <Skeleton variant="text" height={30} />
-              </>
-            ) : (
-              project.desc
-            )}
+            {project.desc}
           </div>
         </div>
       </section>
 
       <section className="pb-20 mx-6 md:mx-64">
         <div className="space-y-14">
-          {loading ? (
-            <>
-              <Skeleton variant="text" width="40%" height={40} />
-              <Skeleton
-                variant="rectangular"
-                width="100%"
-                height={1000}
-                sx={{ borderRadius: 2, bgcolor: "grey.700" }}
-              />
-              <Skeleton
-                variant="rectangular"
-                width="100%"
-                height={1000}
-                sx={{ borderRadius: 2, mt: 2, bgcolor: "grey.700" }}
-              />
-            </>
-          ) : (
-            project.preview.map((section, idx) => (
-              <div key={idx} className="text-center">
-                <p className="mb-4 text-xl md:text-2xl font-bold">
-                  {section.title}
-                </p>
-                <div className="space-y-4">
-                  {section.images?.map((src, i) => (
-                    <img
-                      key={i}
-                      src={src}
-                      alt={`${section.title}-${i}`}
-                      className="object-cover"
-                    />
-                  ))}
-                </div>
+          {project.preview.map((section, idx) => (
+            <div key={idx} className="text-center">
+              <p className="mb-4 text-xl md:text-2xl font-bold">
+                {section.title}
+              </p>
+              <div className="space-y-4">
+                {section.images?.map((src, i) => (
+                  <img
+                    key={i}
+                    src={src}
+                    alt={`${section.title}-${i}`}
+                    className="object-cover"
+                  />
+                ))}
               </div>
-            ))
-          )}
+            </div>
+          ))}
         </div>
       </section>
     </>
