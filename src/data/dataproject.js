@@ -19,18 +19,18 @@ const projects = [
         title: "Login Modal",
         images: ["/images/faza_frame/modallogin.png"],
       },
-      {
-        title: "Search Modal",
-        images: ["/images/faza_frame/searchmodal.png"],
-      },
-      {
-        title: "List Product",
-        images: ["/images/faza_frame/listproduk.png"],
-      },
-      {
-        title: "Detail Product",
-        images: ["/images/faza_frame/detailproduk.png"],
-      },
+      // {
+      //   title: "Search Modal",
+      //   images: ["/images/faza_frame/searchmodal.png"],
+      // },
+      // {
+      //   title: "List Product",
+      //   images: ["/images/faza_frame/listproduk.png"],
+      // },
+      // {
+      //   title: "Detail Product",
+      //   images: ["/images/faza_frame/detailproduk.png"],
+      // },
       {
         title: "Cart Drawer",
         images: ["/images/faza_frame/drawercart.png"],
@@ -43,42 +43,42 @@ const projects = [
         title: "Payment Page",
         images: ["/images/faza_frame/payment.png"],
       },
-      {
-        title: "Sandbox Midtrans",
-        images: ["/images/faza_frame/Sandbox.png"],
-      },
-      {
-        title: "Profile Page",
-        images: ["/images/faza_frame/profile.png"],
-      },
-      {
-        title: "Orders Page",
-        images: [
-          "/images/faza_frame/orderspage.png",
-          "/images/faza_frame/orderstatus.png",
-          "/images/faza_frame/ordertrack.png",
-        ],
-      },
-      {
-        title: "Wishlist Page",
-        images: ["/images/faza_frame/wishlist.png"],
-      },
-      {
-        title: "Review Page",
-        images: [
-          "/images/faza_frame/reviewpage.png",
-          "/images/faza_frame/reviewpage2.png",
-          "/images/faza_frame/reviewpage3.png",
-        ],
-      },
-      {
-        title: "Contact Page",
-        images: ["/images/faza_frame/contact.png"],
-      },
-      {
-        title: "Faqs Page",
-        images: ["/images/faza_frame/faqs.png"],
-      },
+      // {
+      //   title: "Sandbox Midtrans",
+      //   images: ["/images/faza_frame/Sandbox.png"],
+      // },
+      // {
+      //   title: "Profile Page",
+      //   images: ["/images/faza_frame/profile.png"],
+      // },
+      // {
+      //   title: "Orders Page",
+      //   images: [
+      //     "/images/faza_frame/orderspage.png",
+      //     "/images/faza_frame/orderstatus.png",
+      //     "/images/faza_frame/ordertrack.png",
+      //   ],
+      // },
+      // {
+      //   title: "Wishlist Page",
+      //   images: ["/images/faza_frame/wishlist.png"],
+      // },
+      // {
+      //   title: "Review Page",
+      //   images: [
+      //     "/images/faza_frame/reviewpage.png",
+      //     "/images/faza_frame/reviewpage2.png",
+      //     "/images/faza_frame/reviewpage3.png",
+      //   ],
+      // },
+      // {
+      //   title: "Contact Page",
+      //   images: ["/images/faza_frame/contact.png"],
+      // },
+      // {
+      //   title: "Faqs Page",
+      //   images: ["/images/faza_frame/faqs.png"],
+      // },
     ],
   },
   {
@@ -97,14 +97,14 @@ const projects = [
         title: "Home Page",
         images: ["/images/cultivo/home.png"],
       },
-      {
-        title: "Explore Page",
-        images: ["/images/cultivo/daftarkota.png"],
-      },
-      {
-        title: "Detail Page",
-        images: ["/images/cultivo/detailpage.png"],
-      },
+      // {
+      //   title: "Explore Page",
+      //   images: ["/images/cultivo/daftarkota.png"],
+      // },
+      // {
+      //   title: "Detail Page",
+      //   images: ["/images/cultivo/detailpage.png"],
+      // },
       {
         title: "Checkout Page",
         images: [
@@ -120,10 +120,10 @@ const projects = [
           "/images/cultivo/paymentpage2.png",
         ],
       },
-      {
-        title: "Order Page",
-        images: ["/images/cultivo/orderpage1.png"],
-      },
+      // {
+      //   title: "Order Page",
+      //   images: ["/images/cultivo/orderpage1.png"],
+      // },
     ],
   },
   {
@@ -150,30 +150,30 @@ const projects = [
         title: "Data Notulensi",
         images: ["/images/e_notulensi/datanotulensi.png"],
       },
-      {
-        title: "Data Sekretaris",
-        images: ["/images/e_notulensi/datasekre.png"],
-      },
-      {
-        title: "Data Peserta",
-        images: ["/images/e_notulensi/datapeserta.png"],
-      },
-      {
-        title: "Dashboard Sekretaris",
-        images: ["/images/e_notulensi/dashboardsekre.png"],
-      },
-      {
-        title: "Buat Notula",
-        images: ["/images/e_notulensi/sekrebuatnotula.png"],
-      },
-      {
-        title: "Upload Berkas Notula",
-        images: ["/images/e_notulensi/uploadberkasnotula.png"],
-      },
-      {
-        title: "Profil Sekretaris",
-        images: ["/images/e_notulensi/profilsekre.png"],
-      },
+      // {
+      //   title: "Data Sekretaris",
+      //   images: ["/images/e_notulensi/datasekre.png"],
+      // },
+      // {
+      //   title: "Data Peserta",
+      //   images: ["/images/e_notulensi/datapeserta.png"],
+      // },
+      // {
+      //   title: "Dashboard Sekretaris",
+      //   images: ["/images/e_notulensi/dashboardsekre.png"],
+      // },
+      // {
+      //   title: "Buat Notula",
+      //   images: ["/images/e_notulensi/sekrebuatnotula.png"],
+      // },
+      // {
+      //   title: "Upload Berkas Notula",
+      //   images: ["/images/e_notulensi/uploadberkasnotula.png"],
+      // },
+      // {
+      //   title: "Profil Sekretaris",
+      //   images: ["/images/e_notulensi/profilsekre.png"],
+      // },
     ],
   },
 ];
