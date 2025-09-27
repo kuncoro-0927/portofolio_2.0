@@ -42,9 +42,9 @@ const Header = () => {
             onLetterAnimationComplete={handleAnimationComplete}
           />
 
-          <div className="hidden developer md:flex items-center gap-2">
-            <div className="px-24 text-base  py-2.5 border bg-[#f5f5f5] text-[#121212] rounded-full">
-              <i>Projects</i>
+          <div className="hidden developer  md:flex items-center gap-2">
+            <div className="md:px-16 xl:px-24 text-base text-center  py-2.5 border md:max-w-[200px] xl:max-w-[500px] bg-[#f5f5f5] text-[#121212] rounded-full">
+              <p>Projects</p>
             </div>
             <div className="p-3 text-base border bg-[#f5f5f5] text-[#121212] rounded-full">
               <BsArrowRight className="text-lg" />
@@ -54,7 +54,7 @@ const Header = () => {
 
         <div className="md:items-end  flex gap-9 md:gap-0 flex-col-reverse md:flex-row justify-between ">
           <div className="flex  developer md:hidden items-start gap-2">
-            <div className="px-10  md:px-24 text-base  py-2.5 border bg-[#f5f5f5] text-[#121212] rounded-full">
+            <div className="px-16  md:px-24 text-base  py-2.5 border bg-[#f5f5f5] text-[#121212] rounded-full">
               <i>Projects</i>
             </div>
             <div className="p-3 text-base border bg-[#f5f5f5] text-[#121212] rounded-full">
@@ -113,7 +113,7 @@ const Header = () => {
           />
         </div>
 
-        <div className="mt-16 flex-1 space-x-5 flex-col space-y-5 md:space-y-0 md:flex-row md:flex md:space-x-10 md:items-center md:justify-center">
+        <div className="mt-16 flex-wrap flex justify-center gap-5  md:space-y-0 md:flex-row md:flex md:space-x-10 md:items-center md:justify-center">
           <StarBorder
             as="button"
             color="white"
