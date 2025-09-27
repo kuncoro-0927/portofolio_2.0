@@ -8,15 +8,25 @@ const ImageCard = () => {
   useEffect(() => {
     const updateSize = () => {
       if (containerRef.current) {
-        const width = containerRef.current.offsetWidth; // ambil lebar sisa container
-        // di mobile -> pakai width container
-        // di desktop -> maksimal 380px
-        const finalWidth = width < 380 ? width : 380;
+        const width = containerRef.current.offsetWidth;
+        let finalWidth;
+
+        if (window.innerWidth >= 1280) {
+          // xl
+          finalWidth = 420;
+        } else if (window.innerWidth >= 768) {
+          // md
+          finalWidth = 300;
+        } else {
+          // mobile
+          finalWidth = width < 380 ? width : 380;
+        }
+
         setCardSize(`${finalWidth}px`);
       }
     };
 
-    updateSize(); // cek pertama kali
+    updateSize();
     window.addEventListener("resize", updateSize);
     return () => window.removeEventListener("resize", updateSize);
   }, []);
@@ -24,7 +34,7 @@ const ImageCard = () => {
   return (
     <div
       ref={containerRef}
-      className=" w-full  flex justify-center md:justify-end"
+      className="w-full flex justify-center md:justify-end"
     >
       <TiltedCard
         imageSrc="/images/kuncoro3.jpg"
@@ -40,7 +50,9 @@ const ImageCard = () => {
         showTooltip={true}
         displayOverlayContent={false}
         overlayContent={
-          <p className="tilted-card-demo-text text-xl">Kendrick Lamar - GNX</p>
+          <p className="tilted-card-demo-text text-xl">
+            Kuncoro - Fullstack Developer
+          </p>
         }
       />
     </div>

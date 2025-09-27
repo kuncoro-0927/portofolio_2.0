@@ -4,16 +4,16 @@ import { IoMdMail } from "react-icons/io";
 import StarBorder from "../components/Reactbits/StarBorder";
 const Contact = () => {
   return (
-    <section className="mt-20 ">
+    <section className="mt-20  ">
       <div className="relative  text-white flex items-center overflow-hidden">
         {/* Buletan */}
-        <div className="absolute md:top-0 -translate-y-20 md:-translate-y-0 -right-45 md:-left-24 w-[350px] h-[350px]  md:w-[700px] md:h-[700px]   border-[0.1px] border-[#a6a6a6] rounded-full" />
+        <div className="absolute xl:top-0 -translate-y-20 md:-translate-y-0 -right-45 md:-left-20 md:top-16 xl:-left-24 w-[350px] h-[350px] md:w-[600px] md:h-[600px]  xl:w-[700px] xl:h-[700px]   border-[0.1px] border-[#a6a6a6] rounded-full" />
 
         {/* Konten */}
-        <div className="pb-10 md:pt-36 w-full px-8 md:px-28">
+        <div className="pb-10 md:pt-36 w-full px-8 md:px-16 xl:px-28">
           <div className="flex-col-reverse flex md:flex-row md:justify-between  md:items-center">
             <div className="relative mt-10 md:mt-0 z-10  ">
-              <h1 className="text-4xl md:text-7xl font-bold leading-tight">
+              <h1 className="text-4xl md:text-5xl xl:text-7xl font-bold leading-tight">
                 Khitan Hesthi <br />{" "}
                 <p className="flex  items-center justify-between md:gap-14">
                   <span className="developer font-normal text-xs md:text-base text-[#a6a6a6]">
@@ -35,7 +35,7 @@ const Contact = () => {
                 <li>Project</li>
                 <li>Course</li>
               </ul>
-              <div className=" bg-black relative z-10 border-[0.1px] border-[#a6a6a6] px-5 py-5 w-fit md:w-[350px] rounded-3xl">
+              <div className=" bg-black relative z-10 border-[0.1px] border-[#a6a6a6] px-5 py-5 w-fit  xl:w-[350px] rounded-3xl">
                 <h1 className="developer text-[#a6a6a6] text-lg">Site</h1>
                 <p className="text-xs md:text-sm mt-2 text-[#f5f5f5]">
                   Designed & Built by Me / <br /> Design inspired by Taisya /{" "}
@@ -45,7 +45,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="relative md:w-fit flex flex-wrap justify-between items-center mt-16 gap-y-3 md:space-y-0 md:flex-row md:flex md:space-x-10 md:items-center md:justify-center">
+            <div className="relative md:w-fit flex flex-wrap justify-between items-center mt-16 gap-y-3 md:space-y-0 md:flex-row md:flex md:space-x-5 xl:space-x-10 md:items-center md:justify-center">
               <StarBorder
                 as="button"
                 color="white"

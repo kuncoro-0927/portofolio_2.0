@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 import StarBorder from "../components/Reactbits/StarBorder";
 import { BsArrowRight } from "react-icons/bs";
 import SplitText from "../components/Reactbits/SplitText";
@@ -10,13 +11,13 @@ const Header = () => {
   };
 
   return (
-    <header className="px-8 md:px-28">
+    <header className="px-8 md:px-16 xl:px-28">
       <div className="relative flex flex-col">
         <div className="absolute top-0 w-full flex justify-center">
           <Navbar />
         </div>
 
-        <div className="mt-36  md:mt-48 flex items-center justify-between  ">
+        <div className="mt-36 md:mt-48 flex items-center justify-between  ">
           {/* <h1
             className="text-5xl md:text-8xl font-bold 
   bg-gradient-to-r from-[#636363] via-[#f5f5f5] to-white
@@ -26,7 +27,7 @@ const Header = () => {
           </h1> */}
           <SplitText
             text="Full-stack"
-            className="text-5xl md:text-8xl font-bold 
+            className="text-5xl md:text-6xl xl:text-8xl font-bold 
   
   "
             delay={100}
@@ -52,9 +53,9 @@ const Header = () => {
         </div>
 
         <div className="md:items-end  flex gap-9 md:gap-0 flex-col-reverse md:flex-row justify-between ">
-          <div className="flex  developer md:hidden items-center gap-2">
+          <div className="flex  developer md:hidden items-start gap-2">
             <div className="px-10  md:px-24 text-base  py-2.5 border bg-[#f5f5f5] text-[#121212] rounded-full">
-              <i>About Me</i>
+              <i>Projects</i>
             </div>
             <div className="p-3 text-base border bg-[#f5f5f5] text-[#121212] rounded-full">
               <BsArrowRight className="text-lg" />
@@ -73,7 +74,7 @@ const Header = () => {
             threshold={0.2}
             delay={0.3}
           >
-            <blockquote className="max-w-sm developer text-[#a6a6a6] italic">
+            <blockquote className="md:max-w-xs xl:max-w-sm developer text-[#a6a6a6] italic">
               "You’re not going to be{" "}
               <span className="text-white">perfect</span>, but the important
               thing is to <span className="text-white">try</span> and be{" "}
@@ -96,7 +97,7 @@ const Header = () => {
 
           <SplitText
             text="Developer"
-            className="text-5xl ml-auto md:text-8xl font-bold 
+            className="text-5xl  ml-auto md:text-6xl xl:text-8xl font-bold 
   
   "
             delay={100}
@@ -117,7 +118,7 @@ const Header = () => {
             as="button"
             color="white"
             speed="3s"
-            className="custom-class flex items-center gap-2 rounded-full w-fit px-5 py-2"
+            className="custom-class flex items-center gap-2 rounded-full w-[150px] px-5 py-2"
           >
             <FaGithub />
             <p className="developer text-[#a6a6a6] text-sm">Github</p>
@@ -126,7 +127,7 @@ const Header = () => {
             as="button"
             color="white"
             speed="3s"
-            className="custom-class flex items-center gap-2 rounded-full w-fit px-5 py-2"
+            className="custom-class flex items-center gap-2 rounded-full w-[150px] px-5 py-2"
           >
             <FaLinkedin />
             <p className="developer text-[#a6a6a6] text-sm">Linkedin</p>
@@ -135,10 +136,19 @@ const Header = () => {
             as="button"
             color="white"
             speed="3s"
-            className="custom-class flex items-center gap-2 rounded-full w-fit px-5 py-2"
+            className="custom-class flex items-center gap-2 rounded-full w-[150px] px-5 py-2"
           >
             <FaInstagram />
             <p className="developer text-[#a6a6a6] text-sm">Instagram</p>
+          </StarBorder>
+          <StarBorder
+            as="button"
+            color="white"
+            speed="3s"
+            className="custom-class flex items-center gap-2 rounded-full w-[150px]  px-5 py-2"
+          >
+            <IoMdMail />
+            <p className="developer text-[#a6a6a6] text-sm">Email</p>
           </StarBorder>
         </div>
       </div>

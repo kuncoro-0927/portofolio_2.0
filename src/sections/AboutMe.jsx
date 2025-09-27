@@ -5,10 +5,13 @@ import { BsArrowUpRight } from "react-icons/bs";
 import ScrollReveal from "../components/Reactbits/ScrollReveal";
 const AboutMe = () => {
   return (
-    <section id="about" className="mt-10 md:mt-24 px-8 md:px-28 font-bold">
+    <section
+      id="about"
+      className="mt-10 md:mt-24 px-8 md:px-16 xl:px-28 font-bold"
+    >
       <div className="md:flex items-start">
         <h1 className="text-xl md:text-xl ">.../About Me...</h1>
-        <div className="mt-4 md:mt-0 md:ml-50 max-w-sm">
+        <div className="mt-4 md:mt-0 md:ml-auto xl:ml-50 max-w-sm">
           <p className="text-base text-[#a6a6a6] font-normal developer">
             Hi, I’m Kuncoro. I am a <i className="text-white">fresh graduate</i>{" "}
             in Information Technology with a strong interest in{" "}
@@ -27,7 +30,7 @@ const AboutMe = () => {
             </span>
           </div>
 
-          <div className="flex items-center justify-between md:gap-28 text-xs md:text-sm font-normal">
+          <div className="flex items-center justify-between md:gap-16 xl:gap-28 text-xs md:text-sm font-normal">
             <div className="border  w-fit  px-4 py-5 rounded-3xl">
               <h1 className="mb-2 text-lg md:text-xl developer text-[#a6a6a6]">
                 Styles

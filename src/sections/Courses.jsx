@@ -3,7 +3,7 @@ import React from "react";
 const Courses = () => {
   return (
     <section className="md:mt-28 mt-10">
-      <div className="mx-8 md:mx-28">
+      <div className="mx-8 md:mx-16 xl:mx-28">
         <h1 className="text-3xl md:text-5xl font-bold">
           Course & Certification
         </h1>

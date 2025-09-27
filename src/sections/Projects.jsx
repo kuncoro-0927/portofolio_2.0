@@ -64,7 +64,7 @@ const Projects = () => {
       </section> */}
 
       <section className="mt-10 md:mt-28">
-        <div className="mx-8 md:mx-28">
+        <div className="mx-8 md:mx-16 xl:mx-28">
           <h1 className="text-3xl md:text-5xl font-bold">Projects</h1>
         </div>
 
@@ -72,7 +72,7 @@ const Projects = () => {
           {projects.map((project) => (
             <NavLink key={project.id} to={`/project/${project.slug}`}>
               <li
-                className="group justify-start gap-14 md:grid md:grid-cols-[200px_2fr_3fr] items-center px-8 md:px-28 py-6 
+                className="group justify-start gap-14 md:grid md:grid-cols-[100px_2fr_3fr]  xl:grid-cols-[200px_2fr_3fr] items-center px-8 md:px-16 xl:px-28 py-6 
               border-y border-[#222] transition-all duration-300 ease-in-out 
               hover:bg-white hover:text-[#3d3d3d]"
               >
