@@ -7,10 +7,10 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="mt-10 md:mt-24 px-8 md:px-16 xl:px-28 font-bold"
+      className="mt-20 md:mt-24 px-8 sm:px-28 md:px-28 xl:px-28"
     >
       <div className="md:flex items-start">
-        <h1 className="text-xl md:text-xl ">.../About Me...</h1>
+        <h1 className="developer text-sm  sm:text-base ">.../About Me...</h1>
         <div className="mt-4 md:mt-0 md:ml-auto xl:ml-50 max-w-sm">
           <p className="text-base text-[#a6a6a6] font-normal developer">
             Hi, I’m Kuncoro. I am a <i className="text-white">fresh graduate</i>{" "}
@@ -21,7 +21,7 @@ const AboutMe = () => {
         </div>
       </div>
 
-      <div className="mt-10 md:mt-20 gap-y-10 md:gap-y-0 flex-col-reverse flex md:flex-row items-start justify-between">
+      <div className="mt-10 md:mt-20 md:gap-5 gap-y-10 md:gap-y-0 flex-col-reverse flex md:flex-row items-start justify-between">
         <div className="gap-y-7 flex-col flex w-full">
           <div className="border bg-[#f5f5f5] text-[#3d3d3d]  px-4 py-5 rounded-3xl text-xs md:text-sm font-normal w-fit">
             <h1 className="mb-2 text-lg md:text-xl developer ">Front-end</h1>

@@ -63,16 +63,37 @@ const Projects = () => {
         <Carousel slides={projects} options={OPTIONS} />
       </section> */}
 
-      <section className="mt-10 md:mt-28">
-        <div className="mx-8 md:mx-16 xl:mx-28">
-          <h1 className="text-3xl md:text-5xl font-bold">Projects</h1>
+      <section className="mt-20 md:mt-28">
+        <div className="developer flex flex-col md:flex md:flex-row gap-y-3 md:gap-y-0 items-start justify-between mx-8 sm:mx-28 md:mx-28 xl:mx-28">
+          <div>
+            <h1 className="text-sm sm:text-base md:text-base">
+              .../Projects...
+            </h1>
+          </div>
+
+          <span className="text-2xl md:text-4xl max-w-md font-semibold">
+            Showcasing My Work For Your Inspiration
+          </span>
+        </div>
+
+        <div className="developer mt-2 md:mt-5 flex-col-reverse flex md:flex-row gap-y-3 md:gap-y-0 md:flex items-start justify-between mx-8 sm:mx-28 md:mx-28 xl:mx-28">
+          <div>
+            <button className="px-4 text-xs md:text-sm py-2 rounded-md bg-[#f5f5f5] text-[#121212]">
+              Explore All Projects
+            </button>
+          </div>
+
+          <span className="text-sm max-w-md text-[#a6a6a6]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium, repudiandae?
+          </span>
         </div>
 
         <ul className="mt-5 md:mt-14">
           {projects.map((project) => (
             <NavLink key={project.id} to={`/project/${project.slug}`}>
               <li
-                className="group justify-start gap-14 md:grid md:grid-cols-[100px_2fr_3fr]  xl:grid-cols-[200px_2fr_3fr] items-center px-8 md:px-16 xl:px-28 py-6 
+                className="group justify-start gap-14 md:grid md:grid-cols-[100px_2fr_3fr]  xl:grid-cols-[150px_2fr_3fr] items-center px-8 sm:px-28 md:px-28 xl:px-28 py-6 
               border-y border-[#222] transition-all duration-300 ease-in-out 
               hover:bg-white hover:text-[#3d3d3d]"
               >

@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header className="px-8 md:px-16 xl:px-28">
+    <header className="px-8 sm:px-28 md:px-28 xl:px-28">
       <div className="relative flex flex-col">
         <div className="absolute top-0 w-full flex justify-center">
           <Navbar />
@@ -27,7 +27,7 @@ const Header = () => {
           </h1> */}
           <SplitText
             text="Full-stack"
-            className="text-5xl md:text-6xl xl:text-8xl font-bold 
+            className="text-5xl sm:text-6xl md:text-6xl xl:text-8xl font-bold 
   
   "
             delay={100}
@@ -52,7 +52,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="md:items-end  flex gap-9 md:gap-0 flex-col-reverse md:flex-row justify-between ">
+        <div className="md:items-start  flex gap-9 md:gap-0 flex-col-reverse md:flex-row justify-between ">
           <div className="flex  developer md:hidden items-start gap-2">
             <div className="px-16  md:px-24 text-base  py-2.5 border bg-[#f5f5f5] text-[#121212] rounded-full">
               <i>Projects</i>
@@ -74,7 +74,7 @@ const Header = () => {
             threshold={0.2}
             delay={0.3}
           >
-            <blockquote className="md:max-w-xs xl:max-w-sm developer text-[#a6a6a6] italic">
+            <blockquote className="md:max-w-[250px] md:mt-3 xl:mt-0 xl:max-w-sm developer text-[#a6a6a6] italic">
               "You’re not going to be{" "}
               <span className="text-white">perfect</span>, but the important
               thing is to <span className="text-white">try</span> and be{" "}
@@ -97,7 +97,7 @@ const Header = () => {
 
           <SplitText
             text="Developer"
-            className="text-5xl  ml-auto md:text-6xl xl:text-8xl font-bold 
+            className="text-5xl  ml-auto sm:text-6xl md:text-6xl xl:text-8xl font-bold 
   
   "
             delay={100}
@@ -113,12 +113,12 @@ const Header = () => {
           />
         </div>
 
-        <div className="mt-16 flex-wrap flex justify-center gap-5  md:space-y-0 md:flex-row md:flex md:space-x-10 md:items-center md:justify-center">
+        <div className="mt-16 flex-wrap flex justify-center gap-5 md:justify-between  md:space-y-0 md:flex-row md:flex xl:space-x-10 md:items-center xl:justify-center">
           <StarBorder
             as="button"
             color="white"
             speed="3s"
-            className="custom-class flex items-center gap-2 rounded-full w-[150px] px-5 py-2"
+            className="custom-class flex items-center gap-2 rounded-full w-[150px] md:w-[130px] xl:w-[150px]  px-5 py-2"
           >
             <FaGithub />
             <p className="developer text-[#a6a6a6] text-sm">Github</p>
@@ -127,7 +127,7 @@ const Header = () => {
             as="button"
             color="white"
             speed="3s"
-            className="custom-class flex items-center gap-2 rounded-full w-[150px] px-5 py-2"
+            className="custom-class flex items-center gap-2 rounded-full w-[150px] md:w-[130px] xl:w-[150px] px-5 py-2"
           >
             <FaLinkedin />
             <p className="developer text-[#a6a6a6] text-sm">Linkedin</p>
@@ -136,7 +136,7 @@ const Header = () => {
             as="button"
             color="white"
             speed="3s"
-            className="custom-class flex items-center gap-2 rounded-full w-[150px] px-5 py-2"
+            className="custom-class flex items-center gap-2 rounded-full w-[150px] md:w-[130px] xl:w-[150px] px-5 py-2"
           >
             <FaInstagram />
             <p className="developer text-[#a6a6a6] text-sm">Instagram</p>
@@ -145,7 +145,7 @@ const Header = () => {
             as="button"
             color="white"
             speed="3s"
-            className="custom-class flex items-center gap-2 rounded-full w-[150px]  px-5 py-2"
+            className="custom-class flex items-center gap-2 rounded-full w-[150px] md:w-[130px] xl:w-[150px] px-5 py-2"
           >
             <IoMdMail />
             <p className="developer text-[#a6a6a6] text-sm">Email</p>

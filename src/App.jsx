@@ -5,6 +5,7 @@ import AboutMe from "./sections/AboutMe";
 import Projects from "./sections/Projects";
 import Courses from "./sections/Courses";
 import Contact from "./sections/Contact";
+import RecentProject from "./sections/RecentProject";
 import Light from "./components/Light";
 import FloatingButton from "./components/FloatingButton";
 import DetailProject from "./pages/DetailProject";
@@ -29,6 +30,7 @@ export default function App() {
           element={
             <div className="relative z-0">
               <Header />
+              <RecentProject />
               <AboutMe />
               <Projects />
               <Courses />
