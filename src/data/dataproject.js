@@ -4,81 +4,38 @@ const projects = [
     year: "2024",
     title: "Faza Frame",
     category: "Web Development",
-    desc: "Faza Frame is an e-commerce website based in Pacitan, specializing in selling various picture frames and paintings. The platform is designed to simplify the shopping experience by allowing customers to browse products, purchase online, and complete payments securely through Midtrans integration. It also includes automated shipping cost calculation, making transactions more convenient and transparent.",
+    desc: `
+<em style="color:#ffffff;">Faza Frame</em>
+<span style="color:#a6a6a6;"> is an </span>
+<em style="color:#ffffff;">e-commerce website</em>
+<span style="color:#a6a6a6;"> from Pacitan, offering high-quality </span>
+<em style="color:#ffffff;">picture frames</em>
+<span style="color:#a6a6a6;"> and </span>
+<em style="color:#ffffff;">paintings</em>.
+<br /><br />
+<span style="color:#a6a6a6;">Customers can </span>
+<em style="color:#ffffff;">browse products</em>,
+<em style="color:#ffffff;">purchase online</em>,
+<span style="color:#a6a6a6;"> and </span>
+<em style="color:#ffffff;">complete payments securely</em>
+<span style="color:#a6a6a6;"> via </span>
+<em style="color:#ffffff;">Midtrans</em>.
+<span style="color:#a6a6a6;"> Automated shipping ensures transparent and efficient transactions.</span>
+`,
     slug: "e-commerce-faza-frame",
     type: "Capstone Project",
-    mockup: "/images/faza_frame/beranda.png",
+    mockup: "/images/faza_frame/mockup.png",
     tech: "React, Express, MySql, Midtrans, RajaOngkir",
     role: "Fullstack Developer",
     preview: [
       {
-        title: "Home Page",
-        images: ["/images/faza_frame/berandafull.png"],
-      },
-      {
         title: "Login Modal",
-        images: ["/images/faza_frame/modallogin.png"],
-      },
-      // {
-      //   title: "Search Modal",
-      //   images: ["/images/faza_frame/searchmodal.png"],
-      // },
-      // {
-      //   title: "List Product",
-      //   images: ["/images/faza_frame/listproduk.png"],
-      // },
-      // {
-      //   title: "Detail Product",
-      //   images: ["/images/faza_frame/detailproduk.png"],
-      // },
-      {
-        title: "Cart Drawer",
-        images: ["/images/faza_frame/drawercart.png"],
+        images: ["/images/faza_frame/loginmobile.png"],
       },
       {
-        title: "Shipping Form",
-        images: ["/images/faza_frame/formship.png"],
+        title: "Home Page",
+        images: ["/images/faza_frame/mockup.png"],
       },
-      {
-        title: "Payment Page",
-        images: ["/images/faza_frame/payment.png"],
-      },
-      // {
-      //   title: "Sandbox Midtrans",
-      //   images: ["/images/faza_frame/Sandbox.png"],
-      // },
-      // {
-      //   title: "Profile Page",
-      //   images: ["/images/faza_frame/profile.png"],
-      // },
-      // {
-      //   title: "Orders Page",
-      //   images: [
-      //     "/images/faza_frame/orderspage.png",
-      //     "/images/faza_frame/orderstatus.png",
-      //     "/images/faza_frame/ordertrack.png",
-      //   ],
-      // },
-      // {
-      //   title: "Wishlist Page",
-      //   images: ["/images/faza_frame/wishlist.png"],
-      // },
-      // {
-      //   title: "Review Page",
-      //   images: [
-      //     "/images/faza_frame/reviewpage.png",
-      //     "/images/faza_frame/reviewpage2.png",
-      //     "/images/faza_frame/reviewpage3.png",
-      //   ],
-      // },
-      // {
-      //   title: "Contact Page",
-      //   images: ["/images/faza_frame/contact.png"],
-      // },
-      // {
-      //   title: "Faqs Page",
-      //   images: ["/images/faza_frame/faqs.png"],
-      // },
     ],
   },
   {
@@ -97,14 +54,7 @@ const projects = [
         title: "Home Page",
         images: ["/images/cultivo/home.png"],
       },
-      // {
-      //   title: "Explore Page",
-      //   images: ["/images/cultivo/daftarkota.png"],
-      // },
-      // {
-      //   title: "Detail Page",
-      //   images: ["/images/cultivo/detailpage.png"],
-      // },
+
       {
         title: "Checkout Page",
         images: [
@@ -120,10 +70,6 @@ const projects = [
           "/images/cultivo/paymentpage2.png",
         ],
       },
-      // {
-      //   title: "Order Page",
-      //   images: ["/images/cultivo/orderpage1.png"],
-      // },
     ],
   },
   {

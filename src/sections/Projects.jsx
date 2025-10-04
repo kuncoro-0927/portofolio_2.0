@@ -52,17 +52,9 @@ const Projects = () => {
       image: "https://picsum.photos/600/350?random=6",
     },
   ];
-  // const OPTIONS = {
-  //   loop: true,
-  //   align: "center",
-  //   skipSnaps: false,
-  // };
+
   return (
     <>
-      {/* <section className="md:mx-28">
-        <Carousel slides={projects} options={OPTIONS} />
-      </section> */}
-
       <section className="mt-20 md:mt-28">
         <div className="developer flex flex-col md:flex md:flex-row gap-y-3 md:gap-y-0 items-start justify-between mx-8 sm:mx-28 md:mx-28 xl:mx-28">
           <div>

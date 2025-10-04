@@ -13,6 +13,7 @@ export const usePrevNextButtons = (emblaApi, onButtonClick) => {
 
   const onNextButtonClick = useCallback(() => {
     if (!emblaApi) return;
+    console.log("Next button clicked ✅");
     emblaApi.scrollNext();
     if (onButtonClick) onButtonClick(emblaApi);
   }, [emblaApi, onButtonClick]);
