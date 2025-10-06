@@ -32,13 +32,13 @@ const Projects = () => {
       year: "2024",
       title: "Portfolio Website",
       desc: "Personal Project | React / Tailwind",
-      slug: "portfolio-website",
+      slug: "portofolio-v1",
       image: "https://picsum.photos/600/350?random=4",
     },
     {
       id: 5,
       year: "2024",
-      title: "iTern - Company Profile",
+      title: "iTern",
       desc: "Project Based Learning | Laravel / Tailwind / MySQL",
       slug: "itern",
       image: "https://picsum.photos/600/350?random=5",
@@ -55,7 +55,7 @@ const Projects = () => {
 
   return (
     <>
-      <section className="mt-20 md:mt-28">
+      <section id="projects" className="mt-20 md:mt-28">
         <div className="developer flex flex-col md:flex md:flex-row gap-y-3 md:gap-y-0 items-start justify-between mx-8 sm:mx-28 md:mx-28 xl:mx-28">
           <div>
             <h1 className="text-sm sm:text-base md:text-base">

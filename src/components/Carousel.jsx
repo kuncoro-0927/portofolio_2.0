@@ -46,7 +46,7 @@ const Carousel = ({ slides, options }) => {
               />
 
               <div
-                className={`absolute bottom-4 left-4 w-fit bg-[#f5f5f5]/5 backdrop-blur-sm rounded-3xl py-2 px-6 text-white text-sm  ${
+                className={`absolute bottom-4 left-4 w-fit bg-[#f5f5f5]/5 backdrop-blur-sm rounded-3xl py-2 px-6 text-white text-xs sm:text-sm   ${
                   selectedIndex === index ? "" : ""
                 }`}
               >
@@ -59,7 +59,7 @@ const Carousel = ({ slides, options }) => {
 
       <button
         onClick={handleOpenLightbox}
-        className="absolute top-4 right-4 z-[9999] bg-white text-black px-6 py-2 rounded-full text-sm shadow-lg hover:bg-gray-200 cursor-pointer"
+        className="absolute top-4 right-4 z-[9999] bg-white text-black px-6 py-2 rounded-full text-xs sm:text-sm shadow-lg hover:bg-gray-200 cursor-pointer"
       >
         Full Preview
       </button>

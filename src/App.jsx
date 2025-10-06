@@ -15,7 +15,6 @@ export default function App() {
     <>
       <FloatingButton />
 
-      {/* Background */}
       <div className="fixed inset-0 -z-20">
         <Background />
       </div>
@@ -23,7 +22,6 @@ export default function App() {
         <Light />
       </div>
 
-      {/* Routing */}
       <Routes>
         <Route
           path="/"

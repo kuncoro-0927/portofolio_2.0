@@ -1,12 +1,45 @@
 const projects = [
   {
-    id: 2,
+    id: 6,
+    year: "2024",
+    title: "React AI Chatbot",
+    category: "Web Development",
+    desc: `
+<em style="color:#ffffff;">AI Chatbot</em> 
+<span style="color:#a6a6a6;"> is a </span>
+<em style="color:#ffffff;">React-based conversational platform</em> 
+<span style="color:#a6a6a6;"> that integrates multiple AI models, including </span>
+<em style="color:#ffffff;">Google AI</em>, 
+<em style="color:#ffffff;">OpenAI</em>, 
+<em style="color:#ffffff;">DeepSeek AI</em>, 
+<em style="color:#ffffff;">Anthropic AI</em>, 
+<span style="color:#a6a6a6;"> and </span>
+<em style="color:#ffffff;">xAI</em>.
+<span style="color:#a6a6a6;"> It enables users to </span>
+<em style="color:#ffffff;">interact intelligently</em> 
+<span style="color:#a6a6a6;"> with different models in one place, offering </span>
+<em style="color:#ffffff;">flexibility, diverse insights,</em> 
+<span style="color:#a6a6a6;"> and a seamless AI experience.</span>
+`,
+    slug: "react-ai-chatbot",
+    type: "Capstone Project",
+    mockup: "/images/react-ai/reactai1.png",
+    tech: "React, Google AI, Open AI, Deepseek AI, Anthropic AI, xAI",
+    role: "Fullstack Developer",
+    preview: [
+      {
+        title: "React AI Chatbot",
+        images: ["/images/react-ai/reactai1.png"],
+      },
+    ],
+  },
+  {
+    id: 5,
     year: "2024",
     title: "Faza Frame",
     category: "Web Development",
-    desc: `
-<em style="color:#ffffff;">Faza Frame</em>
-<span style="color:#a6a6a6;"> is an </span>
+    desc: `<em style="color:#ffffff;">Faza Frame</em> 
+    <span style="color:#a6a6a6;"> is an </span>
 <em style="color:#ffffff;">e-commerce website</em>
 <span style="color:#a6a6a6;"> from Pacitan, offering high-quality </span>
 <em style="color:#ffffff;">picture frames</em>
@@ -39,11 +72,23 @@ const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     year: "2024",
     title: "Cultivo",
     category: "Web Development",
-    desc: "Cultivo is a tourism ticketing website focused on agrotourism destinations across various regions in Indonesia. The platform is designed to make it easier for travelers to discover, book, and purchase tickets online with a seamless and efficient experience. In addition, Cultivo empowers local tourism operators to expand their market reach, enhance their promotion efforts, and provide broader access for travelers to explore the unique potential of Indonesia’s agrotourism sector.",
+    desc: `
+<em style="color:#ffffff;">Cultivo</em> 
+<span style="color:#a6a6a6;"> is a </span>
+<em style="color:#ffffff;">tourism ticketing platform</em> 
+<span style="color:#a6a6a6;"> focused on Indonesia’s </span>
+<em style="color:#ffffff;">agrotourism destinations</em>.
+<span style="color:#a6a6a6;"> It helps travelers </span>
+<em style="color:#ffffff;">discover, book, and purchase tickets online</em>,
+<span style="color:#a6a6a6;"> while empowering local operators to </span>
+<em style="color:#ffffff;">expand their reach</em> 
+<span style="color:#a6a6a6;"> and promote Indonesia’s </span>
+<em style="color:#ffffff;">agricultural tourism potential</em>.
+`,
     slug: "cultivo",
     type: "Internship & Independent Study Project",
     mockup: "/images/cultivo/homepage4.png",
@@ -52,23 +97,110 @@ const projects = [
     preview: [
       {
         title: "Home Page",
-        images: ["/images/cultivo/home.png"],
+        images: ["/images/cultivo/homepage.png"],
       },
-
       {
-        title: "Checkout Page",
-        images: [
-          "/images/cultivo/datepage.png",
-          "/images/cultivo/checkoutpage.png",
-        ],
+        title: "Login",
+        images: ["/images/cultivo/login2.png"],
       },
-
+    ],
+  },
+  {
+    id: 3,
+    year: "2024",
+    title: "Portofolio Website",
+    category: "Web Development",
+    desc: `
+<em style="color:#ffffff;">Portoflio</em> 
+<span style="color:#a6a6a6;"> is a </span>
+<em style="color:#ffffff;">web-based platform</em> 
+<span style="color:#a6a6a6;"> developed for the Faculty of Vocational Studies, </span>
+<em style="color:#ffffff;">Universitas Brawijaya</em>.
+<span style="color:#a6a6a6;"> It helps secretaries efficiently </span>
+<em style="color:#ffffff;">record, manage, and store meeting minutes</em> 
+<span style="color:#a6a6a6;"> in a structured and accessible way, making documentation </span>
+<em style="color:#ffffff;">faster, more organized,</em> 
+<span style="color:#a6a6a6;"> and </span>
+<em style="color:#ffffff;">less error-prone</em>.
+`,
+    slug: "portofolio-v1",
+    type: "Project Based Learning",
+    mockup: "/images/e_notulensi/dashboardsuperadmin.png",
+    tech: "PHP, Laravel, Bootstrap",
+    role: "Backend Developer",
+    preview: [
       {
-        title: "Payment Page",
-        images: [
-          "/images/cultivo/paymentpage1.png",
-          "/images/cultivo/paymentpage2.png",
-        ],
+        title: "Portofolio V1",
+        images: ["/images/portofoliov1/mockup.png"],
+      },
+    ],
+  },
+
+  {
+    id: 2,
+    year: "2024",
+    title: "iTern",
+    category: "Web Development",
+    desc: `
+<em style="color:#ffffff;">Portoflio</em> 
+<span style="color:#a6a6a6;"> is a </span>
+<em style="color:#ffffff;">web-based platform</em> 
+<span style="color:#a6a6a6;"> developed for the Faculty of Vocational Studies, </span>
+<em style="color:#ffffff;">Universitas Brawijaya</em>.
+<span style="color:#a6a6a6;"> It helps secretaries efficiently </span>
+<em style="color:#ffffff;">record, manage, and store meeting minutes</em> 
+<span style="color:#a6a6a6;"> in a structured and accessible way, making documentation </span>
+<em style="color:#ffffff;">faster, more organized,</em> 
+<span style="color:#a6a6a6;"> and </span>
+<em style="color:#ffffff;">less error-prone</em>.
+`,
+    slug: "itern",
+    type: "Project Based Learning",
+    mockup: "/images/e_notulensi/dashboardsuperadmin.png",
+    tech: "PHP, Laravel, Bootstrap",
+    role: "Backend Developer",
+    preview: [
+      {
+        title: "Dashboard",
+        images: ["/images/e_notulensi/dashboardsuperadmin.png"],
+      },
+      {
+        title: "Dashboard",
+        images: ["/images/e_notulensi/datanotulen.svg"],
+      },
+    ],
+  },
+  {
+    id: 1,
+    year: "2023",
+    title: "E-Notulensi",
+    category: "Web Development",
+    desc: `
+<em style="color:#ffffff;">E-Notulensi</em> 
+<span style="color:#a6a6a6;"> is a </span>
+<em style="color:#ffffff;">web-based platform</em> 
+<span style="color:#a6a6a6;"> developed for the Faculty of Vocational Studies, </span>
+<em style="color:#ffffff;">Universitas Brawijaya</em>.
+<span style="color:#a6a6a6;"> It helps secretaries efficiently </span>
+<em style="color:#ffffff;">record, manage, and store meeting minutes</em> 
+<span style="color:#a6a6a6;"> in a structured and accessible way, making documentation </span>
+<em style="color:#ffffff;">faster, more organized,</em> 
+<span style="color:#a6a6a6;"> and </span>
+<em style="color:#ffffff;">less error-prone</em>.
+`,
+    slug: "e-notulensi",
+    type: "Project Based Learning",
+    mockup: "/images/e_notulensi/dashboardsuperadmin.png",
+    tech: "PHP, Laravel, Bootstrap",
+    role: "Backend Developer",
+    preview: [
+      {
+        title: "Dashboard",
+        images: ["/images/e_notulensi/dashboardsuperadmin.png"],
+      },
+      {
+        title: "Dashboard",
+        images: ["/images/e_notulensi/datanotulen.svg"],
       },
     ],
   },
@@ -77,7 +209,19 @@ const projects = [
     year: "2023",
     title: "E-Notulensi",
     category: "Web Development",
-    desc: "E-Notulensi is a web-based platform developed for the Faculty of Vocational Studies, Universitas Brawijaya. It provides an efficient solution for secretaries to record, manage, and store meeting minutes in a structured and easily accessible way. With e-Notulensi, documenting discussions, decisions, and follow-ups during meetings becomes faster, more organized, and less error-prone.",
+    desc: `
+<em style="color:#ffffff;">E-Notulensi</em> 
+<span style="color:#a6a6a6;"> is a </span>
+<em style="color:#ffffff;">web-based platform</em> 
+<span style="color:#a6a6a6;"> developed for the Faculty of Vocational Studies, </span>
+<em style="color:#ffffff;">Universitas Brawijaya</em>.
+<span style="color:#a6a6a6;"> It helps secretaries efficiently </span>
+<em style="color:#ffffff;">record, manage, and store meeting minutes</em> 
+<span style="color:#a6a6a6;"> in a structured and accessible way, making documentation </span>
+<em style="color:#ffffff;">faster, more organized,</em> 
+<span style="color:#a6a6a6;"> and </span>
+<em style="color:#ffffff;">less error-prone</em>.
+`,
     slug: "e-notulensi",
     type: "Project Based Learning",
     mockup: "/images/e_notulensi/dashboardsuperadmin.png",
@@ -85,41 +229,13 @@ const projects = [
     role: "Backend Developer",
     preview: [
       {
-        title: "Login Page",
-        images: ["/images/e_notulensi/login.png"],
+        title: "Dashboard",
+        images: ["/images/e_notulensi/dashboardsuperadmin.png"],
       },
       {
-        title: "Dashboard Superadmin",
-        images: ["/images/e_notulensi/dashboardspradm.png"],
+        title: "Dashboard",
+        images: ["/images/e_notulensi/datanotulen.svg"],
       },
-      {
-        title: "Data Notulensi",
-        images: ["/images/e_notulensi/datanotulensi.png"],
-      },
-      // {
-      //   title: "Data Sekretaris",
-      //   images: ["/images/e_notulensi/datasekre.png"],
-      // },
-      // {
-      //   title: "Data Peserta",
-      //   images: ["/images/e_notulensi/datapeserta.png"],
-      // },
-      // {
-      //   title: "Dashboard Sekretaris",
-      //   images: ["/images/e_notulensi/dashboardsekre.png"],
-      // },
-      // {
-      //   title: "Buat Notula",
-      //   images: ["/images/e_notulensi/sekrebuatnotula.png"],
-      // },
-      // {
-      //   title: "Upload Berkas Notula",
-      //   images: ["/images/e_notulensi/uploadberkasnotula.png"],
-      // },
-      // {
-      //   title: "Profil Sekretaris",
-      //   images: ["/images/e_notulensi/profilsekre.png"],
-      // },
     ],
   },
 ];
