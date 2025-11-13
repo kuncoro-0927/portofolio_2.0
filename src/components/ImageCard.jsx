@@ -37,7 +37,7 @@ const ImageCard = () => {
       className="w-full flex justify-center md:justify-end"
     >
       <TiltedCard
-        imageSrc="/images/kuncoro3.jpg"
+        imageSrc="/images/kuncoro3.webp"
         altText="Kuncoro - Fullstack Developer"
         captionText="Kuncoro - Fullstack Developer"
         containerHeight={cardSize}

@@ -23,13 +23,13 @@ const projects = [
 `,
     slug: "react-ai-chatbot",
     type: "Capstone Project",
-    mockup: "/images/react-ai/reactai1.png",
+    mockup: "/images/react-ai/reactai1.webp",
     tech: "React, Google AI, Open AI, Deepseek AI, Anthropic AI, xAI",
     role: "Fullstack Developer",
     preview: [
       {
         title: "React AI Chatbot",
-        images: ["/images/react-ai/reactai1.png"],
+        images: ["/images/react-ai/reactai1.webp"],
       },
     ],
   },
@@ -57,17 +57,17 @@ const projects = [
 `,
     slug: "e-commerce-faza-frame",
     type: "Capstone Project",
-    mockup: "/images/faza_frame/mockup.png",
+    mockup: "/images/faza_frame/mockup.webp",
     tech: "React, Express, MySql, Midtrans, RajaOngkir",
     role: "Fullstack Developer",
     preview: [
       {
         title: "Login Modal",
-        images: ["/images/faza_frame/loginmobile.png"],
+        images: ["/images/faza_frame/loginmobile.webp"],
       },
       {
         title: "Home Page",
-        images: ["/images/faza_frame/mockup.png"],
+        images: ["/images/faza_frame/mockup.webp"],
       },
     ],
   },
@@ -97,11 +97,11 @@ const projects = [
     preview: [
       {
         title: "Home Page",
-        images: ["/images/cultivo/homepage.png"],
+        images: ["/images/cultivo/homepage.webp"],
       },
       {
         title: "Login",
-        images: ["/images/cultivo/login2.png"],
+        images: ["/images/cultivo/login2.webp"],
       },
     ],
   },
@@ -131,7 +131,7 @@ const projects = [
     preview: [
       {
         title: "Portofolio V1",
-        images: ["/images/portofoliov1/mockup.png"],
+        images: ["/images/portofoliov1/mockup.webp"],
       },
     ],
   },
@@ -162,11 +162,7 @@ const projects = [
     preview: [
       {
         title: "Dashboard",
-        images: ["/images/e_notulensi/dashboardsuperadmin.png"],
-      },
-      {
-        title: "Dashboard",
-        images: ["/images/e_notulensi/datanotulen.svg"],
+        images: ["/images/itern/itern.webp"],
       },
     ],
   },
@@ -196,11 +192,11 @@ const projects = [
     preview: [
       {
         title: "Dashboard",
-        images: ["/images/e_notulensi/dashboardsuperadmin.png"],
+        images: ["/images/e_notulensi/dashboardsuperadmin.webp"],
       },
       {
         title: "Dashboard",
-        images: ["/images/e_notulensi/datanotulen.svg"],
+        images: ["/images/e_notulensi/datanotulen.webp"],
       },
     ],
   },

@@ -31,3 +31,16 @@ body {
     animation: shine 3s linear infinite;
   }
 }
+
+/* di file global.css atau index.css kamu */
+.split-gradient {
+  background: linear-gradient(to right, #c0c0c0, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.split-gradient span {
+  background: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

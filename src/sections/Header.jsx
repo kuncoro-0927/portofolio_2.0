@@ -18,29 +18,13 @@ const Header = () => {
         </div>
 
         <div className="mt-36 md:mt-48 flex items-center justify-between  ">
-          {/* <h1
-            className="text-5xl md:text-8xl font-bold 
-  bg-gradient-to-r from-[#636363] via-[#f5f5f5] to-white
-  bg-clip-text text-transparent"
+          <h1
+            className="text-5xl sm:text-6xl md:text-6xl xl:text-8xl font-extrabold 
+             bg-gradient-to-r from-[#4a4a4a] via-[#b8b8b8] to-[#f2f2f2]
+             bg-clip-text text-transparent "
           >
             Full-stack
-          </h1> */}
-          <SplitText
-            text="Full-stack"
-            className="text-5xl sm:text-6xl md:text-6xl xl:text-8xl font-bold 
-  
-  "
-            delay={100}
-            duration={0.6}
-            ease="power3.out"
-            splitType="chars"
-            from={{ opacity: 0, y: 40 }}
-            to={{ opacity: 1, y: 0 }}
-            threshold={0.1}
-            rootMargin="-100px"
-            textAlign="center"
-            onLetterAnimationComplete={handleAnimationComplete}
-          />
+          </h1>
 
           <div className="hidden developer  md:flex items-center gap-2">
             <div className="md:px-16 xl:px-24 text-base text-center  py-2.5 border md:max-w-[200px] xl:max-w-[500px] bg-[#f5f5f5] text-[#121212] rounded-full">
