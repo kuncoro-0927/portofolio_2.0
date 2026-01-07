@@ -1,7 +1,7 @@
 const projects = [
   {
-    id: 6,
-    year: "2024",
+    id: 4,
+    year: "2025",
     title: "React AI Chatbot",
     category: "Web Development",
     desc: `
@@ -34,7 +34,7 @@ const projects = [
     ],
   },
   {
-    id: 5,
+    id: 3,
     year: "2024",
     title: "Faza Frame",
     category: "Web Development",
@@ -72,7 +72,7 @@ const projects = [
     ],
   },
   {
-    id: 4,
+    id: 2,
     year: "2024",
     title: "Cultivo",
     category: "Web Development",
@@ -105,67 +105,67 @@ const projects = [
       },
     ],
   },
-  {
-    id: 3,
-    year: "2024",
-    title: "Portofolio Website",
-    category: "Web Development",
-    desc: `
-<em style="color:#ffffff;">Portoflio</em> 
-<span style="color:#a6a6a6;"> is a </span>
-<em style="color:#ffffff;">web-based platform</em> 
-<span style="color:#a6a6a6;"> developed for the Faculty of Vocational Studies, </span>
-<em style="color:#ffffff;">Universitas Brawijaya</em>.
-<span style="color:#a6a6a6;"> It helps secretaries efficiently </span>
-<em style="color:#ffffff;">record, manage, and store meeting minutes</em> 
-<span style="color:#a6a6a6;"> in a structured and accessible way, making documentation </span>
-<em style="color:#ffffff;">faster, more organized,</em> 
-<span style="color:#a6a6a6;"> and </span>
-<em style="color:#ffffff;">less error-prone</em>.
-`,
-    slug: "portofolio-v1",
-    type: "Project Based Learning",
-    mockup: "/images/e_notulensi/dashboardsuperadmin.png",
-    tech: "PHP, Laravel, Bootstrap",
-    role: "Backend Developer",
-    preview: [
-      {
-        title: "Portofolio V1",
-        images: ["/images/portofoliov1/mockup.webp"],
-      },
-    ],
-  },
+  //   {
+  //     id: 3,
+  //     year: "2024",
+  //     title: "Portofolio Website",
+  //     category: "Web Development",
+  //     desc: `
+  // <em style="color:#ffffff;">Portoflio</em>
+  // <span style="color:#a6a6a6;"> is a </span>
+  // <em style="color:#ffffff;">web-based platform</em>
+  // <span style="color:#a6a6a6;"> developed for the Faculty of Vocational Studies, </span>
+  // <em style="color:#ffffff;">Universitas Brawijaya</em>.
+  // <span style="color:#a6a6a6;"> It helps secretaries efficiently </span>
+  // <em style="color:#ffffff;">record, manage, and store meeting minutes</em>
+  // <span style="color:#a6a6a6;"> in a structured and accessible way, making documentation </span>
+  // <em style="color:#ffffff;">faster, more organized,</em>
+  // <span style="color:#a6a6a6;"> and </span>
+  // <em style="color:#ffffff;">less error-prone</em>.
+  // `,
+  //     slug: "portofolio-v1",
+  //     type: "Project Based Learning",
+  //     mockup: "/images/e_notulensi/dashboardsuperadmin.png",
+  //     tech: "PHP, Laravel, Bootstrap",
+  //     role: "Backend Developer",
+  //     preview: [
+  //       {
+  //         title: "Portofolio V1",
+  //         images: ["/images/portofoliov1/mockup.webp"],
+  //       },
+  //     ],
+  //   },
 
-  {
-    id: 2,
-    year: "2024",
-    title: "iTern",
-    category: "Web Development",
-    desc: `
-<em style="color:#ffffff;">Portoflio</em> 
-<span style="color:#a6a6a6;"> is a </span>
-<em style="color:#ffffff;">web-based platform</em> 
-<span style="color:#a6a6a6;"> developed for the Faculty of Vocational Studies, </span>
-<em style="color:#ffffff;">Universitas Brawijaya</em>.
-<span style="color:#a6a6a6;"> It helps secretaries efficiently </span>
-<em style="color:#ffffff;">record, manage, and store meeting minutes</em> 
-<span style="color:#a6a6a6;"> in a structured and accessible way, making documentation </span>
-<em style="color:#ffffff;">faster, more organized,</em> 
-<span style="color:#a6a6a6;"> and </span>
-<em style="color:#ffffff;">less error-prone</em>.
-`,
-    slug: "itern",
-    type: "Project Based Learning",
-    mockup: "/images/e_notulensi/dashboardsuperadmin.png",
-    tech: "PHP, Laravel, Bootstrap",
-    role: "Backend Developer",
-    preview: [
-      {
-        title: "Dashboard",
-        images: ["/images/itern/itern.webp"],
-      },
-    ],
-  },
+  //   {
+  //     id: 2,
+  //     year: "2024",
+  //     title: "iTern",
+  //     category: "Web Development",
+  //     desc: `
+  // <em style="color:#ffffff;">Portoflio</em>
+  // <span style="color:#a6a6a6;"> is a </span>
+  // <em style="color:#ffffff;">web-based platform</em>
+  // <span style="color:#a6a6a6;"> developed for the Faculty of Vocational Studies, </span>
+  // <em style="color:#ffffff;">Universitas Brawijaya</em>.
+  // <span style="color:#a6a6a6;"> It helps secretaries efficiently </span>
+  // <em style="color:#ffffff;">record, manage, and store meeting minutes</em>
+  // <span style="color:#a6a6a6;"> in a structured and accessible way, making documentation </span>
+  // <em style="color:#ffffff;">faster, more organized,</em>
+  // <span style="color:#a6a6a6;"> and </span>
+  // <em style="color:#ffffff;">less error-prone</em>.
+  // `,
+  //     slug: "itern",
+  //     type: "Project Based Learning",
+  //     mockup: "/images/e_notulensi/dashboardsuperadmin.png",
+  //     tech: "PHP, Laravel, Bootstrap",
+  //     role: "Backend Developer",
+  //     preview: [
+  //       {
+  //         title: "Dashboard",
+  //         images: ["/images/itern/itern.webp"],
+  //       },
+  //     ],
+  //   },
   {
     id: 1,
     year: "2023",
@@ -201,7 +201,7 @@ const projects = [
     ],
   },
   {
-    id: 6,
+    id: 1,
     year: "2023",
     title: "E-Notulensi",
     category: "Web Development",

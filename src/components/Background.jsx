@@ -1,7 +1,7 @@
 import Particles from "./OrbReactBits";
 const Background = () => {
   return (
-    <div style={{ width: "100%", height: "600px", position: "relative" }}>
+    <div style={{ width: "100%", height: "100%", position: "relative" }}>
       <Particles
         particleColors={["#a6a6a6", "#3d3d3d"]}
         particleCount={100}

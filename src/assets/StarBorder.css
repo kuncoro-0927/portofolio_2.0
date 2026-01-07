@@ -67,3 +67,37 @@
     opacity: 0;
   }
 }
+
+@media (min-width: 640px) {
+  .inner-content {
+    padding: 12px 28px;
+  }
+}
+
+/* md: ≥ 768px */
+@media (min-width: 768px) {
+  .inner-content {
+    padding: 10px 10px;
+  }
+}
+
+/* lg: ≥ 1024px */
+@media (min-width: 1024px) {
+  .inner-content {
+    padding: 10px 15px;
+  }
+}
+
+/* xl: ≥ 1280px */
+@media (min-width: 1280px) {
+  .inner-content {
+    padding: 10px 20px;
+  }
+}
+
+/* 2xl: ≥ 1536px */
+@media (min-width: 1536px) {
+  .inner-content {
+    padding: 12px 20px;
+  }
+}

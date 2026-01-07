@@ -11,15 +11,15 @@ const Header = () => {
   };
 
   return (
-    <header className="px-8 sm:px-28 md:px-28 xl:px-28">
+    <header className="px-8 sm:px-28 md:px-24 lg:px-28">
       <div className="relative flex flex-col">
         <div className="absolute top-0 w-full flex justify-center">
           <Navbar />
         </div>
 
-        <div className="mt-36 md:mt-48 flex items-center justify-between  ">
+        <div className="mt-36 md:mt-48 2xl:mt-60 flex items-center justify-between  ">
           <h1
-            className="text-5xl sm:text-6xl md:text-6xl xl:text-8xl font-extrabold 
+            className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-extrabold 
              bg-gradient-to-r from-[#4a4a4a] via-[#b8b8b8] to-[#f2f2f2]
              bg-clip-text text-transparent "
           >
@@ -27,10 +27,10 @@ const Header = () => {
           </h1>
 
           <div className="hidden developer  md:flex items-center gap-2">
-            <div className="md:px-16 xl:px-24 text-base text-center  py-2.5 border md:max-w-[200px] xl:max-w-[500px] bg-[#f5f5f5] text-[#121212] rounded-full">
+            <div className="md:px-16 xl:px-24 text-base 2xl:text-lg text-center  py-2.5 2xl:py-4 border md:max-w-[200px] xl:max-w-[500px] bg-[#f5f5f5] text-[#121212] rounded-full">
               <p>Projects</p>
             </div>
-            <div className="p-3 text-base border bg-[#f5f5f5] text-[#121212] rounded-full">
+            <div className="p-3 2xl:p-5 text-base 2xl:text-xl border bg-[#f5f5f5] text-[#121212] rounded-full">
               <BsArrowRight className="text-lg" />
             </div>
           </div>
@@ -58,7 +58,7 @@ const Header = () => {
             threshold={0.2}
             delay={0.3}
           >
-            <blockquote className="md:max-w-[250px] md:mt-3 xl:mt-0 xl:max-w-sm developer text-[#a6a6a6] italic">
+            <blockquote className="md:max-w-[250px] 2xl:text-lg md:mt-3 xl:mt-0 xl:max-w-sm developer text-[#a6a6a6] italic">
               "You’re not going to be{" "}
               <span className="text-white">perfect</span>, but the important
               thing is to <span className="text-white">try</span> and be{" "}
@@ -81,7 +81,7 @@ const Header = () => {
 
           <SplitText
             text="Developer"
-            className="text-5xl  ml-auto sm:text-6xl md:text-6xl xl:text-8xl font-bold 
+            className="text-5xl  ml-auto sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold 
   
   "
             delay={100}
@@ -97,42 +97,50 @@ const Header = () => {
           />
         </div>
 
-        <div className="mt-16 flex-wrap flex justify-center gap-5 md:justify-between  md:space-y-0 md:flex-row md:flex xl:space-x-10 md:items-center xl:justify-center">
+        <div className="mt-16 flex-wrap  flex justify-center gap-5 md:justify-between  md:space-y-0 md:flex-row md:flex xl:space-x-10 md:items-center xl:justify-center">
           <StarBorder
             as="button"
             color="white"
             speed="3s"
-            className="custom-class flex items-center gap-2 rounded-full w-[150px] md:w-[130px] xl:w-[150px]  px-5 py-2"
+            className="custom-class flex items-center gap-2 rounded-full w-[150px] md:w-[130px] xl:w-[150px] 2xl:w-[200px] px-5 py-4 "
           >
-            <FaGithub />
-            <p className="developer text-[#a6a6a6] text-sm">Github</p>
+            <FaGithub className="xl:text-xl 2xl:text-2xl" />
+            <p className="developer text-[#a6a6a6] text-sm xl:text-sm  2xl:text-lg">
+              Github
+            </p>
           </StarBorder>
           <StarBorder
             as="button"
             color="white"
             speed="3s"
-            className="custom-class flex items-center gap-2 rounded-full w-[150px] md:w-[130px] xl:w-[150px] px-5 py-2"
+            className="custom-class flex items-center gap-2 rounded-full w-[150px] md:w-[130px] xl:w-[150px] 2xl:w-[200px] px-5 py-2"
           >
-            <FaLinkedin />
-            <p className="developer text-[#a6a6a6] text-sm">Linkedin</p>
+            <FaLinkedin className="xl:text-xl 2xl:text-2xl" />
+            <p className="developer text-[#a6a6a6] text-sm xl:text-sm  2xl:text-lg">
+              Linkedin
+            </p>
           </StarBorder>
           <StarBorder
             as="button"
             color="white"
             speed="3s"
-            className="custom-class flex items-center gap-2 rounded-full w-[150px] md:w-[130px] xl:w-[150px] px-5 py-2"
+            className="custom-class flex items-center gap-2 rounded-full w-[150px] md:w-[130px] xl:w-[150px] 2xl:w-[200px] px-5 py-2"
           >
-            <FaInstagram />
-            <p className="developer text-[#a6a6a6] text-sm">Instagram</p>
+            <FaInstagram className="xl:text-xl 2xl:text-2xl" />
+            <p className="developer text-[#a6a6a6] text-sm xl:text-sm  2xl:text-lg">
+              Instagram
+            </p>
           </StarBorder>
           <StarBorder
             as="button"
             color="white"
             speed="3s"
-            className="custom-class flex items-center gap-2 rounded-full w-[150px] md:w-[130px] xl:w-[150px] px-5 py-2"
+            className="custom-class flex items-center gap-2 rounded-full w-[150px] md:w-[130px] xl:w-[150px] 2xl:w-[200px] px-5 py-2"
           >
-            <IoMdMail />
-            <p className="developer text-[#a6a6a6] text-sm">Email</p>
+            <IoMdMail className="xl:text-xl 2xl:text-2xl" />
+            <p className="developer text-[#a6a6a6] text-sm xl:text-sm  2xl:text-lg">
+              Email
+            </p>
           </StarBorder>
         </div>
       </div>

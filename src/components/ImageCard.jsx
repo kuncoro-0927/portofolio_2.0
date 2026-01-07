@@ -11,7 +11,10 @@ const ImageCard = () => {
         const width = containerRef.current.offsetWidth;
         let finalWidth;
 
-        if (window.innerWidth >= 1280) {
+        if (window.innerWidth >= 1536) {
+          // 2xl
+          finalWidth = 580;
+        } else if (window.innerWidth >= 1280) {
           // xl
           finalWidth = 420;
         } else if (window.innerWidth >= 768) {
