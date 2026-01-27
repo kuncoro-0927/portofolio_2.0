@@ -56,7 +56,7 @@
 .embla__slide__img {
   border-radius: 1.8rem;
   display: block;
-  height: var(--slide-height);
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }

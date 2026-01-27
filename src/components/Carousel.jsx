@@ -13,7 +13,7 @@ import "yet-another-react-lightbox/styles.css";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 
-const Carousel = ({ slides, options }) => {
+const Carousel = ({ slides, options, heightClass }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [ClassNames()]);
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);
@@ -35,12 +35,15 @@ const Carousel = ({ slides, options }) => {
   };
   return (
     <div className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
+      <div className={`embla__viewport ${heightClass}`} ref={emblaRef}>
+        <div className="embla__container h-full">
           {slides.map((slide, index) => (
-            <div className="embla__slide group relative" key={slide.id}>
+            <div
+            className="embla__slide h-full min-h-0 flex items-center justify-center"
+              key={slide.id}
+            >
               <img
-                className="embla__slide__img w-full h-full object-cover rounded-lg shadow-lg"
+                className="embla__slide__img object-contain rounded-lg shadow-lg"
                 src={slide.image}
                 alt={slide.title}
               />
@@ -82,7 +85,7 @@ const Carousel = ({ slides, options }) => {
               key={index}
               onClick={() => onDotButtonClick(index)}
               className={"embla__dot".concat(
-                index === selectedIndex ? " embla__dot--selected" : ""
+                index === selectedIndex ? " embla__dot--selected" : "",
               )}
             />
           ))}

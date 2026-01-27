@@ -48,9 +48,9 @@ export default function App() {
                 <Projects />
               </Element>
 
-              <Element name="certification">
+              {/* <Element name="certification">
                 <Courses />
-              </Element>
+              </Element> */}
 
               <Element name="contact">
                 <Contact />

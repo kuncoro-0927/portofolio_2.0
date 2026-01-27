@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import StarBorder from "../components/Reactbits/StarBorder";
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowUpRight } from "react-icons/bs";
 import SplitText from "../components/Reactbits/SplitText";
 import AnimatedContent from "../components/Reactbits/AnimatedContent";
 const Header = () => {
@@ -27,11 +27,11 @@ const Header = () => {
           </h1>
 
           <div className="hidden developer  md:flex items-center gap-2">
-            <div className="md:px-16 xl:px-24 text-base 2xl:text-lg text-center  py-2.5 2xl:py-4 border md:max-w-[200px] xl:max-w-[500px] bg-[#f5f5f5] text-[#121212] rounded-full">
-              <p>Projects</p>
+            <div className="md:px-16 xl:px-24 text-base 2xl:text-lg text-center  py-2.5 2xl:py-3 border md:max-w-[200px] xl:max-w-[500px] bg-[#f5f5f5] text-[#121212] rounded-full">
+              <p>Download CV</p>
             </div>
-            <div className="p-3 2xl:p-5 text-base 2xl:text-xl border bg-[#f5f5f5] text-[#121212] rounded-full">
-              <BsArrowRight className="text-lg" />
+            <div className="p-3 2xl:p-4 text-base 2xl:text-xl border bg-[#f5f5f5] text-[#121212] rounded-full">
+              <BsArrowUpRight className="text-lg" />
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@ const Header = () => {
               <i>Projects</i>
             </div>
             <div className="p-3 text-base border bg-[#f5f5f5] text-[#121212] rounded-full">
-              <BsArrowRight className="text-lg" />
+              <BsArrowUpRight className="text-lg" />
             </div>
           </div>
 

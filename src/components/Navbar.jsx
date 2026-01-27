@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="flex w-full py-6 developer text-sm items-center justify-between relative z-100">
       <div className="text-left">
-        <h1 className="text-left md:text-sm xl:text-sm md:text-red-500 xl:text-green-500 2xl:text-yellow-500 2xl:text-lg text-base leading-tight">
+        <h1 className="text-left md:text-sm xl:text-sm  2xl:text-lg text-base leading-tight">
           Khitan Hesthi <br /> Kuncoro
         </h1>
       </div>
