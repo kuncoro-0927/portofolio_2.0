@@ -42,7 +42,7 @@ const Header = () => {
 
         <div className="mt-36 md:mt-48 2xl:mt-52 flex items-center justify-between  ">
           <h1
-            className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[150px] font-extrabold 
+            className="text-6xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[150px] font-extrabold 
              bg-gradient-to-r from-[#4a4a4a] via-[#b8b8b8] to-[#f2f2f2]
              bg-clip-text text-transparent "
           >
@@ -96,13 +96,13 @@ const Header = () => {
             </blockquote>
           </AnimatedContent>
           <h1
-            className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[150px] font-extrabold text-white 
-               text-right  min-w-[300px] md:min-w-[500px] xl:min-w-[750px]"
+            className="text-6xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[150px] font-extrabold text-white 
+               text-right  min-w-[500px] md:min-w-[500px] xl:min-w-[750px]"
           >
             <span ref={elDeveloper}></span>
           </h1>
         </div>
-        <div className="developer mt-16 2xl:mt-28 flex items-center justify-center gap-4 text-sm tracking-widest">
+        <div className="developer mt-24 2xl:mt-28 flex items-center justify-center gap-4 text-sm tracking-widest">
           {/* Kiri */}
           <span className="hidden md:block whitespace-nowrap">Scroll down</span>
           <div className="2xl:w-60 w-full md:w-40 h-px md:h-[0.3px] bg-current opacity-20" />
