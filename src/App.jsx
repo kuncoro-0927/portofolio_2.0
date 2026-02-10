@@ -10,7 +10,7 @@ import RecentProject from "./sections/RecentProject";
 import Light from "./components/Light";
 import FloatingButton from "./components/FloatingButton";
 import DetailProject from "./pages/DetailProject";
-import HeaderThreads from "./components/Threads";
+
 export default function App() {
   return (
     <>
@@ -24,9 +24,6 @@ export default function App() {
         <Light />
       </div> */}
 
-         <div className="absolute inset-0 -z-10 pointer-events-none">
-        <HeaderThreads />
-      </div>
 
       <Routes>
         {/* 🔹 Halaman utama */}

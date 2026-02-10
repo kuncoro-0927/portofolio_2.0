@@ -3,9 +3,13 @@ import { Link as ScrollLink } from "react-scroll";
 import GlassCard from "../components/FramerMotion/GlassCard";
 import FloatingIcon from "../components/FramerMotion/FloatingIcon";
 import FlipGlassButton from "../components/FramerMotion/GlassButton";
+import HeaderThreads from "../components/Threads"
 const Header = () => {
   return (
-    <header className="px-8 sm:px-28 md:px-24 lg:px-28">
+    <header className="relative overflow-hidden px-8 sm:px-28 md:px-24 lg:px-28">
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <HeaderThreads />
+      </div>
       <div className="relative flex flex-col">
         <div className="absolute top-0 w-full flex justify-center">
           <Navbar />
