@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="mt-20 md:mt-24 px-8 sm:px-28 md:px-24 lg:px-28"
+      className="mt-20 md:mt-24 mx-4 sm:mx-28 md:mx-24 lg:mx-28"
     >
       <div className="lg:relative md:flex items-start">
         <h1 className="developer text-sm sm:text-base 2xl:text-lg">
@@ -38,7 +38,7 @@ const AboutMe = () => {
                 Styles
               </h1>
               <span className="">
-                CSS / Tailwind / <br /> Material Ui 
+                CSS / Tailwind / Material Ui 
               </span>
             </div>
             <a

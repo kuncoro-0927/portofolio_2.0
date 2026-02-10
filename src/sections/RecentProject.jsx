@@ -9,7 +9,7 @@ const RecentProject = () => {
   if (!recentProject) return null;
 
   return (
-    <section className="developer mx-8 sm:mx-28 md:mx-24 lg:mx-28 mt-20 xl:mt-20">
+    <section className="developer mx-4 sm:mx-28 md:mx-24 lg:mx-28 mt-20 xl:mt-20">
       <div className="flex items-center justify-between">
         <h2 className="text-sm sm:text-base 2xl:text-lg">
           .../Recent Project...

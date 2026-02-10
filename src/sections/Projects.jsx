@@ -41,7 +41,7 @@ const Projects = () => {
   return (
     <>
       <section id="projects" className="mt-20 md:mt-28">
-        <div className="developer flex flex-col md:flex md:flex-row gap-y-3 md:gap-y-0 items-start justify-between mx-8 sm:mx-28 md:mx-24 lg:mx-28">
+        <div className="developer flex flex-col md:flex md:flex-row gap-y-3 md:gap-y-0 items-start justify-between mx-4 sm:mx-28 md:mx-24 lg:mx-28">
           <div className="flex flex-col gap-5">
             <h2 className="text-sm sm:text-base md:text-base 2xl:text-lg">
               .../Projects...
@@ -89,7 +89,7 @@ const Projects = () => {
           {projects.map((project) => (
             <NavLink key={project.id} to={`/project/${project.slug}`}>
               <li
-                className="group justify-start gap-14 md:grid md:grid-cols-[100px_2fr_3fr]  xl:grid-cols-[150px_2fr_3fr] items-center px-8 sm:px-28 md:px-24 lg:px-28 py-6 
+                className="group justify-start gap-14 md:grid md:grid-cols-[100px_2fr_3fr]  xl:grid-cols-[150px_2fr_3fr] items-center px-4 sm:px-28 md:px-24 lg:px-28 py-6 
               border-y border-[#222] transition-all duration-300 ease-in-out 
               hover:bg-white hover:text-[#3d3d3d]"
               >

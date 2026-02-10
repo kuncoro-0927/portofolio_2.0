@@ -11,14 +11,14 @@ const Contact = () => {
         <div className="absolute xl:top-0 -translate-y-20 md:-translate-y-0 -right-45 md:-left-20 md:top-16 xl:-left-24 w-[350px] h-[350px] md:w-[600px] md:h-[600px]  xl:w-[700px] xl:h-[700px]   border-[0.1px] border-[#a6a6a6] rounded-full" />
 
         {/* Konten */}
-        <div className="pb-10 md:pt-36 w-full px-8 sm:px-24 md:px-24 lg:px-28">
+        <div className="pb-10 md:pt-36 w-full mx-4 sm:mx-24 md:mx-24 lg:mx-28">
           <div className="flex-col-reverse flex md:flex-row md:justify-between  md:items-center">
             <div className="relative mt-10 md:mt-0 z-10  ">
               <h1 className="text-4xl md:text-4xl xl:text-7xl font-bold leading-tight">
                 Khitan Hesthi <br />{" "}
                 <p className="flex  items-center justify-between sm:justify-start sm:gap-14 md:gap-14">
                   <span className="developer font-normal text-xs md:text-base 2xl:text-lg text-[#a6a6a6]">
-                    Full-stack <br /> developer
+                    Frontend <br /> developer
                   </span>
                   <span>Kuncoro </span>
                 </p>
