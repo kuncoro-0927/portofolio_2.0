@@ -42,7 +42,7 @@ const Header = () => {
 
         <div className="mt-36 md:mt-48 2xl:mt-52 flex items-center justify-between  ">
           <h1
-            className="text-6xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[150px] font-extrabold 
+            className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[150px] font-extrabold 
              bg-gradient-to-r from-[#4a4a4a] via-[#b8b8b8] to-[#f2f2f2]
              bg-clip-text text-transparent "
           >
@@ -96,7 +96,7 @@ const Header = () => {
             </blockquote>
           </AnimatedContent>
           <h1
-            className="text-6xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[150px] font-extrabold text-white 
+            className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[150px] font-extrabold text-white 
                text-left ml-auto  min-w-[300px] md:min-w-[500px] xl:min-w-[750px]"
           >
             <span ref={elDeveloper}></span>
