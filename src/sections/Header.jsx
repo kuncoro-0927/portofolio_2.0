@@ -105,13 +105,13 @@ const Header = () => {
         <div className="developer mt-16 2xl:mt-28 flex items-center justify-center gap-4 text-sm tracking-widest">
           {/* Kiri */}
           <span className="hidden md:block whitespace-nowrap">Scroll down</span>
-          <div className="2xl:w-60 w-full md:w-40 h-[0.3px] bg-current opacity-20" />
+          <div className="2xl:w-60 w-full md:w-40 h-px md:h-[0.3px] bg-current opacity-20" />
 
           {/* Icon */}
           <FloatingIcon />
 
           {/* Kanan */}
-          <div className="2xl:w-60 w-full md:w-40 h-[0.3px] bg-current opacity-20" />
+          <div className="2xl:w-60 w-full md:w-40 h-px md:h-[0.3px] bg-current opacity-20" />
           <span className="hidden md:block whitespace-nowrap">to see projects</span>
         </div>
       </div>
