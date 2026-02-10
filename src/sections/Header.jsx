@@ -63,9 +63,9 @@ const Header = () => {
           className="md:items-start flex gap-9 md:gap-0 flex-col-reverse md:flex-row justify-between 
      min-h-[50px] sm:min-h-[60px] md:min-h-[80px] lg:min-h-[100px] 2xl:min-h-[150px]"
         >
-          <div className="flex  developer md:hidden items-start gap-2">
+          <div className="flex mt-5 developer md:hidden items-start gap-2">
             <div className="px-16  md:px-24 text-base  py-2.5 border bg-[#f5f5f5]  hover:bg-white/80 transition-colors duration-200 cursor-pointer text-[#121212] rounded-full">
-              <i>Projects</i>
+              <p>Unduh CV</p>
             </div>
             <div className="p-3 text-base border bg-[#f5f5f5] hover:bg-white/80 transition-colors duration-200 cursor-pointer text-[#121212] rounded-full">
               <BsArrowUpRight className="text-lg" />
@@ -84,7 +84,7 @@ const Header = () => {
             threshold={0.2}
             delay={0.3}
           >
-            <blockquote className="md:max-w-[250px] 2xl:text-lg md:mt-3 xl:mt-0 xl:max-w-sm developer text-[#a6a6a6] italic">
+            <blockquote className="md:max-w-[250px] mt-5 2xl:text-lg md:mt-3 xl:mt-0 xl:max-w-sm developer text-[#a6a6a6] italic">
               "You’re not going to be{" "}
               <span className="text-white">perfect</span>, but the important
               thing is to <span className="text-white">try</span> and be{" "}
@@ -97,14 +97,14 @@ const Header = () => {
           </AnimatedContent>
           <h1
             className="text-6xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[150px] font-extrabold text-white 
-               text-right  min-w-[500px] md:min-w-[500px] xl:min-w-[750px]"
+               text-left ml-auto  min-w-[300px] md:min-w-[500px] xl:min-w-[750px]"
           >
             <span ref={elDeveloper}></span>
           </h1>
         </div>
         <div className="developer mt-24 2xl:mt-28 flex items-center justify-center gap-4 text-sm tracking-widest">
           {/* Kiri */}
-          <span className="hidden md:block whitespace-nowrap">Scroll down</span>
+          <span className="hidden md:block">Scroll down</span>
           <div className="2xl:w-60 w-full md:w-40 h-px md:h-[0.3px] bg-current opacity-20" />
 
           {/* Icon */}
