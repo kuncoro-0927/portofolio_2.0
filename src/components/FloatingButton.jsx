@@ -29,7 +29,7 @@ export default function FloatingButton() {
   if (!visible) return null;
 
   return (
-    <div className="fixed developer bottom-6 right-6 z-70 flex flex-col items-end space-y-3 ">
+    <div className="fixed bottom-6 right-6 z-70 flex flex-col items-end space-y-3 ">
       {open && (
         <ul className="bg-white text-xs md:text-sm 2xl:text-lg px-20 text-black w-14 rounded-3xl py-5 space-y-3 flex flex-col items-center justify-center shadow-xl transition-all duration-300 ease-in-out">
           <li>

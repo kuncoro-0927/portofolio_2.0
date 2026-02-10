@@ -17,7 +17,7 @@ const Contact = () => {
               <h1 className="text-4xl md:text-4xl xl:text-7xl font-bold leading-tight">
                 Khitan Hesthi <br />{" "}
                 <p className="flex  items-center justify-between sm:justify-start sm:gap-14 md:gap-14">
-                  <span className="developer font-normal text-[15px] md:text-base 2xl:text-lg text-[#a6a6a6]">
+                  <span className=" font-normal text-[15px] md:text-base 2xl:text-lg text-[#a6a6a6]">
                     Frontend <br /> developer
                   </span>
                   <span>Kuncoro </span>
@@ -26,11 +26,11 @@ const Contact = () => {
             </div>
 
             <div className="relative z-10 ">
-              <h1 className="md:-translate-y-20 text-[15px] developer  mb-7 md:absolute md:text-base 2xl:text-lg">
+              <h1 className="md:-translate-y-20 text-[15px]   mb-7 md:absolute md:text-base 2xl:text-lg">
                 .../Contacts...
               </h1>
 
-              <ul className="developer space-x-8 text-[15px] 2xl:text-lg flex items-center md:justify-between mb-5">
+              <ul className=" space-x-8 text-[15px] 2xl:text-lg flex items-center md:justify-between mb-5">
                 <li>
                   {" "}
                   <ScrollLink
@@ -85,7 +85,7 @@ const Contact = () => {
                 </li>
               </ul>
               <div className=" bg-black relative z-10 border-[0.1px] border-[#a6a6a6] px-5 py-5 w-fit  xl:w-[350px] rounded-3xl">
-                <h1 className="developer text-[#a6a6a6] text-lg 2xl:text-xl">
+                <h1 className=" text-[#a6a6a6] text-lg 2xl:text-xl">
                   Site
                 </h1>
                 <p className="text-[15px] 2xl:text-lg mt-2 text-[#f5f5f5]">
@@ -105,7 +105,7 @@ const Contact = () => {
    hover:shadow-[0_0_20px_rgba(255,255,255,0.20)]"
               >
                 <FaGithub className="xl:text-xl 2xl:text-2xl" />
-                <p className="developer text-[#a6a6a6] text-sm xl:text-sm  2xl:text-lg">
+                <p className=" text-[#a6a6a6] text-sm xl:text-sm  2xl:text-lg">
                   Github
                 </p>
               </StarBorder>
@@ -117,7 +117,7 @@ const Contact = () => {
    hover:shadow-[0_0_20px_rgba(255,255,255,0.20)]"
               >
                 <FaLinkedin className="xl:text-xl 2xl:text-2xl" />
-                <p className="developer text-[#a6a6a6] text-sm xl:text-sm  2xl:text-lg">
+                <p className=" text-[#a6a6a6] text-sm xl:text-sm  2xl:text-lg">
                   Linkedin
                 </p>
               </StarBorder>
@@ -129,7 +129,7 @@ const Contact = () => {
    hover:shadow-[0_0_20px_rgba(255,255,255,0.20)]"
               >
                 <FaInstagram className="xl:text-xl 2xl:text-2xl" />
-                <p className="developer text-[#a6a6a6] text-sm xl:text-sm  2xl:text-lg">
+                <p className=" text-[#a6a6a6] text-sm xl:text-sm  2xl:text-lg">
                   Instagram
                 </p>
               </StarBorder>
@@ -141,7 +141,7 @@ const Contact = () => {
    hover:shadow-[0_0_20px_rgba(255,255,255,0.20)]"
               >
                 <IoMdMail className="xl:text-xl 2xl:text-2xl" />
-                <p className="developer text-[#a6a6a6] text-sm xl:text-sm  2xl:text-lg">
+                <p className=" text-[#a6a6a6] text-sm xl:text-sm  2xl:text-lg">
                   Email
                 </p>
               </StarBorder>

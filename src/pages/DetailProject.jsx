@@ -20,7 +20,7 @@ export default function DetailProject() {
   // );
 
   return (
-    <section className="developer  relative z-20 mx-6 sm:mx-28 mt-10 sm:mt-10 mb-10 sm:mb-10">
+    <section className="  relative z-20 mx-6 sm:mx-28 mt-10 sm:mt-10 mb-10 sm:mb-10">
       <FlipButton className="px-5 hidden md:flex items-center gap-2 w-fit py-2 2xl:py-2.5 border rounded-3xl mb-8 bg-[#f5f5f5] text-black">
         <BsArrowLeft className="text-base md:text-xl mr-2" />
         Kembali

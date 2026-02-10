@@ -27,7 +27,7 @@ const Icon = icon;
         className="flex items-center gap-2"
       >
         <Icon className="xl:text-xl 2xl:text-2xl" />
-        <span className="developer ml-2 text-[#a6a6a6] text-sm xl:text-sm 2xl:text-lg">
+        <span className=" ml-2 text-[#a6a6a6] text-sm xl:text-sm 2xl:text-lg">
           {label}
         </span>
       </FlipButton>

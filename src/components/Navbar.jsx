@@ -2,7 +2,7 @@ import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 const Navbar = () => {
   return (
-    <nav className="flex w-full py-6 developer text-sm items-center justify-between relative z-100">
+    <nav className="flex w-full py-6 text-sm items-center justify-between relative z-100">
       <div className="text-left">
         <h1 className="text-left md:text-sm xl:text-sm  2xl:text-base text-[#a6a6a6]  text-base leading-tight">
           Portofolio

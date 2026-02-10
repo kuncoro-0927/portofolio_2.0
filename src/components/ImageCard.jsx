@@ -41,8 +41,8 @@ const ImageCard = () => {
     >
       <TiltedCard
         imageSrc="/images/kuncoro3.webp"
-        altText="Kuncoro - Fullstack Developer"
-        captionText="Kuncoro - Fullstack Developer"
+        altText="Kuncoro - Frontend Developer"
+        captionText="Kuncoro - Frontend Developer"
         containerHeight={cardSize}
         containerWidth={cardSize}
         imageHeight={cardSize}
@@ -54,7 +54,7 @@ const ImageCard = () => {
         displayOverlayContent={false}
         overlayContent={
           <p className="tilted-card-demo-text text-xl">
-            Kuncoro - Fullstack Developer
+            Kuncoro - Frontend Developer
           </p>
         }
       />

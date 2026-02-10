@@ -41,7 +41,7 @@ const Projects = () => {
   return (
     <>
       <section id="projects" className="mt-20 md:mt-28">
-        <div className="developer flex flex-col md:flex md:flex-row gap-y-3 md:gap-y-0 items-start justify-between mx-4 sm:mx-28 md:mx-24 lg:mx-28">
+        <div className=" flex flex-col md:flex md:flex-row gap-y-3 md:gap-y-0 items-start justify-between mx-4 sm:mx-28 md:mx-24 lg:mx-28">
           <div className="flex flex-col gap-5">
             <h2 className="text-[15px] sm:text-base md:text-base 2xl:text-lg">
               .../Projects...
@@ -98,7 +98,7 @@ const Projects = () => {
                   {project.year}
                 </p>
 
-                <p className="text-[15px] 2xl:text-lg developer  transition-colors duration-300">
+                <p className="text-[15px] 2xl:text-lg   transition-colors duration-300">
                   <span>{project.title}</span>
                 </p>
 

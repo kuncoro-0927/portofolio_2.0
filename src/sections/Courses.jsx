@@ -4,14 +4,14 @@ const Courses = () => {
   return (
     <section className="md:mt-28 mt-20">
       <div className="mx-8 sm:mx-28 md:mx-24 lg:mx-28">
-        <h1 className="developer text-sm md:text-base 2xl:text-lg ">
+        <h1 className=" text-sm md:text-base 2xl:text-lg ">
           .../Course & Certification...
         </h1>
-        <h1 className="mt-8 md:mt-10 developer flex items-center gap-3 text-xl 2xl:text-2xl font-semibold">
+        <h1 className="mt-8 md:mt-10  flex items-center gap-3 text-xl 2xl:text-2xl font-semibold">
           Professional Certification{" "}
         </h1>
         <div className="mt-5 flex flex-wrap justify-between space-y-14">
-          <div className="developer flex items-start gap-7 md:gap-10">
+          <div className=" flex items-start gap-7 md:gap-10">
             <img className="w-14 md:w-20" src="/images/logobnsp3.png" alt="" />
             <div>
               <h1 className="text-base xl:text-xl">Junior Web Developer</h1>
@@ -28,11 +28,11 @@ const Courses = () => {
           </div>
         </div>
 
-        <h1 className="mt-8 md:mt-10 developer flex items-center gap-3 text-xl 2xl:text-2xl font-semibold">
+        <h1 className="mt-8 md:mt-10  flex items-center gap-3 text-xl 2xl:text-2xl font-semibold">
           Courses & Trainings
         </h1>
         <div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8 md:gap-y-14">
-          <div className="developer flex items-start gap-7 md:gap-10">
+          <div className=" flex items-start gap-7 md:gap-10">
             <img
               className="w-14 md:w-20 flex-shrink-0"
               src="/udemylogo.png"
@@ -54,7 +54,7 @@ const Courses = () => {
             </div>
           </div>
           {/* course 1 */}
-          <div className="developer flex items-start gap-7 md:gap-10">
+          <div className=" flex items-start gap-7 md:gap-10">
             <img
               className="w-14 md:w-20 flex-shrink-0"
               src="/images/logomyskill.png"
@@ -74,7 +74,7 @@ const Courses = () => {
             </div>
           </div>
           {/* course 2 */}
-          <div className="developer flex items-start gap-7 md:gap-10">
+          <div className=" flex items-start gap-7 md:gap-10">
             <img
               className="w-14 md:w-20 flex-shrink-0"
               src="/images/logomyskill.png"
@@ -94,7 +94,7 @@ const Courses = () => {
             </div>
           </div>
 
-          <div className="developer flex items-start gap-7 md:gap-10">
+          <div className=" flex items-start gap-7 md:gap-10">
             <img
               className="w-14 md:w-20 flex-shrink-0"
               src="/images/logoil2.jpeg"
@@ -115,7 +115,7 @@ const Courses = () => {
               </p>
             </div>
           </div>
-          <div className="developer flex items-start gap-7 md:gap-10">
+          <div className=" flex items-start gap-7 md:gap-10">
             <img
               className="w-14 md:w-20 flex-shrink-0"
               src="/images/logoil2.jpeg"
@@ -137,11 +137,11 @@ const Courses = () => {
             </div>
           </div>
         </div>
-        <h1 className="mt-8 md:mt-10 developer flex items-center gap-3 text-xl 2xl:text-2xl font-semibold">
+        <h1 className="mt-8 md:mt-10  flex items-center gap-3 text-xl 2xl:text-2xl font-semibold">
           Award
         </h1>
         <div className="mt-5 flex flex-wrap justify-between space-y-8 md:space-y-14">
-          <div className="developer flex items-start gap-7 md:gap-10">
+          <div className=" flex items-start gap-7 md:gap-10">
             <img className="w-14 md:w-20" src="/images/logoil2.jpeg" alt="" />
             <div>
               <h1 className="text-base xl:text-xl max-w-[350px]">
@@ -160,11 +160,11 @@ const Courses = () => {
           </div>
         </div>
 
-        <h1 className="mt-8 md:mt-10 developer flex items-center gap-3 text-xl 2xl:text-2xl font-semibold">
+        <h1 className="mt-8 md:mt-10  flex items-center gap-3 text-xl 2xl:text-2xl font-semibold">
           Other Certifications
         </h1>
         <div className="mt-5 flex flex-wrap justify-between space-y-8 md:space-y-14">
-          <div className="developer flex items-start gap-7 md:gap-10">
+          <div className=" flex items-start gap-7 md:gap-10">
             <div className="p-2 w-14 md:w-20 h-14 md:h-20 flex items-center bg-white">
               {" "}
               <img className="" src="/images/logoit.jpeg" alt="" />
