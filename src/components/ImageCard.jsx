@@ -48,7 +48,7 @@ const ImageCard = () => {
         imageHeight={cardSize}
         imageWidth={cardSize}
         rotateAmplitude={12}
-        scaleOnHover={1.2}
+        scaleOnHover={1.1}
         showMobileWarning={false}
         showTooltip={true}
         displayOverlayContent={false}

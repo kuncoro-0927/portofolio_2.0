@@ -1,3 +1,12 @@
+import { FaCalendar } from "react-icons/fa";
+import { RiUser4Fill } from "react-icons/ri";
+import { FaLaptopCode } from "react-icons/fa";
+import { FaProjectDiagram } from "react-icons/fa";
+import { FaServer } from "react-icons/fa";
+import { FaDatabase } from "react-icons/fa";
+import { FaCreditCard } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { MdLocalShipping } from "react-icons/md";
 const projects = [
   {
     id: 4,
@@ -5,70 +14,78 @@ const projects = [
     title: "React AI Chatbot",
     category: "Web Development",
     desc: `
-<em style="color:#ffffff;">AI Chatbot</em> 
-<span style="color:#a6a6a6;"> is a </span>
-<em style="color:#ffffff;">React-based conversational platform</em> 
-<span style="color:#a6a6a6;"> that integrates multiple AI models, including </span>
-<em style="color:#ffffff;">Google AI</em>, 
-<em style="color:#ffffff;">OpenAI</em>, 
-<em style="color:#ffffff;">DeepSeek AI</em>, 
-<em style="color:#ffffff;">Anthropic AI</em>, 
-<span style="color:#a6a6a6;"> and </span>
-<em style="color:#ffffff;">xAI</em>.
-<span style="color:#a6a6a6;"> It enables users to </span>
-<em style="color:#ffffff;">interact intelligently</em> 
-<span style="color:#a6a6a6;"> with different models in one place, offering </span>
-<em style="color:#ffffff;">flexibility, diverse insights,</em> 
-<span style="color:#a6a6a6;"> and a seamless AI experience.</span>
+AI Chatbot adalah platform percakapan berbasis React yang mengintegrasikan berbagai model AI, seperti Google AI, OpenAI, DeepSeek AI, Anthropic AI, dan xAI. Platform ini memungkinkan pengguna berinteraksi secara cerdas dengan berbagai model dalam satu tempat, sehingga memberikan fleksibilitas, beragam sudut pandang, dan pengalaman AI yang mulus.
 `,
     slug: "react-ai-chatbot",
     type: "Capstone Project",
     mockup: "/images/react-ai/reactai1.webp",
-    tech: "React, Google AI, Open AI, Deepseek AI, Anthropic AI, xAI",
+    // tech: "React, Google AI, Open AI, Deepseek AI, Anthropic AI, xAI",
     role: "Fullstack Developer",
     preview: [
       {
         title: "React AI Chatbot",
         images: ["/images/react-ai/reactai1.webp"],
       },
+      {
+        title: "React AI Chatbot",
+        images: ["/images/react-ai/ra1.webp"],
+      },
     ],
+    features: [
+      "Chat dengan banyak model AI (Google AI, OpenAI, DeepSeek AI, Anthropic AI, xAI) dalam satu platform",
+      "Bisa pilih dan ganti model AI sesuai kebutuhan",
+      "Riwayat percakapan tersimpan",
+    ],
+    details: [
+      { icon: FaCalendar, text: "2025" },
+      { icon: FaProjectDiagram, text: "Project Pribadi" },
+    ],
+    tech: [{ icon: FaLaptopCode, text: "React Js" }],
   },
   {
     id: 3,
     year: "2024",
     title: "Faza Frame",
     category: "Web Development",
-    desc: `<em style="color:#ffffff;">Faza Frame</em> 
-    <span style="color:#a6a6a6;"> is an </span>
-<em style="color:#ffffff;">e-commerce website</em>
-<span style="color:#a6a6a6;"> from Pacitan, offering high-quality </span>
-<em style="color:#ffffff;">picture frames</em>
-<span style="color:#a6a6a6;"> and </span>
-<em style="color:#ffffff;">paintings</em>.
-<br /><br />
-<span style="color:#a6a6a6;">Customers can </span>
-<em style="color:#ffffff;">browse products</em>,
-<em style="color:#ffffff;">purchase online</em>,
-<span style="color:#a6a6a6;"> and </span>
-<em style="color:#ffffff;">complete payments securely</em>
-<span style="color:#a6a6a6;"> via </span>
-<em style="color:#ffffff;">Midtrans</em>.
-<span style="color:#a6a6a6;"> Automated shipping ensures transparent and efficient transactions.</span>
+    desc: `Faza Frame merupakan website e-commerce yang dikembangkan untuk mendigitalisasi proses penjualan pada Faza Frame. Platform ini memungkinkan pengelolaan produk, transaksi, serta pembayaran online yang terintegrasi dengan Midtrans, sehingga proses penjualan menjadi lebih efisien dan mudah diakses oleh pelanggan.
 `,
     slug: "e-commerce-faza-frame",
     type: "Capstone Project",
     mockup: "/images/faza_frame/mockup.webp",
-    tech: "React, Express, MySql, Midtrans, RajaOngkir",
-    role: "Fullstack Developer",
     preview: [
       {
-        title: "Login Modal",
-        images: ["/images/faza_frame/loginmobile.webp"],
+        images: ["/images/faza_frame/ff1.webp"],
       },
       {
-        title: "Home Page",
-        images: ["/images/faza_frame/mockup.webp"],
+        images: ["/images/faza_frame/ff2.webp"],
       },
+      {
+        images: ["/images/faza_frame/ff3.webp"],
+      },
+      {
+        images: ["/images/faza_frame/ff4.webp"],
+      },
+    ],
+    features: [
+      "Pemesanan Online: Pemesanan produk langsung melalui website.",
+      "Katalog Produk: Tampilan produk lengkap dengan informasi dan gambar.",
+      "Pembayaran Online: Pembayaran aman terintegrasi dengan Midtrans.",
+      "Status Pesanan Real-Time: Pemantauan status pesanan secara langsung.",
+      "Cek Ongkir: Perhitungan ongkos kirim otomatis menggunakan RajaOngkir.",
+      "Manajemen Stok & Penjualan: Pengelolaan stok dan penjualan secara real-time.",
+    ],
+    details: [
+      { icon: FaCalendar, text: "2025" },
+      { icon: RiUser4Fill, text: "Fullstack Developer" },
+      { icon: FaProjectDiagram, text: "Tugas Akhir" },
+    ],
+    tech: [
+      { icon: FaLaptopCode, text: "React Js" },
+      { icon: FaServer, text: "Express Js" },
+      { icon: FaDatabase, text: "MySql" },
+      { icon: FaCreditCard, text: "Midtrans" },
+      { icon: MdLocalShipping, text: "Raja Ongkir" },
+      { icon: RiTailwindCssFill, text: "Tailwind CSS" },
     ],
   },
   {
@@ -77,32 +94,43 @@ const projects = [
     title: "Cultivo",
     category: "Web Development",
     desc: `
-<em style="color:#ffffff;">Cultivo</em> 
-<span style="color:#a6a6a6;"> is a </span>
-<em style="color:#ffffff;">tourism ticketing platform</em> 
-<span style="color:#a6a6a6;"> focused on Indonesia’s </span>
-<em style="color:#ffffff;">agrotourism destinations</em>.
-<span style="color:#a6a6a6;"> It helps travelers </span>
-<em style="color:#ffffff;">discover, book, and purchase tickets online</em>,
-<span style="color:#a6a6a6;"> while empowering local operators to </span>
-<em style="color:#ffffff;">expand their reach</em> 
-<span style="color:#a6a6a6;"> and promote Indonesia’s </span>
-<em style="color:#ffffff;">agricultural tourism potential</em>.
+Cultivo adalah platform web yang memudahkan pengguna menemukan dan memesan wisata alam serta destinasi agrikultur di Indonesia. Website ini menampilkan berbagai tempat wisata, memungkinkan pemesanan tiket online, dan menghadirkan pengalaman yang edukatif serta menyenangkan.
 `,
     slug: "cultivo",
     type: "Internship & Independent Study Project",
     mockup: "/images/cultivo/homepage4.png",
-    tech: "React, Express, MySql, Midtrans",
     role: "Fullstack Developer",
     preview: [
       {
-        title: "Home Page",
-        images: ["/images/cultivo/homepage.webp"],
+        images: ["/images/cultivo/cultivo1.webp"],
       },
       {
-        title: "Login",
-        images: ["/images/cultivo/login2.webp"],
+        images: ["/images/cultivo/cultivo2.webp"],
       },
+      {
+        images: ["/images/cultivo/cultivo3.webp"],
+      },
+      {
+        images: ["/images/cultivo/cultivo4.webp"],
+      },
+    ],
+    features: [
+      "Pencarian Destinasi: Mudah menemukan tempat wisata alam dan agrikultur.",
+      "Pemesanan Tiket: Membeli tiket langsung di website.",
+      "Informasi Destinasi: Detail dan gambar tiap lokasi.",
+      "Antarmuka Responsif: Mudah digunakan di semua perangkat.",
+    ],
+    details: [
+      { icon: FaCalendar, text: "2024" },
+      { icon: RiUser4Fill, text: "Fullstack Developer" },
+      { icon: FaProjectDiagram, text: "Internship" },
+    ],
+    tech: [
+      { icon: FaLaptopCode, text: "React Js" },
+      { icon: FaServer, text: "Express Js" },
+      { icon: FaDatabase, text: "MySql" },
+      { icon: FaCreditCard, text: "Midtrans" },
+      { icon: RiTailwindCssFill, text: "Tailwind CSS" },
     ],
   },
   //   {
@@ -172,66 +200,40 @@ const projects = [
     title: "E-Notulensi",
     category: "Web Development",
     desc: `
-<em style="color:#ffffff;">E-Notulensi</em> 
-<span style="color:#a6a6a6;"> is a </span>
-<em style="color:#ffffff;">web-based platform</em> 
-<span style="color:#a6a6a6;"> developed for the Faculty of Vocational Studies, </span>
-<em style="color:#ffffff;">Universitas Brawijaya</em>.
-<span style="color:#a6a6a6;"> It helps secretaries efficiently </span>
-<em style="color:#ffffff;">record, manage, and store meeting minutes</em> 
-<span style="color:#a6a6a6;"> in a structured and accessible way, making documentation </span>
-<em style="color:#ffffff;">faster, more organized,</em> 
-<span style="color:#a6a6a6;"> and </span>
-<em style="color:#ffffff;">less error-prone</em>.
+E-Notulensi adalah platform berbasis web yang dikembangkan untuk Fakultas Vokasi, Universitas Brawijaya. Aplikasi ini membantu sekretaris dalam mencatat, mengelola, dan menyimpan notulensi rapat secara terstruktur dan mudah diakses, sehingga proses dokumentasi menjadi lebih cepat, rapi, dan minim kesalahan.
 `,
     slug: "e-notulensi",
-    type: "Project Based Learning",
-    mockup: "/images/e_notulensi/dashboardsuperadmin.png",
-    tech: "PHP, Laravel, Bootstrap",
     role: "Backend Developer",
     preview: [
       {
-        title: "Dashboard",
-        images: ["/images/e_notulensi/dashboardsuperadmin.webp"],
+        images: ["/images/e_notulensi/en1.webp"],
       },
       {
-        title: "Dashboard",
-        images: ["/images/e_notulensi/datanotulen.webp"],
+        images: ["/images/e_notulensi/en2.webp"],
+      },
+      {
+        images: ["/images/e_notulensi/en3.webp"],
+      },
+      {
+        images: ["/images/e_notulensi/en4.webp"],
       },
     ],
-  },
-  {
-    id: 1,
-    year: "2023",
-    title: "E-Notulensi",
-    category: "Web Development",
-    desc: `
-<em style="color:#ffffff;">E-Notulensi</em> 
-<span style="color:#a6a6a6;"> is a </span>
-<em style="color:#ffffff;">web-based platform</em> 
-<span style="color:#a6a6a6;"> developed for the Faculty of Vocational Studies, </span>
-<em style="color:#ffffff;">Universitas Brawijaya</em>.
-<span style="color:#a6a6a6;"> It helps secretaries efficiently </span>
-<em style="color:#ffffff;">record, manage, and store meeting minutes</em> 
-<span style="color:#a6a6a6;"> in a structured and accessible way, making documentation </span>
-<em style="color:#ffffff;">faster, more organized,</em> 
-<span style="color:#a6a6a6;"> and </span>
-<em style="color:#ffffff;">less error-prone</em>.
-`,
-    slug: "e-notulensi",
-    type: "Project Based Learning",
-    mockup: "/images/e_notulensi/dashboardsuperadmin.png",
-    tech: "PHP, Laravel, Bootstrap",
-    role: "Backend Developer",
-    preview: [
-      {
-        title: "Dashboard",
-        images: ["/images/e_notulensi/dashboardsuperadmin.png"],
-      },
-      {
-        title: "Dashboard",
-        images: ["/images/e_notulensi/datanotulen.svg"],
-      },
+    features: [
+      "Manajemen Pengguna: Mengelola data sekretaris dan peserta rapat (tambah, edit, hapus).",
+      "Manajemen Data Master: Mengelola unit kerja dan data pendukung sistem.",
+      "Dashboard & Arsip Notulensi: Melihat ringkasan data serta arsip seluruh notulensi rapat.",
+      "Pembuatan Notulensi: Membuat dan mengedit notulensi rapat menggunakan template yang tersedia.",
+      "Manajemen Peserta: Memilih peserta rapat dari data yang telah disediakan.",
+      "Manajemen Peserta: Memilih peserta rapat dari data yang telah disediakan.",
+    ],
+    details: [
+      { icon: FaCalendar, text: "2023" },
+      { icon: RiUser4Fill, text: "Backend Developer" },
+      { icon: FaProjectDiagram, text: "Project Based Learning" },
+    ],
+    tech: [
+      { icon: FaLaptopCode, text: "Laravel" },
+      { icon: FaDatabase, text: "MySql" },
     ],
   },
 ];

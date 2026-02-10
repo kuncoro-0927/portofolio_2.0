@@ -44,3 +44,34 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.flip-btn {
+  position: relative;
+  /* display: inline-flex; */
+  align-items: center;
+  justify-content: center;
+  perspective: 500px;
+  overflow: hidden;
+    white-space: nowrap;       /* 🔑 kunci teks */
+  min-width: max-content; 
+  
+}
+
+/* default label behavior */
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+}
+
+.label-front {
+  transform: translateZ(1px);
+}
+
+.label-back {
+  position: absolute;
+  inset: 0;
+  transform: translateZ(1px);
+}

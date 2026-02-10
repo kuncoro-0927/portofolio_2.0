@@ -4,35 +4,52 @@ import Carousel from "../components/Carousel";
 import { FaGithub } from "react-icons/fa";
 import { BsArrowUpRight, BsArrowLeft } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import FlipButton from "../components/FramerMotion/FlipButton";
 export default function DetailProject() {
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
 
-  const OPTIONS = { loop: true, align: "center", slidesToScroll: 1 };
+  // const OPTIONS = { loop: true, align: "center", slidesToScroll: 1 };
 
-  const slides = project.preview.flatMap((section, i) =>
-    section.images.map((img, j) => ({
-      id: `${i}-${j}`,
-      image: img,
-      title: `${section.title}`,
-    })),
-  );
+  // const slides = project.preview.flatMap((section, i) =>
+  //   section.images.map((img, j) => ({
+  //     id: `${i}-${j}`,
+  //     image: img,
+  //     title: `${section.title}`,
+  //   })),
+  // );
 
   return (
-    <section className="developer  relative z-20 mx-8 sm:mx-28 sm:mt-10 mb-10 sm:mb-10">
-      <Link
-        to="/"
-        className="px-5 hidden md:flex items-center gap-2 w-fit py-2 2xl:py-2.5 border rounded-3xl mb-8"
-      >
-        {" "}
-        <BsArrowLeft className="text-base md:text-xl" />
-        <span className="text-sm">Back</span>
-      </Link>
-      <div className="flex flex-col-reverse sm:flex-row items-start gap-y-5 sm:gap-y-0 sm:gap-10 justify-between">
-        <div className="max-w-xs 2xl:max-w-lg w-full ">
-          <h3 className="text-xl 2xl:text-5xl font-semibold">
-            {project.title}
+    <section className="developer  relative z-20 mx-6 sm:mx-28 mt-10 sm:mt-10 mb-10 sm:mb-10">
+      <FlipButton className="px-5 hidden md:flex items-center gap-2 w-fit py-2 2xl:py-2.5 border rounded-3xl mb-8 bg-[#f5f5f5] text-black">
+        <BsArrowLeft className="text-base md:text-xl mr-2" />
+        Kembali
+      </FlipButton>
+      <div className="">
+        <div className="md:flex items-center justify-baseline">
+          <h3 className="text-2xl 2xl:text-4xl font-semibold">
+            <span className="text-[#a6a6a6]">Project —</span> {project.title}
           </h3>
+          <FlipButton className="bg-[#f5f5f5] text-sm md:text-base inline-flex mt-4 md:mt-0 px-3.5 py-1.5 md:px-5 md:py-2 rounded-full text-black ml-auto">
+            <FaGithub className="mr-2"/>
+            Github
+          </FlipButton>
+        </div>
+
+        <div className="mt-5 2xl:mt-10 items-stretch grid grid-cols-1 md:grid-cols-2 gap-4">
+          {project.preview.map((section, i) =>
+            section.images.map((img, j) => (
+              <img
+                key={`${i}-${j}`}
+                src={img}
+                alt={`${project.title} preview ${j + 1}`}
+                className="w-full rounded-lg"
+              />
+            )),
+          )}
+        </div>
+
+        {/* 
           <div className="flex mt-5 sm:mt-5 gap-3 flex-wrap">
             {project.tech.split(",").map((item, index) => (
               <span
@@ -42,35 +59,54 @@ export default function DetailProject() {
                 {item.trim()}
               </span>
             ))}
-          </div>
-          <div className="mt-5 sm:mt-10">
+          </div> */}
+        <div className="mt-10 md:flex items-start justify-start gap-20 sm:mt-10">
+          <div className="md:max-w-3xl 2xl:max-w-4xl">
+            <h2 className="text-2xl 2xl:text-3xl font-semibold">Tentang {project.title}</h2>
             <p
-              className="text-white text-sm 2xl:text-lg leading-relaxed"
+              className="text-[#a6a6a6] text-md mt-4 2xl:mt-4 2xl:text-base"
               dangerouslySetInnerHTML={{ __html: project.desc }}
             />
+
+            <p className="text-[#a6a6a6] mt-4 2xl:mt-4">Fitur Utama:</p>
+            <ul className="list-disc space-y-0.5 ml-4 2xl:mt-4 text-[#a6a6a6]">
+              {project.features.map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
           </div>
 
-          <div className="flex mt-5 sm:mt-5 items-center">
-            <div className=" border p-3  rounded-full border-[#f5f5f5] w-fit">
-              <FaGithub className="text-lg md:text-xl" />
-            </div>
-            <div className=" bg-[#f5f5f5] -translate-x-3 border p-3 rounded-full text-[#3d3d3d] w-fit">
-              <BsArrowUpRight className="text-lg md:text-xl" />
-            </div>
-          </div>
-        </div>
+          <div className="text-base mt-4 md:mt-0">
+            <h2 className="mb-2">Detail</h2>
+            {project.details.map((detail, i) => {
+              const Icon = detail.icon;
+              return (
+                <div
+                  key={i}
+                  className="flex items-center gap-4 text-[#a6a6a6] my-0.5 text-base"
+                >
+                  <Icon className="text-[#a6a6a6]" />
 
-        <div className="mt-10 w-full sm:mt-0">
-          <button className="px-5 md:hidden flex items-center gap-2 py-2 border rounded-3xl mb-8">
-            {" "}
-            <BsArrowLeft className="text-lg md:text-xl" />
-            <span>Back</span>
-          </button>
-          <Carousel
-            slides={slides}
-            options={OPTIONS}
-            heightClass="h-[280px] sm:h-[380px] lg:h-[500px] 2xl:h-[600px]"
-          />
+                  <span>{detail.text}</span>
+                </div>
+              );
+            })}
+
+            <h2 className="mb-2 mt-6">Tech</h2>
+            {project.tech.map((detail, i) => {
+              const Icon = detail.icon;
+              return (
+                <div
+                  key={i}
+                  className="flex items-center gap-4 text-[#a6a6a6] my-0.5 text-base"
+                >
+                  <Icon className="text-[#a6a6a6]" />
+
+                  <span>{detail.text}</span>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

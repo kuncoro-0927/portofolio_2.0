@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import "../css/embla.css";
+import FlipButton from "../components/FramerMotion/FlipButton";
 const Projects = () => {
   const projects = [
     {
@@ -45,9 +46,21 @@ const Projects = () => {
             <h2 className="text-sm sm:text-base md:text-base 2xl:text-lg">
               .../Projects...
             </h2>
-            <button className="px-4 text-xs md:text-sm 2xl:text-lg 2xl:py-3 py-2 rounded-md bg-[#f5f5f5] text-[#121212]">
-              Explore All Projects
-            </button>
+
+          {/* <FlipButton
+  href="https://www.framer.com/plugins/"
+  className="
+    px-6 py-2
+    text-xs md:text-sm 2xl:text-lg 2xl:py-3
+    rounded-full
+    bg-[#f5f5f5]
+    text-[#121212]
+    drop-shadow-[0_3px_5px_rgba(255,255,255,0.22)]
+  "
+>
+  Explore all Projects
+</FlipButton> */}
+
           </div>
 
           <div className="flex flex-col gap-3">

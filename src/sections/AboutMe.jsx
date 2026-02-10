@@ -28,7 +28,7 @@ const AboutMe = () => {
           <div className="border bg-[#f5f5f5] text-[#3d3d3d]  px-4 py-5 rounded-3xl text-xs md:text-sm 2xl:text-lg font-normal w-fit">
             <h1 className="mb-2 text-lg md:text-xl developer ">Front-end</h1>
             <span className="">
-              Javascript / Typescript / React / Redux Toolkit
+              Javascript / React / Redux Toolkit
             </span>
           </div>
 
@@ -38,7 +38,7 @@ const AboutMe = () => {
                 Styles
               </h1>
               <span className="">
-                CSS / Tailwind / <br /> Material Ui / Ant.D / Shadcn
+                CSS / Tailwind / <br /> Material Ui 
               </span>
             </div>
             <a
@@ -62,7 +62,7 @@ const AboutMe = () => {
               Back-end
             </h1>
             <span className="">
-              Laravel / Express / MySQL / PostgreSQL <br /> / MongoDb
+              Laravel / Express / MySQL 
             </span>
           </div>
         </div>
