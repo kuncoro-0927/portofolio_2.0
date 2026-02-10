@@ -2,7 +2,7 @@
 
 body {
   @apply bg-black text-[#F5F5F5];
-  font-family: "tapography", monospace;
+   font-family: "Satoshi", system-ui, sans-serif;
 }
 
 @font-face {

@@ -10,18 +10,22 @@ import RecentProject from "./sections/RecentProject";
 import Light from "./components/Light";
 import FloatingButton from "./components/FloatingButton";
 import DetailProject from "./pages/DetailProject";
-
+import HeaderThreads from "./components/Threads";
 export default function App() {
   return (
     <>
       <FloatingButton />
 
       {/* Background */}
-      <div className="fixed inset-0 -z-20">
+      {/* <div className="fixed inset-0 -z-20">
         <Background />
-      </div>
-      <div className="absolute inset-0 z-10 pointer-events-none">
+      </div> */}
+      {/* <div className="absolute inset-0 z-10 pointer-events-none">
         <Light />
+      </div> */}
+
+         <div className="absolute inset-0 -z-10 pointer-events-none">
+        <HeaderThreads />
       </div>
 
       <Routes>
