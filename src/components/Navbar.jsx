@@ -9,7 +9,7 @@ const Navbar = () => {
         </h1>
       </div>
 
-      <div className="w-full hidden absolute text-xs sm:text-sm xl:text-sm  2xl:text-[15px] md:flex justify-center">
+      <div className="w-full hidden absolute text-[15px] xl:text-sm  2xl:text-[15px] md:flex justify-center">
         <div className="flex items-center gap-7">
        
           <ScrollLink
