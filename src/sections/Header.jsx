@@ -11,7 +11,7 @@ const Header = () => {
           <Navbar />
         </div>
 
-        <div className="mt-36 md:mt-48 2xl:mt-40 ">
+        <div className="mt-36 flex justify-center md:mt-48 2xl:mt-40 ">
           <GlassCard className />
         </div>
 

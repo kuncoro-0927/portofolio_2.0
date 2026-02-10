@@ -1,8 +1,9 @@
-import { motion as Motion} from "framer-motion";
+import { motion as Motion } from "framer-motion";
 
-const GlassCard = () => {
- return (
-    <div style={containerStyle}>
+const GlassCard = ({ className = "" }) => {
+  return (
+    // Gunakan div ini untuk mengatur posisi dari luar
+    <div className={className}>
       <div style={badgeWrapper}>
         <Motion.div 
           initial={{ opacity: 0.8 }}
@@ -26,27 +27,22 @@ const GlassCard = () => {
             <span style={dotSolid}></span>
           </div>
           
-          <span className="text-base" style={textStyle}>Frontend Developer</span>
+          <span className="text-[15px] md:text-[18px] whitespace-nowrap" style={textStyle}>
+            Frontend Developer
+          </span>
         </Motion.div>
       </div>
     </div>
   );
 };
 
-// --- STYLING ---
-
-const containerStyle = {
-  backgroundColor: '#000',
-  
-  display: 'flex',
-  justifyContent: 'center',
-};
+// --- STYLING TERUPDATE ---
 
 const badgeWrapper = {
+  display: 'inline-flex', // PENTING: Biar lebar border mengikuti isi, bukan full ke kanan
   position: 'relative',
   borderRadius: '999px',
-  padding: '1px', // Ketebalan border
-  // Efek Gradasi Border: Kiri terang (glass), Kanan transparan/gelap
+  padding: '1px',
   background: 'linear-gradient(90deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 60%)',
 };
 
@@ -55,10 +51,10 @@ const badgeStyle = {
   alignItems: 'center',
   padding: '10px 20px',
   gap: '12px',
-  borderRadius: '999px',
-  backgroundColor: '#0a0a0a', // Hitam pekat di bagian dalam
+  borderRadius: '999px', // Pastikan radius ini tetap ada
+  background: 'linear-gradient(90deg, rgba(35,35,35,1) 0%, rgba(0,0,0,1) 100%)',
   backdropFilter: 'blur(10px)',
-background: 'linear-gradient(90deg, rgba(35,35,35,1) 0%, rgba(0,0,0,1) 100%)',
+  overflow: 'hidden', // Memastikan background gradient terpotong sesuai radius
 };
 
 const dotContainer = {
@@ -73,7 +69,7 @@ const dotContainer = {
 const dotSolid = {
   width: '8px',
   height: '8px',
-  backgroundColor: '#fff', // Titik putih menyala
+  backgroundColor: '#fff',
   borderRadius: '50%',
   zIndex: 2,
   boxShadow: '0 0 10px #fff',
@@ -91,8 +87,8 @@ const dotGlow = {
 
 const textStyle = {
   color: 'rgba(255, 255, 255, 0.9)',
-
   fontWeight: '400',
   fontFamily: 'Inter, sans-serif',
 };
+
 export default GlassCard;
