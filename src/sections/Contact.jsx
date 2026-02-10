@@ -17,7 +17,7 @@ const Contact = () => {
               <h1 className="text-4xl md:text-4xl xl:text-7xl font-bold leading-tight">
                 Khitan Hesthi <br />{" "}
                 <p className="flex  items-center justify-between sm:justify-start sm:gap-14 md:gap-14">
-                  <span className="developer font-normal text-xs md:text-base 2xl:text-lg text-[#a6a6a6]">
+                  <span className="developer font-normal text-[15px] md:text-base 2xl:text-lg text-[#a6a6a6]">
                     Frontend <br /> developer
                   </span>
                   <span>Kuncoro </span>
@@ -26,11 +26,11 @@ const Contact = () => {
             </div>
 
             <div className="relative z-10 ">
-              <h1 className="md:-translate-y-20 text-sm developer  mb-7 md:absolute md:text-base 2xl:text-lg">
+              <h1 className="md:-translate-y-20 text-[15px] developer  mb-7 md:absolute md:text-base 2xl:text-lg">
                 .../Contacts...
               </h1>
 
-              <ul className="developer space-x-8 text-xs md:text-sm 2xl:text-lg flex items-center md:justify-between mb-5">
+              <ul className="developer space-x-8 text-[15px] 2xl:text-lg flex items-center md:justify-between mb-5">
                 <li>
                   {" "}
                   <ScrollLink
@@ -88,7 +88,7 @@ const Contact = () => {
                 <h1 className="developer text-[#a6a6a6] text-lg 2xl:text-xl">
                   Site
                 </h1>
-                <p className="text-xs md:text-sm 2xl:text-lg mt-2 text-[#f5f5f5]">
+                <p className="text-[15px] 2xl:text-lg mt-2 text-[#f5f5f5]">
                   Designed & Built by Me / <br /> Design inspired by Taisya /{" "}
                   <br /> Built with React & Tailwind
                 </p>

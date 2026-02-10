@@ -9,7 +9,7 @@ const AboutMe = () => {
       className="mt-20 md:mt-24 mx-4 sm:mx-28 md:mx-24 lg:mx-28"
     >
       <div className="lg:relative md:flex items-start">
-        <h1 className="developer text-sm sm:text-base 2xl:text-lg">
+        <h1 className="developer text-[15px] sm:text-base 2xl:text-lg">
           .../About Me...
         </h1>
         <div className="mt-4 md:mt-0 md:ml-auto lg:absolute lg:left-1/2 lg:-translate-x-1/2  w-[350px] max-w-sm">
@@ -25,14 +25,14 @@ const AboutMe = () => {
 
       <div className="mt-10 md:mt-10 lg:mt-24 xl:mt-28 2xl:mt-32 md:gap-5 gap-y-10 md:gap-y-0 flex-col-reverse flex md:flex-row items-start justify-between">
         <div className="gap-y-7 flex-col flex w-full">
-          <div className="border bg-[#f5f5f5] text-[#3d3d3d]  px-4 py-5 rounded-3xl text-xs md:text-sm 2xl:text-lg font-normal w-fit">
+          <div className="border bg-[#f5f5f5] text-[#3d3d3d]  px-4 py-5 rounded-3xl text-[15px] md:text-[15px] 2xl:text-lg font-normal w-fit">
             <h1 className="mb-2 text-lg md:text-xl developer ">Front-end</h1>
             <span className="">
               Javascript / React / Redux Toolkit
             </span>
           </div>
 
-          <div className="flex items-center justify-between md:gap-16 xl:gap-28 text-xs md:text-sm 2xl:text-lg font-normal">
+          <div className="flex items-center justify-between md:gap-16 xl:gap-28 text-[15px] md:text-[15px] 2xl:text-lg font-normal">
             <div className="border  w-fit  px-4 py-5 rounded-3xl">
               <h1 className="mb-2 text-lg md:text-xl developer text-[#a6a6a6]">
                 Styles
@@ -57,7 +57,7 @@ const AboutMe = () => {
             </a>
           </div>
 
-          <div className="border   px-4 py-5 rounded-3xl text-xs md:text-sm 2xl:text-lg font-normal w-fit">
+          <div className="border   px-4 py-5 rounded-3xl text-[15px] md:text-[15px] 2xl:text-lg font-normal w-fit">
             <h1 className="mb-2 text-lg md:text-xl developer text-[#a6a6a6] ">
               Back-end
             </h1>

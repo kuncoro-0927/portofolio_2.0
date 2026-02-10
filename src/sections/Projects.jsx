@@ -43,7 +43,7 @@ const Projects = () => {
       <section id="projects" className="mt-20 md:mt-28">
         <div className="developer flex flex-col md:flex md:flex-row gap-y-3 md:gap-y-0 items-start justify-between mx-4 sm:mx-28 md:mx-24 lg:mx-28">
           <div className="flex flex-col gap-5">
-            <h2 className="text-sm sm:text-base md:text-base 2xl:text-lg">
+            <h2 className="text-[15px] sm:text-base md:text-base 2xl:text-lg">
               .../Projects...
             </h2>
 
@@ -94,15 +94,15 @@ const Projects = () => {
               hover:bg-white hover:text-[#3d3d3d]"
               >
                 {/* Year */}
-                <p className="text-sm md:text-sm 2xl:text-lg text-[#a6a6a6] group-hover:text-[#3d3d3d] transition-colors duration-300">
+                <p className="text-[15px]  2xl:text-lg text-[#a6a6a6] group-hover:text-[#3d3d3d] transition-colors duration-300">
                   {project.year}
                 </p>
 
-                <p className="text-sm md:text-sm 2xl:text-lg developer  transition-colors duration-300">
+                <p className="text-[15px] 2xl:text-lg developer  transition-colors duration-300">
                   <span>{project.title}</span>
                 </p>
 
-                <p className="text-sm md:text-sm 2xl:text-lg  transition-colors duration-300">
+                <p className="text-[15px] 2xl:text-lg  transition-colors duration-300">
                   {project.desc}
                 </p>
               </li>
