@@ -31,7 +31,20 @@ export default function FloatingButton() {
   return (
     <div className="fixed bottom-6 right-6 z-70 flex flex-col items-end space-y-3 ">
       {open && (
-        <ul className="bg-white text-[15px] 2xl:text-lg px-20 text-black w-14 rounded-3xl py-5 space-y-3 flex flex-col items-center justify-center shadow-xl transition-all duration-300 ease-in-out">
+        <ul className="bg-white text-[15px] 2xl:text-[15px] px-5 w-full text-black rounded-3xl py-5 space-y-3 flex flex-col items-center justify-center shadow-xl transition-all duration-300 ease-in-out">
+         <li>
+            <ScrollLink
+              to="/"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              spy={true}
+              onClick={() => setOpen(false)}
+              className="cursor-pointer"
+            >
+              Main
+            </ScrollLink>
+          </li>
           <li>
             <ScrollLink
               to="about"
@@ -42,7 +55,7 @@ export default function FloatingButton() {
               onClick={() => setOpen(false)}
               className="cursor-pointer"
             >
-              About
+              About Me
             </ScrollLink>
           </li>
           <li>
@@ -59,20 +72,7 @@ export default function FloatingButton() {
               Projects
             </ScrollLink>
           </li>
-          <li>
-            {" "}
-            <ScrollLink
-              to="certification"
-              smooth={true}
-              duration={500}
-              offset={-80}
-              spy={true}
-              onClick={() => setOpen(false)}
-              className="cursor-pointer"
-            >
-              Courses
-            </ScrollLink>
-          </li>
+
           <li>
             {" "}
             <ScrollLink
@@ -98,7 +98,7 @@ export default function FloatingButton() {
         >
           {/* Text "Menu" hanya muncul kalau belum open */}
           <span
-            className={`transition-all duration-300 text-[15px] 2xl:text-lg ${
+            className={`transition-all duration-300 text-[15px] 2xl:text-[15px] ${
               open ? "opacity-0 scale-0 absolute" : "opacity-100 scale-100"
             }`}
           >

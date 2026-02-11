@@ -1,11 +1,15 @@
+import { useNavigate } from "react-router-dom";
+
 import { useParams } from "react-router-dom";
 import projects from "../data/dataproject";
 import Carousel from "../components/Carousel";
 import { FaGithub } from "react-icons/fa";
 import { BsArrowUpRight, BsArrowLeft } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import FlipButton from "../components/FramerMotion/FlipButton";
+import FlipGlassButton from "../components/FramerMotion/GlassButton";
 export default function DetailProject() {
+  const navigate = useNavigate();
+
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
 
@@ -21,20 +25,21 @@ export default function DetailProject() {
 
   return (
     <section className="  relative z-20 mx-6 sm:mx-28 mt-10 sm:mt-10 mb-10 sm:mb-10">
-      <FlipButton className="px-5 hidden md:flex items-center gap-2 w-fit py-2 2xl:py-2.5 border rounded-3xl mb-8 bg-[#f5f5f5] text-black">
-        <BsArrowLeft className="text-base md:text-xl mr-2" />
-        Kembali
-      </FlipButton>
-      <div className="">
-        <div className="md:flex items-center justify-baseline">
+      <FlipGlassButton onClick={() => navigate(-1)} className=" hidden md:flex">
+        <BsArrowLeft className="text-base md:text-xl" />
+        Back
+      </FlipGlassButton>
+      <div className="mt-10">
+        <div className="md:flex items-center justify-between">
           <h3 className="text-2xl 2xl:text-4xl font-semibold">
             <span className="text-[#a6a6a6]">Project —</span> {project.title}
           </h3>
-          <FlipButton className="bg-[#f5f5f5] text-sm md:text-base inline-flex mt-4 md:mt-0 px-3.5 py-1.5 md:px-5 md:py-2 rounded-full text-black ml-auto">
-            <FaGithub className="mr-2"/>
+          <FlipGlassButton className="">
+            <FaGithub className="xl:text-xl 2xl:text-2xl" />
             Github
-          </FlipButton>
+          </FlipGlassButton>
         </div>
+        <p className="text-[#a6a6a6] text-[15px]">{project.subtitle}</p>
 
         <div className="mt-5 2xl:mt-10 items-stretch grid grid-cols-1 md:grid-cols-2 gap-4">
           {project.preview.map((section, i) =>
@@ -62,13 +67,15 @@ export default function DetailProject() {
           </div> */}
         <div className="mt-10 md:flex items-start justify-start gap-20 sm:mt-10">
           <div className="md:max-w-3xl 2xl:max-w-4xl">
-            <h2 className="text-2xl 2xl:text-3xl font-semibold">Tentang {project.title}</h2>
+            <h2 className="text-2xl 2xl:text-3xl font-semibold">
+              About {project.title}
+            </h2>
             <p
               className="text-[#a6a6a6] text-md mt-4 2xl:mt-4 2xl:text-base"
               dangerouslySetInnerHTML={{ __html: project.desc }}
             />
 
-            <p className="text-[#a6a6a6] mt-4 2xl:mt-4">Fitur Utama:</p>
+            <p className="text-[#a6a6a6] mt-4 2xl:mt-4">Main Features:</p>
             <ul className="list-disc space-y-0.5 ml-4 2xl:mt-4 text-[#a6a6a6]">
               {project.features.map((feature, index) => (
                 <li key={index}>{feature}</li>
@@ -77,7 +84,7 @@ export default function DetailProject() {
           </div>
 
           <div className="text-base mt-4 md:mt-0">
-            <h2 className="mb-2">Detail</h2>
+            <h2 className="mb-2">Details</h2>
             {project.details.map((detail, i) => {
               const Icon = detail.icon;
               return (
@@ -92,7 +99,7 @@ export default function DetailProject() {
               );
             })}
 
-            <h2 className="mb-2 mt-6">Tech</h2>
+            <h2 className="mb-2 mt-6">Tech Stack</h2>
             {project.tech.map((detail, i) => {
               const Icon = detail.icon;
               return (

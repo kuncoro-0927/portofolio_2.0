@@ -47,7 +47,7 @@ const Projects = () => {
               .../Projects...
             </h2>
 
-          {/* <FlipButton
+            {/* <FlipButton
   href="https://www.framer.com/plugins/"
   className="
     px-6 py-2
@@ -60,7 +60,6 @@ const Projects = () => {
 >
   Explore all Projects
 </FlipButton> */}
-
           </div>
 
           <div className="flex flex-col gap-3">
@@ -68,7 +67,7 @@ const Projects = () => {
               Showcasing My Work For Your Inspiration
             </h3>
             <span className="text-sm md:text-sm 2xl:text-lg max-w-sm 2xl:max-w-xl text-[#a6a6a6]">
-              Here are some projects that I’ve worked on recently.
+             Here are some of my best projects
             </span>
           </div>
         </div>

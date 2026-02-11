@@ -14,7 +14,7 @@ import DetailProject from "./pages/DetailProject";
 export default function App() {
   return (
     <>
-      <FloatingButton />
+     
 
       {/* Background */}
       {/* <div className="fixed inset-0 -z-20">
@@ -31,6 +31,7 @@ export default function App() {
           path="/"
           element={
             <div className="relative z-0">
+               <FloatingButton />
               <Element name="header">
                 {" "}
                 <Header />

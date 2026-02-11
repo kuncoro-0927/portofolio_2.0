@@ -11,7 +11,18 @@ const Navbar = () => {
 
       <div className="w-full hidden absolute text-[15px] xl:text-sm  2xl:text-[15px] md:flex justify-center">
         <div className="flex items-center gap-7">
-       
+            <ScrollLink
+            to="/"
+            smooth={true}
+            duration={500}
+            offset={-80}
+            spy={true}
+            activeClass="text-blue-400 font-semibold"
+            className="cursor-pointer text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
+          >
+            Main
+          </ScrollLink>
+
           <ScrollLink
             to="about"
             smooth={true}
@@ -21,7 +32,7 @@ const Navbar = () => {
             activeClass="text-blue-400 font-semibold"
             className="cursor-pointer text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
           >
-            Tentang Saya
+            About Me
           </ScrollLink>
 
           <ScrollLink
@@ -33,7 +44,7 @@ const Navbar = () => {
             activeClass="text-blue-400 font-semibold"
             className="cursor-pointer text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
           >
-            Project
+            Projects
           </ScrollLink>
 
           {/* <ScrollLink
@@ -57,7 +68,7 @@ const Navbar = () => {
             activeClass="text-blue-400 font-semibold"
             className="cursor-pointer text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
           >
-            Kontak
+            Contact
           </ScrollLink>
         </div>
       </div>

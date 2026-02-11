@@ -12,9 +12,10 @@ const projects = [
     id: 4,
     year: "2025",
     title: "React AI Chatbot",
+    subtitle: "React-Based Multi-Model AI Chatbot",
     category: "Web Development",
     desc: `
-AI Chatbot adalah platform percakapan berbasis React yang mengintegrasikan berbagai model AI, seperti Google AI, OpenAI, DeepSeek AI, Anthropic AI, dan xAI. Platform ini memungkinkan pengguna berinteraksi secara cerdas dengan berbagai model dalam satu tempat, sehingga memberikan fleksibilitas, beragam sudut pandang, dan pengalaman AI yang mulus.
+    AI Chatbot is a React-based conversational platform that integrates multiple AI models, including Google AI, OpenAI, DeepSeek AI, Anthropic AI, and xAI. The platform enables users to interact intelligently with different models in one place, providing flexibility, diverse perspectives, and a seamless AI experience.
 `,
     slug: "react-ai-chatbot",
     type: "Capstone Project",
@@ -32,13 +33,13 @@ AI Chatbot adalah platform percakapan berbasis React yang mengintegrasikan berba
       },
     ],
     features: [
-      "Chat dengan banyak model AI (Google AI, OpenAI, DeepSeek AI, Anthropic AI, xAI) dalam satu platform",
-      "Bisa pilih dan ganti model AI sesuai kebutuhan",
-      "Riwayat percakapan tersimpan",
+      "Chat with multiple AI models (Google AI, OpenAI, DeepSeek AI, Anthropic AI, and xAI) in one platform.",
+      "You can choose and switch AI models based on your needs.",
+      "Conversation history is saved.",
     ],
     details: [
       { icon: FaCalendar, text: "2025" },
-      { icon: FaProjectDiagram, text: "Project Pribadi" },
+      { icon: FaProjectDiagram, text: "Personal Project" },
     ],
     tech: [{ icon: FaLaptopCode, text: "React Js" }],
   },
@@ -46,9 +47,9 @@ AI Chatbot adalah platform percakapan berbasis React yang mengintegrasikan berba
     id: 3,
     year: "2024",
     title: "Faza Frame",
+    subtitle: "E-Commerce Platform for Art and Frames",
     category: "Web Development",
-    desc: `Faza Frame merupakan website e-commerce yang dikembangkan untuk mendigitalisasi proses penjualan pada Faza Frame. Platform ini memungkinkan pengelolaan produk, transaksi, serta pembayaran online yang terintegrasi dengan Midtrans, sehingga proses penjualan menjadi lebih efisien dan mudah diakses oleh pelanggan.
-`,
+    desc: `Faza Frame is an e-commerce website developed to digitize the sales process of Faza Frame. The platform enables product management, transaction handling, and online payments integrated with Midtrans, making the sales process more efficient and easily accessible for customers.`,
     slug: "e-commerce-faza-frame",
     type: "Capstone Project",
     mockup: "/images/faza_frame/mockup.webp",
@@ -67,17 +68,17 @@ AI Chatbot adalah platform percakapan berbasis React yang mengintegrasikan berba
       },
     ],
     features: [
-      "Pemesanan Online: Pemesanan produk langsung melalui website.",
-      "Katalog Produk: Tampilan produk lengkap dengan informasi dan gambar.",
-      "Pembayaran Online: Pembayaran aman terintegrasi dengan Midtrans.",
-      "Status Pesanan Real-Time: Pemantauan status pesanan secara langsung.",
-      "Cek Ongkir: Perhitungan ongkos kirim otomatis menggunakan RajaOngkir.",
-      "Manajemen Stok & Penjualan: Pengelolaan stok dan penjualan secara real-time.",
+      "Online Ordering: Place orders directly through the website.",
+      "Product Catalog: Complete product listings with detailed information and images.",
+      "Online Payments: Secure payments integrated with Midtrans.",
+      "Real-Time Order Status: Track order status instantly.",
+      "Shipping Cost Checker: Automatic shipping cost calculation using RajaOngkir.",
+      "Stock & Sales Management: Real-time inventory and sales management.",
     ],
     details: [
       { icon: FaCalendar, text: "2025" },
       { icon: RiUser4Fill, text: "Fullstack Developer" },
-      { icon: FaProjectDiagram, text: "Tugas Akhir" },
+      { icon: FaProjectDiagram, text: "final assignment" },
     ],
     tech: [
       { icon: FaLaptopCode, text: "React Js" },
@@ -92,10 +93,10 @@ AI Chatbot adalah platform percakapan berbasis React yang mengintegrasikan berba
     id: 2,
     year: "2024",
     title: "Cultivo",
+    subtitle: "Agrotourism Ticket Booking Platform",
     category: "Web Development",
     desc: `
-Cultivo adalah platform web yang memudahkan pengguna menemukan dan memesan wisata alam serta destinasi agrikultur di Indonesia. Website ini menampilkan berbagai tempat wisata, memungkinkan pemesanan tiket online, dan menghadirkan pengalaman yang edukatif serta menyenangkan.
-`,
+Cultivo is a web platform that helps users discover and book nature tourism and agricultural destinations across Indonesia. The website showcases various attractions, enables online ticket booking, and delivers an educational and enjoyable experience.`,
     slug: "cultivo",
     type: "Internship & Independent Study Project",
     mockup: "/images/cultivo/homepage4.png",
@@ -115,10 +116,10 @@ Cultivo adalah platform web yang memudahkan pengguna menemukan dan memesan wisat
       },
     ],
     features: [
-      "Pencarian Destinasi: Mudah menemukan tempat wisata alam dan agrikultur.",
-      "Pemesanan Tiket: Membeli tiket langsung di website.",
-      "Informasi Destinasi: Detail dan gambar tiap lokasi.",
-      "Antarmuka Responsif: Mudah digunakan di semua perangkat.",
+      "Destination Search: Easily find nature and agricultural tourism spots.",
+      "Ticket Booking: Purchase tickets directly through the website.",
+      "Destination Information: Detailed descriptions and images for each location.",
+      "Responsive Interface: Optimized for seamless use across all devices.",
     ],
     details: [
       { icon: FaCalendar, text: "2024" },
@@ -198,10 +199,10 @@ Cultivo adalah platform web yang memudahkan pengguna menemukan dan memesan wisat
     id: 1,
     year: "2023",
     title: "E-Notulensi",
+    subtitle: "Web-Based Meeting Minutes Management System",
     category: "Web Development",
     desc: `
-E-Notulensi adalah platform berbasis web yang dikembangkan untuk Fakultas Vokasi, Universitas Brawijaya. Aplikasi ini membantu sekretaris dalam mencatat, mengelola, dan menyimpan notulensi rapat secara terstruktur dan mudah diakses, sehingga proses dokumentasi menjadi lebih cepat, rapi, dan minim kesalahan.
-`,
+E-Notulensi is a web-based platform developed for the Faculty of Vocational Studies at Universitas Brawijaya. The application assists secretaries in recording, managing, and storing meeting minutes in a structured and accessible manner, making the documentation process faster, more organized, and less prone to errors.`,
     slug: "e-notulensi",
     role: "Backend Developer",
     preview: [
@@ -219,12 +220,11 @@ E-Notulensi adalah platform berbasis web yang dikembangkan untuk Fakultas Vokasi
       },
     ],
     features: [
-      "Manajemen Pengguna: Mengelola data sekretaris dan peserta rapat (tambah, edit, hapus).",
-      "Manajemen Data Master: Mengelola unit kerja dan data pendukung sistem.",
-      "Dashboard & Arsip Notulensi: Melihat ringkasan data serta arsip seluruh notulensi rapat.",
-      "Pembuatan Notulensi: Membuat dan mengedit notulensi rapat menggunakan template yang tersedia.",
-      "Manajemen Peserta: Memilih peserta rapat dari data yang telah disediakan.",
-      "Manajemen Peserta: Memilih peserta rapat dari data yang telah disediakan.",
+      "User Management: Manage secretary and meeting participant data (create, update, delete).",
+      "Master Data Management: Manage departments and supporting system data.",
+      "Dashboard & Meeting Archive: View data summaries and access archived meeting minutes.",
+      "Minutes Creation: Create and edit meeting minutes using predefined templates.",
+      "Participant Management: Select meeting participants from existing records.",
     ],
     details: [
       { icon: FaCalendar, text: "2023" },
