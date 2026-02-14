@@ -25,21 +25,23 @@ export default function DetailProject() {
 
   return (
     <section className="  relative z-20 mx-6 sm:mx-28 mt-10 sm:mt-10 mb-10 sm:mb-10">
-      <FlipGlassButton onClick={() => navigate(-1)} className=" hidden md:flex">
-        <BsArrowLeft className="text-base md:text-xl" />
-        Back
-      </FlipGlassButton>
+      <div className="hidden md:flex">
+        <FlipGlassButton onClick={() => navigate(-1)}>
+          <BsArrowLeft className="text-base md:text-xl" />
+          Back
+        </FlipGlassButton>
+      </div>
       <div className="mt-10">
         <div className="md:flex items-center justify-between">
-          <h3 className="text-2xl 2xl:text-4xl font-semibold">
+          <h3 className="text-2xl mb-5 md:mb-0 2xl:text-4xl font-semibold">
             <span className="text-[#a6a6a6]">Project —</span> {project.title}
+            <p className="text-[#a6a6a6] font-normal text-[15px]">{project.subtitle}</p>
           </h3>
           <FlipGlassButton className="">
             <FaGithub className="xl:text-xl 2xl:text-2xl" />
             Github
           </FlipGlassButton>
         </div>
-        <p className="text-[#a6a6a6] text-[15px]">{project.subtitle}</p>
 
         <div className="mt-5 2xl:mt-10 items-stretch grid grid-cols-1 md:grid-cols-2 gap-4">
           {project.preview.map((section, i) =>
