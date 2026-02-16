@@ -9,7 +9,7 @@ export default function FlipGlassButton({
   onClick,
 }) {
   return (
-    <Motion.button
+    <Motion.a
       onClick={onClick}
       href={href}
       initial="rest"
@@ -77,6 +77,6 @@ export default function FlipGlassButton({
           className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent skew-x-12 pointer-events-none"
         />
       </div>
-    </Motion.button>
+    </Motion.a>
   );
 }

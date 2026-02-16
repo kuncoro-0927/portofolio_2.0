@@ -26,7 +26,7 @@ const RecentProject = () => {
         className=" w-full mt-14 h-[300px] md:h-[600px] 2xl:h-[800px] relative rounded-2xl overflow-hidden cursor-pointer"
       >
         <div className="absolute top-3 right-3 md:top-6 md:right-6">
-          <FlipButton className="flex text-[15px] 2xl:text-lg items-center gap-3 bg-[#f5f5f5]  text-[#121212] px-5 py-2 2xl:px-8 2xl:py-3 rounded-full shadow-lg ">
+          <FlipButton href="/project/react-ai-chatbot" className="flex text-[15px] 2xl:text-lg items-center gap-3 bg-[#f5f5f5]  text-[#121212] px-5 py-2 2xl:px-8 2xl:py-3 rounded-full shadow-lg ">
             View Project
           </FlipButton>
         </div>

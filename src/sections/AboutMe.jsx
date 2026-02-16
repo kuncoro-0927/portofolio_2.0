@@ -27,9 +27,7 @@ const AboutMe = () => {
         <div className="gap-y-7 flex-col flex w-full">
           <div className="border bg-[#f5f5f5] text-[#3d3d3d]  px-4 py-5 rounded-3xl text-[15px] md:text-[15px] 2xl:text-lg font-normal w-fit">
             <h1 className="mb-2 text-lg md:text-xl  ">Front-end</h1>
-            <span className="">
-              Javascript / React / Redux Toolkit
-            </span>
+            <span className="">Javascript / React / Redux Toolkit</span>
           </div>
 
           <div className="flex items-center justify-between md:gap-16 xl:gap-28 text-[15px] md:text-[15px] 2xl:text-lg font-normal">
@@ -37,23 +35,27 @@ const AboutMe = () => {
               <h1 className="mb-2 text-lg md:text-xl  text-[#a6a6a6]">
                 Styles
               </h1>
-              <span className="">
-                CSS / Tailwind / Material Ui 
-              </span>
+              <span className="">CSS / Tailwind / Material Ui</span>
             </div>
             <a
               href="https://github.com/kuncoro-0927"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="flex items-center">
-                <div className=" border p-3 translate-x-3 rounded-full border-[#f5f5f5] w-fit">
+              <a
+                href="https://github.com/kuncoro-0927"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+              >
+                <span className="border p-3 translate-x-3 rounded-full border-[#f5f5f5] w-fit">
                   <FaGithub className="text-lg md:text-xl 2xl:text-2xl" />
-                </div>
-                <div className=" bg-[#f5f5f5] border p-3 rounded-full text-[#3d3d3d] w-fit">
+                </span>
+
+                <span className="bg-[#f5f5f5] border p-3 rounded-full text-[#3d3d3d] w-fit">
                   <BsArrowUpRight className="text-lg md:text-xl 2xl:text-2xl" />
-                </div>
-              </div>
+                </span>
+              </a>
             </a>
           </div>
 
@@ -61,9 +63,7 @@ const AboutMe = () => {
             <h1 className="mb-2 text-lg md:text-xl  text-[#a6a6a6] ">
               Back-end
             </h1>
-            <span className="">
-              Laravel / Express / MySQL 
-            </span>
+            <span className="">Laravel / Express / MySQL</span>
           </div>
         </div>
         <ImageCard />

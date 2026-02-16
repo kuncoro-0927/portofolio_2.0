@@ -37,7 +37,7 @@ export default function DetailProject() {
             <span className="text-[#a6a6a6]">Project —</span> {project.title}
             <p className="text-[#a6a6a6] font-normal text-[15px]">{project.subtitle}</p>
           </h3>
-          <FlipGlassButton className="">
+          <FlipGlassButton href={project.github}>
             <FaGithub className="xl:text-xl 2xl:text-2xl" />
             Github
           </FlipGlassButton>

@@ -14,6 +14,7 @@ const projects = [
     title: "React AI Chatbot",
     subtitle: "React-Based Multi-Model AI Chatbot",
     category: "Web Development",
+    github: "https://github.com/kuncoro-0927",
     desc: `
     AI Chatbot is a React-based conversational platform that integrates multiple AI models, including Google AI, OpenAI, DeepSeek AI, Anthropic AI, and xAI. The platform enables users to interact intelligently with different models in one place, providing flexibility, diverse perspectives, and a seamless AI experience.
 `,
@@ -49,6 +50,7 @@ const projects = [
     title: "Faza Frame",
     subtitle: "E-Commerce Platform for Art and Frames",
     category: "Web Development",
+    github: "https://github.com/kuncoro-0927",
     desc: `Faza Frame is an e-commerce website developed to digitize the sales process of Faza Frame. The platform enables product management, transaction handling, and online payments integrated with Midtrans, making the sales process more efficient and easily accessible for customers.`,
     slug: "e-commerce-faza-frame",
     type: "Capstone Project",
@@ -95,6 +97,7 @@ const projects = [
     title: "Cultivo",
     subtitle: "Agrotourism Ticket Booking Platform",
     category: "Web Development",
+    github: "https://github.com/kuncoro-0927",
     desc: `
 Cultivo is a web platform that helps users discover and book nature tourism and agricultural destinations across Indonesia. The website showcases various attractions, enables online ticket booking, and delivers an educational and enjoyable experience.`,
     slug: "cultivo",
@@ -201,6 +204,7 @@ Cultivo is a web platform that helps users discover and book nature tourism and 
     title: "E-Notulensi",
     subtitle: "Web-Based Meeting Minutes Management System",
     category: "Web Development",
+    github: "https://github.com/kuncoro-0927",
     desc: `
 E-Notulensi is a web-based platform developed for the Faculty of Vocational Studies at Universitas Brawijaya. The application assists secretaries in recording, managing, and storing meeting minutes in a structured and accessible manner, making the documentation process faster, more organized, and less prone to errors.`,
     slug: "e-notulensi",

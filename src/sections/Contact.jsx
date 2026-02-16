@@ -94,27 +94,28 @@ const Contact = () => {
           </div>
           <div className="flex items-center justify-center">
             <div className="mt-16 flex-wrap flex justify-center gap-5 md:justify-between  md:space-y-0 md:flex-row md:flex xl:space-x-10 md:items-center xl:justify-center">
-              <FlipGlassButton className="flex">
+              <FlipGlassButton
+                href="https://github.com/kuncoro-0927"
+                className="flex"
+              >
                 <FaGithub className="xl:text-xl 2xl:text-2xl" />
                 Github
               </FlipGlassButton>
 
-              <FlipGlassButton className="flex">
+              <FlipGlassButton href="https://www.linkedin.com/in/khitan-hesthi-kuncoro" className="flex">
                 <FaLinkedin className="xl:text-xl 2xl:text-2xl" />
                 Linkedin
               </FlipGlassButton>
 
-              <FlipGlassButton>
+              <FlipGlassButton href="https://www.instagram.com/kkuncoro__?igsh=ZnNzZTg3cm44Mmcy&utm_source=qr">
                 <FaInstagram className="xl:text-xl 2xl:text-2xl" />
                 Instagram
               </FlipGlassButton>
 
-              <FlipGlassButton>
-                 <IoMdMail className="xl:text-xl 2xl:text-2xl" />
+              <FlipGlassButton href="mailto:khitanhesthik@gmail.com">
+                <IoMdMail className="xl:text-xl 2xl:text-2xl" />
                 Email
               </FlipGlassButton>
-
-             
             </div>
           </div>
         </div>
