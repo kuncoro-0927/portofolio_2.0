@@ -14,7 +14,7 @@ const projects = [
     title: "React AI Chatbot",
     subtitle: "React-Based Multi-Model AI Chatbot",
     category: "Web Development",
-    github: "https://github.com/kuncoro-0927",
+    github: "https://github.com/kuncoro-0927/react-ai-chatbot",
     desc: `
     AI Chatbot is a React-based conversational platform that integrates multiple AI models, including Google AI, OpenAI, DeepSeek AI, Anthropic AI, and xAI. The platform enables users to interact intelligently with different models in one place, providing flexibility, diverse perspectives, and a seamless AI experience.
 `,
