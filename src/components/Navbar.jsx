@@ -17,7 +17,6 @@ const Navbar = () => {
             duration={500}
             offset={-80}
             spy={true}
-            activeClass="text-blue-400 font-semibold"
             className="cursor-pointer text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
           >
             Main
@@ -29,7 +28,7 @@ const Navbar = () => {
             duration={500}
             offset={-80}
             spy={true}
-            activeClass="text-blue-400 font-semibold"
+       
             className="cursor-pointer text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
           >
             About Me
@@ -41,7 +40,7 @@ const Navbar = () => {
             duration={500}
             offset={-80}
             spy={true}
-            activeClass="text-blue-400 font-semibold"
+           
             className="cursor-pointer text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
           >
             Projects
@@ -65,7 +64,7 @@ const Navbar = () => {
             duration={500}
             offset={-80}
             spy={true}
-            activeClass="text-blue-400 font-semibold"
+         
             className="cursor-pointer text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
           >
             Contact
