@@ -66,7 +66,7 @@ const Contact = () => {
                     spy={true}
                     className="cursor-pointer text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
                   >
-                    ProjectS
+                    Projects
                   </ScrollLink>
                 </li>
                 <li>
