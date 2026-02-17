@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="w-full hidden absolute text-[15px] xl:text-sm  2xl:text-[15px] md:flex justify-center">
         <div className="flex items-center gap-7">
             <ScrollLink
-            to="/"
+            to="main"
             smooth={true}
             duration={500}
             offset={-80}

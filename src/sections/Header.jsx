@@ -6,7 +6,10 @@ import FlipGlassButton from "../components/FramerMotion/GlassButton";
 import HeaderThreads from "../components/Threads";
 const Header = () => {
   return (
-    <header className="relative overflow-hidden px-8 sm:px-28 md:px-24 lg:px-28">
+    <header
+      id="main"
+      className="relative overflow-hidden px-8 sm:px-28 md:px-24 lg:px-28"
+    >
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <HeaderThreads />
       </div>
@@ -25,8 +28,9 @@ const Header = () => {
           </h1>
           <p className="text-[#a6a6a6] text-base mt-5 text-center">
             Elevate your digital presence with intuitive and polished user
-            interfaces. Showcase your <br />vision through seamless interactions and
-            high-performance frontend solutions.
+            interfaces. Showcase your <br />
+            vision through seamless interactions and high-performance frontend
+            solutions.
           </p>
         </div>
 

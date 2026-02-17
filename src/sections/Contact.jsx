@@ -33,7 +33,7 @@ const Contact = () => {
                 <li>
                   {" "}
                   <ScrollLink
-                    to="header"
+                    to="main"
                     smooth={true}
                     duration={500}
                     offset={-80}
@@ -66,20 +66,20 @@ const Contact = () => {
                     spy={true}
                     className="cursor-pointer text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
                   >
-                    Projects
+                    ProjectS
                   </ScrollLink>
                 </li>
                 <li>
                   {" "}
                   <ScrollLink
-                    to="certification"
+                    to="contact"
                     smooth={true}
                     duration={500}
                     offset={-80}
                     spy={true}
                     className="cursor-pointer text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
                   >
-                    Courses
+                      Contact
                   </ScrollLink>
                 </li>
               </ul>
