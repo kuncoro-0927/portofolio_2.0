@@ -34,7 +34,7 @@ const Header = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center gap-3 md:gap-6 w-full mt-10">
+        <div className="flex  justify-center items-start gap-3 md:gap-6 w-full mt-10">
           <FlipGlassButton href="/cv/CV_KhitanHesthiKuncoro.pdf"
   download="CCV_KhitanHesthiKuncoro.pdf">Download CV</FlipGlassButton>
 
