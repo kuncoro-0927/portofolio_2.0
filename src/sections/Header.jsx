@@ -35,18 +35,9 @@ const Header = () => {
         </div>
 
         <div className="flex justify-center items-center gap-3 md:gap-6 w-full mt-10">
-          {" "}
-          <ScrollLink
-            to="projects" // ID target section kamu
-            smooth={true}
-            duration={500}
-            offset={-80}
-            spy={true}
-            component="div" // Trik agar tidak bentrok dengan tag <a> di dalam button
-            className="cursor-pointer"
-          >
-            <FlipGlassButton>Download CV</FlipGlassButton>
-          </ScrollLink>
+          <FlipGlassButton href="/cv/CV_KhitanHesthiKuncoro.pdf"
+  download="CCV_KhitanHesthiKuncoro.pdf">Download CV</FlipGlassButton>
+
           <ScrollLink
             to="projects" // ID target section kamu
             smooth={true}
