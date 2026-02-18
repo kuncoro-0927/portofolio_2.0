@@ -23,20 +23,24 @@ const Header = () => {
         </div>
 
         <div className="flex flex-col justify-center 2xl:text-8xl mt-5">
-          <h1 className="text-center text-[44px] lg:text-[74px] xl:text-[92px] xl:max-w-3xl xl:w-full xl:mx-auto leading-none">
-            Building Beautiful Modern Web Apps
+          <h1 className="text-center text-[44px] lg:text-[74px] xl:text-[92px] xl:max-w-4xl xl:w-full xl:mx-auto leading-none">
+            Hi, Im Kuncoro Frontend Developer
           </h1>
           <p className="text-[#a6a6a6] text-base mt-5 text-center">
-            Elevate your digital presence with intuitive and polished user
-            interfaces. Showcase your <br />
-            vision through seamless interactions and high-performance frontend
-            solutions.
+            I build responsive and scalable web applications using modern
+            frontend technologies, focusing on clean code, <br /> intuitive user
+            interfaces, and seamless user experiences that deliver real value.
           </p>
         </div>
 
         <div className="flex  justify-center items-start gap-3 md:gap-6 w-full mt-10">
-          <FlipGlassButton href="/cv/CV_KhitanHesthiKuncoro.pdf"
-  download="CCV_KhitanHesthiKuncoro.pdf">Download CV</FlipGlassButton>
+          <FlipGlassButton
+            href="/cv/CV_KhitanHesthiKuncoro.pdf"
+            target="_blank"
+            download="CCV_KhitanHesthiKuncoro.pdf"
+          >
+            Download CV
+          </FlipGlassButton>
 
           <ScrollLink
             to="projects" // ID target section kamu

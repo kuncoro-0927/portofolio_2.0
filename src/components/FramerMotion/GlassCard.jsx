@@ -27,8 +27,8 @@ const GlassCard = ({ className = "" }) => {
             <span style={dotSolid}></span>
           </div>
           
-          <span className="text-[15px] md:text-[18px] whitespace-nowrap" style={textStyle}>
-            Frontend Developer
+          <span className="text-[15px] md:text-[15px] whitespace-nowrap" style={textStyle}>
+            Building Beautiful Modern Web Apps
           </span>
         </Motion.div>
       </div>
