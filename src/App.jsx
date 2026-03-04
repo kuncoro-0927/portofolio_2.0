@@ -1,38 +1,30 @@
 import { Routes, Route } from "react-router-dom";
-import Background from "./components/Background";
+import React, { Suspense, lazy } from "react";
 import Header from "./sections/Header";
-import AboutMe from "./sections/AboutMe";
-import Projects from "./sections/Projects";
-import Courses from "./sections/Courses";
-import Contact from "./sections/Contact";
-import RecentProject from "./sections/RecentProject";
-import Light from "./components/Light";
 import FloatingButton from "./components/FloatingButton";
-import DetailProject from "./pages/DetailProject";
+
+const RecentProject = lazy(() => import("./sections/RecentProject"));
+const AboutMe = lazy(() => import("./sections/AboutMe"));
+const Projects = lazy(() => import("./sections/Projects"));
+const Contact = lazy(() => import("./sections/Contact"));
+const DetailProject = lazy(() => import("./pages/DetailProject"));
 
 export default function App() {
   return (
-    <>
-      {/* Background */}
-      {/* <div className="fixed inset-0 -z-20">
-        <Background />
-      </div> */}
-      {/* <div className="absolute inset-0 z-10 pointer-events-none">
-        <Light />
-      </div> */}
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <div className="relative z-0">
+            <FloatingButton />
 
-      <Routes>
-        {/* 🔹 Halaman utama */}
-        <Route
-          path="/"
-          element={
-            <div className="relative z-0">
-              <FloatingButton />
+            {/* Hero langsung render */}
+            <section id="header">
+              <Header />
+            </section>
 
-              <section id="header">
-                <Header />
-              </section>
-
+            {/* Section lain lazy */}
+            <Suspense fallback={null}>
               <section id="recentproject">
                 <RecentProject />
               </section>
@@ -48,13 +40,20 @@ export default function App() {
               <section id="contact">
                 <Contact />
               </section>
-            </div>
-          }
-        />
+            </Suspense>
+          </div>
+        }
+      />
 
-        {/* 🔹 Halaman detail project */}
-        <Route path="/project/:slug" element={<DetailProject />} />
-      </Routes>
-    </>
+      {/* Detail page lazy */}
+      <Route
+        path="/project/:slug"
+        element={
+          <Suspense fallback={null}>
+            <DetailProject />
+          </Suspense>
+        }
+      />
+    </Routes>
   );
 }
