@@ -20,7 +20,7 @@ const RecentProject = () => {
         <img
           src={recentProject.mockup}
           alt={recentProject.title}
-          loading="lazy"
+          fetchpriority="high"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute top-3 right-3 md:top-6 md:right-6">
