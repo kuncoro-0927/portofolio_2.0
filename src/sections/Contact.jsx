@@ -2,11 +2,10 @@ import React from "react";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import StarBorder from "../components/Reactbits/StarBorder";
-import { Link as ScrollLink } from "react-scroll";
-import FlipGlassButton from "../components/FramerMotion/GlassButton";
+
 const Contact = () => {
   return (
-    <section className="mt-20  ">
+    <section id="contact" className="mt-20  ">
       <div className="relative  text-white flex items-center overflow-hidden">
         <div className="absolute xl:top-0 -translate-y-20 md:-translate-y-0 -right-45 md:-left-20 md:top-16 xl:-left-24 w-[350px] h-[350px] md:w-[600px] md:h-[600px]  xl:w-[700px] xl:h-[700px]   border-[0.1px] border-[#a6a6a6] rounded-full" />
 
@@ -29,58 +28,41 @@ const Contact = () => {
                 .../Contacts...
               </h1>
 
-              <ul className=" space-x-8 text-[15px] 2xl:text-[15px] flex items-center md:justify-between mb-5">
+              <ul className="space-x-8 text-[15px] flex items-center md:justify-between mb-5">
                 <li>
-                  {" "}
-                  <ScrollLink
-                    to="main"
-                    smooth={true}
-                    duration={500}
-                    offset={-80}
-                    spy={true}
-                    className="cursor-pointer text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
+                  <a
+                    href="#main"
+                    className="text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
                   >
                     Main
-                  </ScrollLink>
+                  </a>
                 </li>
+
                 <li>
-                  {" "}
-                  <ScrollLink
-                    to="about"
-                    smooth={true}
-                    duration={500}
-                    offset={-80}
-                    spy={true}
-                    className="cursor-pointer text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
+                  <a
+                    href="#about"
+                    className="text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
                   >
                     About
-                  </ScrollLink>
+                  </a>
                 </li>
+
                 <li>
-                  {" "}
-                  <ScrollLink
-                    to="projects"
-                    smooth={true}
-                    duration={500}
-                    offset={-80}
-                    spy={true}
-                    className="cursor-pointer text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
+                  <a
+                    href="#projects"
+                    className="text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
                   >
                     Projects
-                  </ScrollLink>
+                  </a>
                 </li>
+
                 <li>
-                  {" "}
-                  <ScrollLink
-                    to="contact"
-                    smooth={true}
-                    duration={500}
-                    offset={-80}
-                    spy={true}
-                    className="cursor-pointer text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
+                  <a
+                    href="#contact"
+                    className="text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
                   >
                     Contact
-                  </ScrollLink>
+                  </a>
                 </li>
               </ul>
               <div className=" bg-black relative z-10 border-[0.1px] border-[#a6a6a6] px-5 py-5 w-fit  xl:w-[350px] rounded-3xl">

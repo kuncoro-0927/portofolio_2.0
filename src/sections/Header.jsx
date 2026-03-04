@@ -1,8 +1,6 @@
 import Navbar from "../components/Navbar";
-import { Link as ScrollLink } from "react-scroll";
 import GlassCard from "../components/FramerMotion/GlassCard";
 import FloatingIcon from "../components/FramerMotion/FloatingIcon";
-import FlipGlassButton from "../components/FramerMotion/GlassButton";
 import HeaderThreads from "../components/Threads";
 import StarBorder from "../components/Reactbits/StarBorder";
 const Header = () => {

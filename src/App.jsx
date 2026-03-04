@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import { Element } from "react-scroll"; // ⬅️ tambahkan ini
 import Background from "./components/Background";
 import Header from "./sections/Header";
 import AboutMe from "./sections/AboutMe";
@@ -14,8 +13,6 @@ import DetailProject from "./pages/DetailProject";
 export default function App() {
   return (
     <>
-     
-
       {/* Background */}
       {/* <div className="fixed inset-0 -z-20">
         <Background />
@@ -24,39 +21,33 @@ export default function App() {
         <Light />
       </div> */}
 
-
       <Routes>
         {/* 🔹 Halaman utama */}
         <Route
           path="/"
           element={
             <div className="relative z-0">
-               <FloatingButton />
-              <Element name="header">
-                {" "}
+              <FloatingButton />
+
+              <section id="header">
                 <Header />
-              </Element>
+              </section>
 
-              {/* Bungkus tiap section dengan Element */}
-              <Element name="recentproject">
+              <section id="recentproject">
                 <RecentProject />
-              </Element>
+              </section>
 
-              <Element name="about">
+              <section id="about">
                 <AboutMe />
-              </Element>
+              </section>
 
-              <Element name="projects">
+              <section id="projects">
                 <Projects />
-              </Element>
+              </section>
 
-              {/* <Element name="certification">
-                <Courses />
-              </Element> */}
-
-              <Element name="contact">
+              <section id="contact">
                 <Contact />
-              </Element>
+              </section>
             </div>
           }
         />

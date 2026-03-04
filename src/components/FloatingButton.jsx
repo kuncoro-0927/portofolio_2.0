@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
 import { RiMenu3Fill } from "react-icons/ri";
-import { Link as ScrollLink } from "react-scroll";
+
 export default function FloatingButton() {
   const [open, setOpen] = useState(false);
   const [visible, setVisible] = useState(true);
@@ -32,60 +32,26 @@ export default function FloatingButton() {
     <div className="fixed bottom-6 right-6 z-70 flex flex-col items-end space-y-3 ">
       {open && (
         <ul className="bg-white text-[15px] 2xl:text-[15px] px-5 w-full text-black rounded-3xl py-5 space-y-3 flex flex-col items-center justify-center shadow-xl transition-all duration-300 ease-in-out">
-         <li>
-            <ScrollLink
-              to="/"
-              smooth={true}
-              duration={500}
-              offset={-80}
-              spy={true}
-              onClick={() => setOpen(false)}
-              className="cursor-pointer"
-            >
+          <li>
+            <a href="#main" className=" duration-300 transition">
               Main
-            </ScrollLink>
+            </a>
           </li>
           <li>
-            <ScrollLink
-              to="about"
-              smooth={true}
-              duration={500}
-              offset={-80}
-              spy={true}
-              onClick={() => setOpen(false)}
-              className="cursor-pointer"
-            >
+            <a href="#about" className=" duration-300 transition">
               About Me
-            </ScrollLink>
+            </a>
           </li>
           <li>
-            {" "}
-            <ScrollLink
-              to="projects"
-              smooth={true}
-              duration={500}
-              offset={-80}
-              spy={true}
-              onClick={() => setOpen(false)}
-              className="cursor-pointer"
-            >
+            <a href="#projects" className=" duration-300 transition">
               Projects
-            </ScrollLink>
+            </a>
           </li>
 
           <li>
-            {" "}
-            <ScrollLink
-              to="contact"
-              smooth={true}
-              duration={500}
-              offset={-80}
-              spy={true}
-              onClick={() => setOpen(false)}
-              className="cursor-pointer"
-            >
+            <a href="#contact" className=" duration-300 transition">
               Contact
-            </ScrollLink>
+            </a>
           </li>
         </ul>
       )}

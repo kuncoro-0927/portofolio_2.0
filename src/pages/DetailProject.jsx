@@ -4,7 +4,6 @@ import projects from "../data/dataproject";
 import { FaGithub } from "react-icons/fa";
 import { BsArrowUpRight, BsArrowLeft } from "react-icons/bs";
 import StarBorder from "../components/Reactbits/StarBorder";
-import FlipGlassButton from "../components/FramerMotion/GlassButton";
 export default function DetailProject() {
   const navigate = useNavigate();
 
