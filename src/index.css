@@ -2,10 +2,12 @@
 
 body {
   @apply bg-black text-[#F5F5F5];
-   font-family: "Satoshi", system-ui, sans-serif;
+  font-family: "Satoshi", system-ui, sans-serif;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 /* di file global.css atau index.css kamu */
 .split-gradient {
@@ -26,9 +28,8 @@ body {
   justify-content: center;
   perspective: 500px;
   overflow: hidden;
-    white-space: nowrap;       /* 🔑 kunci teks */
-  min-width: max-content; 
-  
+  white-space: nowrap; /* 🔑 kunci teks */
+  min-width: max-content;
 }
 
 /* default label behavior */

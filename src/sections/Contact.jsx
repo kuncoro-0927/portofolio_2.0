@@ -79,7 +79,7 @@ const Contact = () => {
                     spy={true}
                     className="cursor-pointer text-[#a6a6a6] hover:text-[#f5f5f5] duration-300 transition"
                   >
-                      Contact
+                    Contact
                   </ScrollLink>
                 </li>
               </ul>
@@ -94,28 +94,69 @@ const Contact = () => {
           </div>
           <div className="flex items-center justify-center">
             <div className="mt-16 flex-wrap flex justify-center gap-5 md:justify-between  md:space-y-0 md:flex-row md:flex xl:space-x-10 md:items-center xl:justify-center">
-              <FlipGlassButton
+              <StarBorder
+                as="a"
+                color="white"
+                speed="3s"
                 href="https://github.com/kuncoro-0927"
-                className="flex"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center gap-2 
+             rounded-full px-6 py-2 
+             text-[#a6a6a6] hover:text-white 
+             transition-colors duration-300 cursor-pointer w-[150px] md:w-[130px] xl:w-[150px] 2xl:w-[160px]"
               >
-                <FaGithub className="xl:text-xl 2xl:text-2xl" />
+                <FaGithub className="xl:text-xl 2xl:text-xl" />
                 Github
-              </FlipGlassButton>
+              </StarBorder>
 
-              <FlipGlassButton href="https://www.linkedin.com/in/khitan-hesthi-kuncoro" className="flex">
-                <FaLinkedin className="xl:text-xl 2xl:text-2xl" />
+              <StarBorder
+                as="a"
+                color="white"
+                speed="3s"
+                href="https://www.linkedin.com/in/khitan-hesthi-kuncoro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center gap-2 
+             rounded-full px-6 py-2 
+             text-[#a6a6a6] hover:text-white 
+             transition-colors duration-300 cursor-pointer w-[150px] md:w-[130px] xl:w-[150px] 2xl:w-[160px]"
+              >
+                <FaLinkedin className="xl:text-xl 2xl:text-xl" />
                 Linkedin
-              </FlipGlassButton>
+              </StarBorder>
 
-              <FlipGlassButton href="https://www.instagram.com/kkuncoro__?igsh=ZnNzZTg3cm44Mmcy&utm_source=qr">
-                <FaInstagram className="xl:text-xl 2xl:text-2xl" />
+              <StarBorder
+                as="a"
+                color="white"
+                speed="3s"
+                href="https://www.instagram.com/kkuncoro__?igsh=ZnNzZTg3cm44Mmcy&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center gap-2 
+             rounded-full px-6 py-2 
+             text-[#a6a6a6] hover:text-white 
+             transition-colors duration-300 cursor-pointer w-[150px] md:w-[130px] xl:w-[150px] 2xl:w-[160px]"
+              >
+                <FaInstagram className="xl:text-xl 2xl:text-xl" />
                 Instagram
-              </FlipGlassButton>
+              </StarBorder>
 
-              <FlipGlassButton href="mailto:khitanhesthik@gmail.com">
-                <IoMdMail className="xl:text-xl 2xl:text-2xl" />
+              <StarBorder
+                as="a"
+                color="white"
+                speed="3s"
+                href="mailto:khitanhesthik@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center gap-2 
+             rounded-full px-6 py-2 
+             text-[#a6a6a6] hover:text-white 
+             transition-colors duration-300 cursor-pointer w-[150px] md:w-[130px] xl:w-[150px] 2xl:w-[160px]"
+              >
+                <IoMdMail className="xl:text-xl 2xl:text-xl" />
                 Email
-              </FlipGlassButton>
+              </StarBorder>
             </div>
           </div>
         </div>

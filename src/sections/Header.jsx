@@ -4,6 +4,7 @@ import GlassCard from "../components/FramerMotion/GlassCard";
 import FloatingIcon from "../components/FramerMotion/FloatingIcon";
 import FlipGlassButton from "../components/FramerMotion/GlassButton";
 import HeaderThreads from "../components/Threads";
+import StarBorder from "../components/Reactbits/StarBorder";
 const Header = () => {
   return (
     <header
@@ -33,25 +34,34 @@ const Header = () => {
         </div>
 
         <div className="flex  justify-center items-start gap-3 md:gap-6 w-full mt-10">
-          <FlipGlassButton
+          <StarBorder
+            as="a"
             href="/cv/CV_KhitanHesthiKuncoro.pdf"
             target="_blank"
-            download="CCV_KhitanHesthiKuncoro.pdf"
+            rel="noopener noreferrer"
+            download="CV_KhitanHesthiKuncoro.pdf"
+            color="white"
+            speed="3s"
+            className=" rounded-full px-6 py-3"
+            aria-label="Download CV Khitan Hesthi Kuncoro"
           >
-            Download CV
-          </FlipGlassButton>
+            <p className=" text-[#a6a6a6] text-sm xl:text-sm  2xl:text-base">
+              Download CV
+            </p>
+          </StarBorder>
 
-          <ScrollLink
-            to="projects" // ID target section kamu
-            smooth={true}
-            duration={500}
-            offset={-80}
-            spy={true}
-            component="div" // Trik agar tidak bentrok dengan tag <a> di dalam button
-            className="cursor-pointer"
+          <StarBorder
+            as="a"
+            href="#projects"
+            color="white"
+            speed="3s"
+            className="group flex items-center justify-center gap-2 
+             rounded-full px-6 py-2 
+             text-[#a6a6a6] hover:text-white 
+             transition-colors duration-300"
           >
-            <FlipGlassButton>See Projects</FlipGlassButton>
-          </ScrollLink>
+            Projects
+          </StarBorder>
         </div>
 
         <div className="hidden  pb-4 lg:flex mt-24 md:mt-10 2xl:mt-10  items-center justify-center gap-4 text-sm tracking-widest">
