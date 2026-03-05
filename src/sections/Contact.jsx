@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="relative  text-white flex items-center overflow-hidden">
         <div className="absolute xl:top-0 -translate-y-20 md:-translate-y-0 -right-45 md:-left-20 md:top-16 xl:-left-24 w-[350px] h-[350px] md:w-[600px] md:h-[600px]  xl:w-[700px] xl:h-[700px]   border-[0.1px] border-[#a6a6a6] rounded-full" />
 
-        <div className="pb-10 md:pt-36 w-full mx-4 sm:mx-24 md:mx-24 lg:mx-28">
+        <div className="pb-10 md:pt-36 w-full mx-4 sm:mx-20 md:mx-14 lg:mx-28">
           <div className="flex-col-reverse flex md:flex-row md:justify-between  md:items-center">
             <div className="relative mt-10 md:mt-0 z-10  ">
               <h1 className="text-4xl md:text-4xl xl:text-7xl font-bold leading-tight">
@@ -75,7 +75,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="mt-16 flex-wrap flex justify-center gap-5 md:justify-between  md:space-y-0 md:flex-row md:flex xl:space-x-10 md:items-center xl:justify-center">
+            <div className="mt-16 flex-wrap flex justify-center gap-5 md:justify-between  md:space-y-0 md:flex-row md:flex lg:space-x-10 md:items-center xl:justify-center">
               <StarBorder
                 as="a"
                 color="white"

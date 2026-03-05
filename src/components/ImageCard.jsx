@@ -1,63 +1,22 @@
-import { useEffect, useRef, useState } from "react";
 import TiltedCard from "./Reactbits/TiltedCard";
 
 const ImageCard = () => {
-  const containerRef = useRef(null);
-  const [cardSize, setCardSize] = useState("380px");
-
-  useEffect(() => {
-    const updateSize = () => {
-      if (containerRef.current) {
-        const width = containerRef.current.offsetWidth;
-        let finalWidth;
-
-        if (window.innerWidth >= 1536) {
-          // 2xl
-          finalWidth = 580;
-        } else if (window.innerWidth >= 1280) {
-          // xl
-          finalWidth = 420;
-        } else if (window.innerWidth >= 768) {
-          // md
-          finalWidth = 300;
-        } else {
-          // mobile
-          finalWidth = width < 380 ? width : 380;
-        }
-
-        setCardSize(`${finalWidth}px`);
-      }
-    };
-
-    updateSize();
-    window.addEventListener("resize", updateSize);
-    return () => window.removeEventListener("resize", updateSize);
-  }, []);
+  const isMobile = window.innerWidth < 768;
 
   return (
-    <div
-      ref={containerRef}
-      className="w-full flex justify-center md:justify-end"
-    >
-      <TiltedCard
-        imageSrc="/images/kuncoro3.webp"
-        altText="Kuncoro - Frontend Developer"
-        captionText="Kuncoro - Frontend Developer"
-        containerHeight={cardSize}
-        containerWidth={cardSize}
-        imageHeight={cardSize}
-        imageWidth={cardSize}
-        rotateAmplitude={12}
-        scaleOnHover={1.1}
-        showMobileWarning={false}
-        showTooltip={true}
-        displayOverlayContent={false}
-        overlayContent={
-          <p className="tilted-card-demo-text text-xl">
-            Kuncoro - Frontend Developer
-          </p>
-        }
-      />
+    <div className="w-full flex justify-center md:justify-end">
+      <div className="w-full md:w-[300px] lg:w-[350px] xl:w-[420px] 2xl:w-[450px]">
+        <TiltedCard
+          imageSrc="/images/kuncoro3.webp"
+          altText="Kuncoro - Frontend Developer"
+          captionText="Kuncoro - Frontend Developer"
+          rotateAmplitude={isMobile ? 0 : 12}
+          scaleOnHover={isMobile ? 1 : 1.1}
+          showMobileWarning={false}
+          showTooltip={!isMobile}
+          displayOverlayContent={false}
+        />
+      </div>
     </div>
   );
 };

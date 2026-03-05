@@ -14,8 +14,6 @@ export default function TiltedCard({
   captionText = "",
   containerHeight = "300px",
   containerWidth = "100%",
-  imageHeight = "300px",
-  imageWidth = "300px",
   scaleOnHover = 1.1,
   rotateAmplitude = 14,
   showMobileWarning = true,
@@ -37,7 +35,7 @@ export default function TiltedCard({
     mass: 1,
   });
 
-  const [lastY, setLastY] = useState(0);
+  const lastY = useRef(0);
 
   function handleMouse(e) {
     if (!ref.current) return;
@@ -55,9 +53,8 @@ export default function TiltedCard({
     x.set(e.clientX - rect.left);
     y.set(e.clientY - rect.top);
 
-    const velocityY = offsetY - lastY;
-    rotateFigcaption.set(-velocityY * 0.6);
-    setLastY(offsetY);
+    const velocityY = offsetY - lastY.current;
+    lastY.current = offsetY;
   }
 
   function handleMouseEnter() {
@@ -94,8 +91,8 @@ export default function TiltedCard({
       <motion.div
         className="tilted-card-inner"
         style={{
-          width: imageWidth,
-          height: imageHeight,
+          width: "100%",
+          height: "100%",
           rotateX,
           rotateY,
           scale,
@@ -106,8 +103,8 @@ export default function TiltedCard({
           alt={altText}
           className="tilted-card-img"
           style={{
-            width: imageWidth,
-            height: imageHeight,
+            width: "100%",
+            height: "auto",
           }}
         />
 
