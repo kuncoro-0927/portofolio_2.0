@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import React, { Suspense, lazy } from "react";
-import { Element } from "react-scroll";
+
 import Header from "./sections/Header";
 import FloatingButton from "./components/FloatingButton";
 
@@ -19,30 +19,20 @@ export default function App() {
           <div className="relative z-0">
             <FloatingButton />
 
-            <Element name="header">
-              <Header />
-            </Element>
+            <Header />
 
             <main>
-              <Suspense fallback={<div className="h-[20vh] bg-transparent" />}>
-                <Element name="recentproject">
-                  <RecentProject />
-                </Element>
+              <Suspense fallback={<div className="h-40" />}>
+                <RecentProject />
 
-                <Element name="about">
-                  <AboutMe />
-                </Element>
+                <AboutMe />
 
-                <Element name="projects">
-                  <Projects />
-                </Element>
+                <Projects />
               </Suspense>
             </main>
 
             <Suspense fallback={null}>
-              <Element name="contact">
-                <Contact />
-              </Element>
+              <Contact />
             </Suspense>
           </div>
         }

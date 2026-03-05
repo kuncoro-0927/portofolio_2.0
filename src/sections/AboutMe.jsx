@@ -43,13 +43,25 @@ const AboutMe = () => {
               rel="noopener noreferrer"
               className="flex items-center"
             >
-              <span className="border p-3 translate-x-3 rounded-full border-[#f5f5f5] w-fit">
+              <a
+                href="https://github.com/kuncoro-0927"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Kunjungi profil GitHub Kuncoro"
+                className="border p-3 translate-x-3 rounded-full border-[#f5f5f5] w-fit"
+              >
                 <FaGithub className="text-lg md:text-xl 2xl:text-2xl" />
-              </span>
+              </a>
 
-              <span className="bg-[#f5f5f5] border p-3 rounded-full text-[#3d3d3d] w-fit">
+              <a
+                href="https://github.com/kuncoro-0927"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Kunjungi profil GitHub Kuncoro"
+                className="bg-[#f5f5f5] border p-3 rounded-full text-[#3d3d3d] w-fit"
+              >
                 <BsArrowUpRight className="text-lg md:text-xl 2xl:text-2xl" />
-              </span>
+              </a>
             </a>
           </div>
 
