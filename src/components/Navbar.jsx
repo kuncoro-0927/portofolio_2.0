@@ -46,6 +46,7 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="cursor-pointer"
+          aria-label="Kunjungi profil Github Kuncoro"
         >
           <FaGithub className="text-xl" />
         </a>
