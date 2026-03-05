@@ -21,6 +21,9 @@ const RecentProject = () => {
           src={recentProject.mockup}
           alt={recentProject.title}
           fetchPriority="high"
+          width="1330" 
+          height="1050"
+          loading="eager"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute top-3 right-3 md:top-6 md:right-6">
