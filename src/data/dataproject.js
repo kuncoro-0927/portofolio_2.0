@@ -20,7 +20,7 @@ const projects = [
 `,
     slug: "react-ai-chatbot",
     type: "Capstone Project",
-    mockup: "/images/react-ai/reactai1.svg",
+    mockup: "/images/react-ai/reactai1.webp",
     // tech: "React, Google AI, Open AI, Deepseek AI, Anthropic AI, xAI",
     role: "Fullstack Developer",
     preview: [
