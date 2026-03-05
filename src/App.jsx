@@ -18,34 +18,37 @@ export default function App() {
           <div className="relative z-0">
             <FloatingButton />
 
-            {/* Hero langsung render */}
             <section id="header">
               <Header />
             </section>
 
-            {/* Section lain lazy */}
-            <Suspense fallback={null}>
-              <section id="recentproject">
+            <section id="recentproject">
+              <Suspense fallback={null}>
                 <RecentProject />
-              </section>
+              </Suspense>
+            </section>
 
-              <section id="about">
+            <section id="about">
+              <Suspense fallback={null}>
                 <AboutMe />
-              </section>
+              </Suspense>
+            </section>
 
-              <section id="projects">
+            <section id="projects">
+              <Suspense fallback={null}>
                 <Projects />
-              </section>
+              </Suspense>
+            </section>
 
-              <section id="contact">
+            <section id="contact">
+              <Suspense fallback={null}>
                 <Contact />
-              </section>
-            </Suspense>
+              </Suspense>
+            </section>
           </div>
         }
       />
 
-      {/* Detail page lazy */}
       <Route
         path="/project/:slug"
         element={
