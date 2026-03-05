@@ -1,9 +1,8 @@
+import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import projects from "../data/dataproject";
 import { FaGithub } from "react-icons/fa";
 import { BsArrowLeft } from "react-icons/bs";
 import StarBorder from "../components/Reactbits/StarBorder";
-
 import {
   FaCalendar,
   FaLaptopCode,
@@ -12,10 +11,9 @@ import {
   FaDatabase,
   FaCreditCard,
 } from "react-icons/fa";
-
 import { RiUser4Fill, RiTailwindCssFill } from "react-icons/ri";
 import { MdLocalShipping } from "react-icons/md";
-
+import projects from "../data/dataproject";
 export default function DetailProject() {
   const navigate = useNavigate();
   const { slug } = useParams();

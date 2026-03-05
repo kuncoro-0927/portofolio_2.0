@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import React, { Suspense, lazy } from "react";
+import { Element } from "react-scroll";
 import Header from "./sections/Header";
 import FloatingButton from "./components/FloatingButton";
 
@@ -18,33 +19,31 @@ export default function App() {
           <div className="relative z-0">
             <FloatingButton />
 
-            <section id="header">
+            <Element name="header">
               <Header />
-            </section>
+            </Element>
 
-            <section id="recentproject">
-              <Suspense fallback={null}>
-                <RecentProject />
+            <main>
+              <Suspense fallback={<div className="h-[20vh] bg-transparent" />}>
+                <Element name="recentproject">
+                  <RecentProject />
+                </Element>
+
+                <Element name="about">
+                  <AboutMe />
+                </Element>
+
+                <Element name="projects">
+                  <Projects />
+                </Element>
               </Suspense>
-            </section>
+            </main>
 
-            <section id="about">
-              <Suspense fallback={null}>
-                <AboutMe />
-              </Suspense>
-            </section>
-
-            <section id="projects">
-              <Suspense fallback={null}>
-                <Projects />
-              </Suspense>
-            </section>
-
-            <section id="contact">
-              <Suspense fallback={null}>
+            <Suspense fallback={null}>
+              <Element name="contact">
                 <Contact />
-              </Suspense>
-            </section>
+              </Element>
+            </Suspense>
           </div>
         }
       />
@@ -52,7 +51,7 @@ export default function App() {
       <Route
         path="/project/:slug"
         element={
-          <Suspense fallback={null}>
+          <Suspense fallback={<div className="h-screen bg-black" />}>
             <DetailProject />
           </Suspense>
         }

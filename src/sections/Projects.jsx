@@ -84,30 +84,30 @@ const Projects = () => {
           </span>
         </div> */}
 
-        <ul className="mt-5 md:mt-14">
+        <div className="mt-5 md:mt-14">
           {projects.map((project) => (
             <NavLink key={project.id} to={`/project/${project.slug}`}>
-              <li
+              <ul
                 className="group justify-start gap-14 md:grid md:grid-cols-[100px_2fr_3fr]  xl:grid-cols-[150px_2fr_3fr] items-center px-4 sm:px-20 md:px-24 lg:px-28 py-6 
               border-y border-[#222] transition-all duration-300 ease-in-out 
               hover:bg-white hover:text-[#3d3d3d]"
               >
                 {/* Year */}
-                <p className="text-[15px]  2xl:text-lg text-[#a6a6a6] group-hover:text-[#3d3d3d] transition-colors duration-300">
+                <li className="text-[15px]  2xl:text-lg text-[#a6a6a6] group-hover:text-[#3d3d3d] transition-colors duration-300">
                   {project.year}
-                </p>
+                </li>
 
-                <p className="text-[15px] 2xl:text-lg   transition-colors duration-300">
+                <li className="text-[15px] 2xl:text-lg   transition-colors duration-300">
                   <span>{project.title}</span>
-                </p>
+                </li>
 
-                <p className="text-[15px] 2xl:text-lg  transition-colors duration-300">
+                <li className="text-[15px] 2xl:text-lg  transition-colors duration-300">
                   {project.desc}
-                </p>
-              </li>
+                </li>
+              </ul>
             </NavLink>
           ))}
-        </ul>
+        </div>
       </section>
     </>
   );

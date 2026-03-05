@@ -87,6 +87,7 @@ const Contact = () => {
              rounded-full px-6 py-2 
              text-[#a6a6a6] hover:text-white 
              transition-colors duration-300 cursor-pointer w-[150px] md:w-[130px] xl:w-[150px] 2xl:w-[160px]"
+                aria-label="Kunjungi profil GitHub Kuncoro"
               >
                 <FaGithub className="xl:text-xl 2xl:text-xl" />
                 Github
@@ -103,6 +104,7 @@ const Contact = () => {
              rounded-full px-6 py-2 
              text-[#a6a6a6] hover:text-white 
              transition-colors duration-300 cursor-pointer w-[150px] md:w-[130px] xl:w-[150px] 2xl:w-[160px]"
+             aria-label="Kunjungi profil Linkedin Kuncoro"
               >
                 <FaLinkedin className="xl:text-xl 2xl:text-xl" />
                 Linkedin
@@ -119,6 +121,7 @@ const Contact = () => {
              rounded-full px-6 py-2 
              text-[#a6a6a6] hover:text-white 
              transition-colors duration-300 cursor-pointer w-[150px] md:w-[130px] xl:w-[150px] 2xl:w-[160px]"
+             aria-label="Kunjungi profil Instagram Kuncoro"
               >
                 <FaInstagram className="xl:text-xl 2xl:text-xl" />
                 Instagram
@@ -135,6 +138,7 @@ const Contact = () => {
              rounded-full px-6 py-2 
              text-[#a6a6a6] hover:text-white 
              transition-colors duration-300 cursor-pointer w-[150px] md:w-[130px] xl:w-[150px] 2xl:w-[160px]"
+             aria-label="Hubungi Email Kuncoro"
               >
                 <IoMdMail className="xl:text-xl 2xl:text-xl" />
                 Email
