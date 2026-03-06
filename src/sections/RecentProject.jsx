@@ -20,7 +20,7 @@ const RecentProject = () => {
           src={recentProject.mockup}
           alt={recentProject.title}
           fetchPriority="high"
-          width="1330" 
+          width="1400" 
           height="1050"
           loading="eager"
           className="absolute inset-0 w-full h-full object-cover"
