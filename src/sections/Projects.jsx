@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import "../css/embla.css";
 
 const Projects = () => {
   const projects = [
