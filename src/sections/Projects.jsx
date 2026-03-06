@@ -44,20 +44,6 @@ const Projects = () => {
             <h2 className="text-[15px] sm:text-base md:text-base 2xl:text-lg">
               .../Projects...
             </h2>
-
-            {/* <FlipButton
-  href="https://www.framer.com/plugins/"
-  className="
-    px-6 py-2
-    text-xs md:text-sm 2xl:text-lg 2xl:py-3
-    rounded-full
-    bg-[#f5f5f5]
-    text-[#121212]
-    drop-shadow-[0_3px_5px_rgba(255,255,255,0.22)]
-  "
->
-  Explore all Projects
-</FlipButton> */}
           </div>
 
           <div className="flex flex-col gap-3">

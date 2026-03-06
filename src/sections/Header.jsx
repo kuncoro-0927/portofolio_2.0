@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import GlassCard from "../components/GlassCard";
-import FloatingIcon from "../components/FramerMotion/FloatingIcon";
+import FloatingMouse from "../components/FloatingMouse";
 import HeaderThreads from "../components/Threads";
 import StarBorder from "../components/Reactbits/StarBorder";
 const Header = () => {
@@ -67,7 +67,7 @@ const Header = () => {
           <span className=" text-[#a6a6a6] ">Scroll down</span>
           <div className="2xl:w-60 w-full md:w-40 h-px md:h-[0.3px] bg-current opacity-20" />
 
-          <FloatingIcon />
+          <FloatingMouse />
 
           <div className="2xl:w-60 w-full md:w-40 h-px md:h-[0.3px] bg-current opacity-20" />
           <span className=" text-[#a6a6a6] whitespace-nowrap">

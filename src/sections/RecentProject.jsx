@@ -1,5 +1,4 @@
 import projects from "../data/dataproject";
-import FlipButton from "../components/FramerMotion/FlipButton";
 const RecentProject = () => {
   const recentProject = projects.reduce((latest, p) =>
     p.id > latest.id ? p : latest,
@@ -27,12 +26,12 @@ const RecentProject = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute top-3 right-3 md:top-6 md:right-6">
-          <FlipButton
+          <button
             href="/project/react-ai-chatbot"
             className="flex text-[15px] 2xl:text-lg items-center gap-3 bg-[#f5f5f5]  text-[#121212] px-5 py-2 2xl:px-8 2xl:py-3 rounded-full shadow-lg "
           >
             View Project
-          </FlipButton>
+          </button>
         </div>
 
         {/* Tags kanan bawah */}
