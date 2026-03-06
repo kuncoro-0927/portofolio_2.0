@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import GlassCard from "../components/GlassCard";
 import FloatingMouse from "../components/FloatingMouse";
-// import HeaderThreads from "../components/Threads";
+import HeaderThreads from "../components/Threads";
 import StarBorder from "../components/Reactbits/StarBorder";
 const Header = () => {
   return (
@@ -9,9 +9,9 @@ const Header = () => {
       id="main"
       className="relative overflow-hidden px-8 sm:px-20 md:px-14 lg:px-28"
     >
-      {/* <div className="absolute inset-0 -z-10 pointer-events-none">
+      <div className="absolute inset-0 -z-10 pointer-events-none">
         <HeaderThreads />
-      </div> */}
+      </div>
       <div className="relative flex flex-col">
         <div className="absolute top-0 w-full flex justify-center">
           <Navbar />

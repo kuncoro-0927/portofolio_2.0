@@ -20,6 +20,7 @@ const HeaderThreads = () => {
         amplitude={isMobile ? 0.5 : 1}
         // Tambahkan distance di mobile agar antar garis ada jarak (tidak menempel)
         distance={isMobile ? 0.5 : 0.4}
+        quantity={isMobile ? 15 : 40}
         enableMouseInteraction
       />
     </div>

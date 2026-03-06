@@ -23,7 +23,7 @@ uniform vec2 uMouse;
 
 #define PI 3.1415926538
 
-const int u_line_count = 40;
+uniform int uLineCount;
 const float u_line_width = 7.0;
 const float u_line_blur = 10.0;
 
@@ -95,8 +95,11 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
     vec2 uv = fragCoord / iResolution.xy;
 
     float line_strength = 1.0;
-    for (int i = 0; i < u_line_count; i++) {
-        float p = float(i) / float(u_line_count);
+    for (int i = 0; i < 40; i++) {
+        // Trik: Berhenti paksa jika i sudah melewati jumlah yang kita mau (misal 10 di mobile)
+        if (i >= uLineCount) break; 
+
+        float p = float(i) / float(uLineCount);
         line_strength *= (1.0 - lineFn(
             uv,
             u_line_width * pixel(1.0, iResolution.xy) * (1.0 - p),
@@ -154,8 +157,10 @@ const Threads = ({
         },
         uColor: { value: new Color(...color) },
         uAmplitude: { value: amplitude },
+        LineCount: { value: rest.quantity || 40 },
         uDistance: { value: distance },
         uMouse: { value: new Float32Array([0.5, 0.5]) },
+        uLineCount: { value: rest.quantity || 40 },
       },
     });
 
@@ -218,7 +223,7 @@ const Threads = ({
       if (container.contains(gl.canvas)) container.removeChild(gl.canvas);
       gl.getExtension("WEBGL_lose_context")?.loseContext();
     };
-  }, [color, amplitude, distance, enableMouseInteraction]);
+  }, [color, amplitude, distance, enableMouseInteraction, rest.quantity]);
 
   return (
     <div ref={containerRef} className="w-full h-full relative" {...rest} />
