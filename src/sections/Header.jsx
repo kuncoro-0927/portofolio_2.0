@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import GlassCard from "../components/FramerMotion/GlassCard";
+import GlassCard from "../components/GlassCard";
 import FloatingIcon from "../components/FramerMotion/FloatingIcon";
 import HeaderThreads from "../components/Threads";
 import StarBorder from "../components/Reactbits/StarBorder";
@@ -63,14 +63,12 @@ const Header = () => {
         </div>
 
         <div className="hidden  pb-4 lg:flex mt-24 md:mt-10 2xl:mt-10  items-center justify-center gap-4 text-sm tracking-widest">
-          {/* Kiri */}
+
           <span className=" text-[#a6a6a6] ">Scroll down</span>
           <div className="2xl:w-60 w-full md:w-40 h-px md:h-[0.3px] bg-current opacity-20" />
 
-          {/* Icon */}
           <FloatingIcon />
 
-          {/* Kanan */}
           <div className="2xl:w-60 w-full md:w-40 h-px md:h-[0.3px] bg-current opacity-20" />
           <span className=" text-[#a6a6a6] whitespace-nowrap">
             to see projects

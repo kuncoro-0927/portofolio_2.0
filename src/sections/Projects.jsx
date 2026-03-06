@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
-import Carousel from "../components/Carousel";
 import "../css/embla.css";
-import FlipButton from "../components/FramerMotion/FlipButton";
+
 const Projects = () => {
   const projects = [
     {
