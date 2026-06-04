@@ -16,7 +16,7 @@ const Contact = () => {
                 Khitan Hesthi <br />{" "}
                 <p className="flex  items-center justify-between sm:justify-start sm:gap-14 md:gap-14">
                   <span className=" font-normal text-[15px] md:text-base 2xl:text-lg text-[#a6a6a6]">
-                    frontend <br /> developer
+                    website <br /> developer
                   </span>
                   <span>Kuncoro </span>
                 </p>
