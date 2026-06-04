@@ -34,10 +34,10 @@ const Header = () => {
         <div className="flex  justify-center items-start gap-3 md:gap-6 w-full mt-10">
           <StarBorder
             as="a"
-            href="/cv/CV_KhitanHesthiKuncoro.pdf"
+            href="/cv/Khitan-Hesthi-Kuncoro-CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            download="CV_KhitanHesthiKuncoro.pdf"
+            download="Khitan-Hesthi-Kuncoro-CV.pdf"
             color="white"
             speed="3s"
             className=" rounded-full px-6 py-3"
