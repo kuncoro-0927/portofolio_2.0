@@ -1,41 +1,6 @@
 import { NavLink } from "react-router-dom";
-
+import projects from "../data/dataproject";
 const Projects = () => {
-  const projects = [
-    {
-      id: 1,
-      year: "2025",
-      title: "React AI Chatbot",
-      desc: "Personal | React",
-      slug: "react-ai-chatbot",
-      image: "/images/cultivo/homepage4.png",
-    },
-    {
-      id: 2,
-      year: "2025",
-      title: "E-Commerce - Faza Frame",
-      desc: "Final Project | React / Express / MySQL / Midtrans",
-      slug: "e-commerce-faza-frame",
-      image: "https://picsum.photos/600/350?random=2",
-    },
-    {
-      id: 3,
-      year: "2024",
-      title: "Cultivo",
-      desc: "Intern | React / Express / MySQL / Midtrans",
-      slug: "cultivo",
-      image: "https://picsum.photos/600/350?random=3",
-    },
-    {
-      id: 4,
-      year: "2023",
-      title: "E-Notulensi",
-      desc: "Project Based Learning | Laravel / Bootstrap / MySQL",
-      slug: "e-notulensi",
-      image: "https://picsum.photos/600/350?random=6",
-    },
-  ];
-
   return (
     <>
       <section id="projects" className="mt-20 md:mt-48 lg:mt-30 2xl:mt-40">
@@ -51,7 +16,7 @@ const Projects = () => {
               Showcasing My Work For Your Inspiration
             </h3>
             <span className="text-sm md:text-sm 2xl:text-lg max-w-sm 2xl:max-w-xl text-[#a6a6a6]">
-             Here are some of my best projects
+              Here are some of my best projects
             </span>
           </div>
         </div>
@@ -86,7 +51,7 @@ const Projects = () => {
                 </li>
 
                 <li className="text-[15px] 2xl:text-lg  transition-colors duration-300">
-                  {project.desc}
+                  {project.subdesc}
                 </li>
               </ul>
             </NavLink>

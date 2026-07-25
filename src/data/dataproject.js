@@ -1,5 +1,60 @@
 const projects = [
   {
+    id: 5,
+    year: "2026",
+    title: "Kalmia Coffee",
+    subtitle: "Coffee Shop Landing Page with AI Chatbot",
+    category: "Web Development",
+    url: "https://kalmiacoffee.netlify.app",
+    github: "https://github.com/kuncoro-0927/kalmia-coffee",
+    desc: `
+Kalmia Coffee is a multi-section React and Tailwind CSS landing page built for a coffee shop brand, featuring smooth scroll-triggered animations powered by GSAP. The site includes an integrated AI chatbot widget backed by a Node.js/Express server connected to the Groq API, giving visitors an interactive way to ask questions directly on the page.
+`,
+    slug: "kalmia-coffee",
+    subdesc: "Personal | React / Express / GSAP / Groq API",
+    type: "Personal Project",
+    mockup: "/images/kalmia-coffee/index.webp",
+    role: "Fullstack Developer",
+
+    preview: [
+      {
+        title: "Kalmia Coffee",
+        images: ["/images/kalmia-coffee/prv1.webp"],
+      },
+      {
+        title: "Kalmia Coffee",
+        images: ["/images/kalmia-coffee/prv2.webp"],
+      },
+      {
+        title: "Kalmia Coffee",
+        images: ["/images/kalmia-coffee/prv3.webp"],
+      },
+      {
+        title: "Kalmia Coffee",
+        images: ["/images/kalmia-coffee/prv4.webp"],
+      },
+    ],
+
+    features: [
+      "Multi-section landing page (Hero, Gallery, Testimonials, Contact, Footer).",
+      "Smooth scroll-triggered animations using GSAP/ScrollTrigger.",
+      "Integrated AI chatbot widget powered by Node.js/Express and the Groq API.",
+    ],
+
+    details: [
+      { icon: "calendar", text: "2026" }, // TODO: sesuaikan tahun
+      { icon: "project", text: "Personal Project" }, // TODO: sesuaikan jenis
+    ],
+
+    tech: [
+      { icon: "code", text: "React Js" },
+      { icon: "tailwind", text: "Tailwind CSS" },
+      { icon: "code", text: "GSAP" },
+      { icon: "code", text: "Groq API" },
+      { icon: "server", text: "Express Js" },
+    ],
+  },
+  {
     id: 4,
     year: "2025",
     title: "React AI Chatbot",
@@ -10,6 +65,7 @@ const projects = [
 AI Chatbot is a React-based conversational platform that integrates multiple AI models, including Google AI, OpenAI, DeepSeek AI, Anthropic AI, and xAI. The platform enables users to interact intelligently with different models in one place, providing flexibility, diverse perspectives, and a seamless AI experience.
 `,
     slug: "react-ai-chatbot",
+    subdesc: "Personal | React",
     type: "Capstone Project",
     mockup: "/images/react-ai/reactai1.webp",
     role: "Fullstack Developer",
@@ -48,6 +104,7 @@ AI Chatbot is a React-based conversational platform that integrates multiple AI 
     github: "https://github.com/kuncoro-0927",
     desc: `Faza Frame is an e-commerce website developed to digitize the sales process of Faza Frame. The platform enables product management, transaction handling, and online payments integrated with Midtrans, making the sales process more efficient and easily accessible for customers.`,
     slug: "e-commerce-faza-frame",
+    subdesc: "Final Project | React / Express / MySQL / Midtrans",
     type: "Capstone Project",
     mockup: "/images/faza_frame/mockup.webp",
 
@@ -94,6 +151,7 @@ AI Chatbot is a React-based conversational platform that integrates multiple AI 
 Cultivo is a web platform that helps users discover and book nature tourism and agricultural destinations across Indonesia. The website showcases various attractions, enables online ticket booking, and delivers an educational and enjoyable experience.
 `,
     slug: "cultivo",
+    subdesc: "Intern | React / Express / MySQL / Midtrans",
     type: "Internship & Independent Study Project",
     mockup: "/images/cultivo/homepage4.png",
     role: "Fullstack Developer",
@@ -138,6 +196,7 @@ Cultivo is a web platform that helps users discover and book nature tourism and 
 E-Notulensi is a web-based platform developed for the Faculty of Vocational Studies at Universitas Brawijaya. The application assists secretaries in recording, managing, and storing meeting minutes in a structured and accessible manner, making the documentation process faster, more organized, and less prone to errors.
 `,
     slug: "e-notulensi",
+    subdesc: "Project Based Learning | Laravel / Bootstrap / MySQL",
     role: "Backend Developer",
 
     preview: [

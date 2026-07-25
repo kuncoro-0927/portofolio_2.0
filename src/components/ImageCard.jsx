@@ -5,7 +5,7 @@ const ImageCard = () => {
 
   return (
     <div className="w-full flex justify-center md:justify-end">
-      <div className="w-full md:w-[300px] lg:w-[350px] xl:w-[420px] 2xl:w-[450px]">
+      <div className="w-full aspect-[4/5] md:w-[300px] lg:w-[350px] xl:w-[420px] 2xl:w-[450px] md:aspect-auto">
         <TiltedCard
           imageSrc="/images/kuncoro3.webp"
           altText="Kuncoro - Frontend Developer"

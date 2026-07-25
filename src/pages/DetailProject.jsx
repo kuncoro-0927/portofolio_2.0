@@ -57,18 +57,28 @@ export default function DetailProject() {
             </p>
           </h3>
 
-          <StarBorder
-            as="a"
-            color="white"
-            speed="3s"
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center justify-center gap-2 rounded-full px-6 py-2 text-[#a6a6a6] hover:text-white transition-colors duration-300 cursor-pointer"
-          >
-            <FaGithub className="xl:text-xl 2xl:text-xl" />
-            Github
-          </StarBorder>
+          <div className="flex items-center gap-2">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2 text-black bg-white rounded-full hover:bg-white/90  duration-300"
+              href={project.url}
+            >
+              Preview
+            </a>
+            <StarBorder
+              as="a"
+              color="white"
+              speed="3s"
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-center gap-2 rounded-full px-6 py-2 text-[#a6a6a6] hover:text-white transition-colors duration-300 cursor-pointer"
+            >
+              <FaGithub className="xl:text-xl 2xl:text-xl" />
+              Github
+            </StarBorder>
+          </div>
         </div>
 
         {/* PREVIEW IMAGES */}

@@ -20,18 +20,18 @@ const RecentProject = () => {
           src={recentProject.mockup}
           alt={recentProject.title}
           fetchPriority="high"
-          width="1400" 
+          width="1400"
           height="1050"
           loading="eager"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute top-3 right-3 md:top-6 md:right-6">
-          <button
-            href="/project/react-ai-chatbot"
-            className="flex text-[15px] 2xl:text-lg items-center gap-3 bg-[#f5f5f5]  text-[#121212] px-5 py-2 2xl:px-8 2xl:py-3 rounded-full shadow-lg "
+          <a
+            href={`/project/${recentProject.slug}`}
+            className="flex text-[15px] 2xl:text-lg items-center gap-3 bg-[#f5f5f5]  text-[#121212] px-5 py-2 2xl:px-8 2xl:py-3 rounded-full shadow-lg cursor-pointer hover:bg-white transition-colors duration-300"
           >
             View Project
-          </button>
+          </a>
         </div>
 
         {/* Tags kanan bawah */}
