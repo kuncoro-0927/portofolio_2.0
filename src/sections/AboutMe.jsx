@@ -14,11 +14,11 @@ const AboutMe = () => {
         </h1>
         <div className="mt-4 md:mt-0 md:ml-auto lg:absolute lg:left-1/2 lg:-translate-x-1/2  w-[350px] max-w-sm">
           <p className="text-base 2xl:text-lg text-[#a6a6a6] font-normal ">
-            Hi, I’m Khitan Hesthi Kuncoro. I am a{" "}
-            <i className="text-white">fresh graduate</i> in Information
-            Technology with a strong interest in{" "}
-            <i className="text-white">web development</i> and{" "}
-            <i className="text-white">modern technologies</i> .
+            Hi, I'm Khitan Hesthi Kuncoro. I am a{" "}
+            <i className="text-white">Frontend Developer</i> with a background
+            in <i className="text-white">Information Technology</i>, focused on
+            building <i className="text-white">modern and responsive</i> web
+            applications.
           </p>
         </div>
       </div>

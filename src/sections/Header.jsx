@@ -23,7 +23,7 @@ const Header = () => {
 
         <div className="flex flex-col justify-center 2xl:text-8xl mt-5">
           <h1 className="text-center text-[44px] lg:text-[74px] xl:text-[92px] lg:max-w-3xl xl:max-w-4xl xl:w-full  mx-auto leading-none">
-            Hi, Im Kuncoro Website Developer
+            Hi, Im Kuncoro Frontend Developer
           </h1>
           <p className="text-[#a6a6a6] mx-auto md:max-w-3xl text-base mt-5 text-center">
             Building responsive, scalable web applications with modern
