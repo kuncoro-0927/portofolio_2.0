@@ -15,7 +15,7 @@ const RecentProject = () => {
         {/* <span className="text-xs sm:text-base">Explore More Work</span> */}
       </div>
 
-      <div className="w-full mt-14 h-[300px] md:h-[600px] 2xl:h-[800px] relative rounded-2xl overflow-hidden cursor-pointer">
+      <div className="w-full mt-14 h-[300px] sm:h-[450px] md:h-[500px] 2xl:h-[800px] relative rounded-2xl overflow-hidden cursor-pointer">
         <img
           src={recentProject.mockup}
           alt={recentProject.title}

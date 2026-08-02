@@ -1,6 +1,6 @@
 const projects = [
   {
-    id: 5,
+    id: 4,
     year: "2026",
     title: "Kalmia Coffee",
     subtitle: "Coffee Shop Landing Page with AI Chatbot",
@@ -54,50 +54,50 @@ Kalmia Coffee is a multi-section React and Tailwind CSS landing page built for a
       { icon: "server", text: "Express Js" },
     ],
   },
-  {
-    id: 4,
-    year: "2025",
-    title: "React AI Chatbot",
-    subtitle: "React-Based Multi-Model AI Chatbot",
-    category: "Web Development",
-    github: "https://github.com/kuncoro-0927/react-ai-chatbot",
-    desc: `
-AI Chatbot is a React-based conversational platform that integrates multiple AI models, including Google AI, OpenAI, DeepSeek AI, Anthropic AI, and xAI. The platform enables users to interact intelligently with different models in one place, providing flexibility, diverse perspectives, and a seamless AI experience.
-`,
-    slug: "react-ai-chatbot",
-    subdesc: "Personal | React",
-    type: "Capstone Project",
-    mockup: "/images/react-ai/reactai1.webp",
-    role: "Fullstack Developer",
+//   {
+//     id: 4,
+//     year: "2025",
+//     title: "React AI Chatbot",
+//     subtitle: "React-Based Multi-Model AI Chatbot",
+//     category: "Web Development",
+//     github: "https://github.com/kuncoro-0927/react-ai-chatbot",
+//     desc: `
+// AI Chatbot is a React-based conversational platform that integrates multiple AI models, including Google AI, OpenAI, DeepSeek AI, Anthropic AI, and xAI. The platform enables users to interact intelligently with different models in one place, providing flexibility, diverse perspectives, and a seamless AI experience.
+// `,
+//     slug: "react-ai-chatbot",
+//     subdesc: "Personal | React",
+//     type: "Capstone Project",
+//     mockup: "/images/react-ai/reactai1.webp",
+//     role: "Fullstack Developer",
 
-    preview: [
-      {
-        title: "React AI Chatbot",
-        images: ["/images/react-ai/reactai1.webp"],
-      },
-      {
-        title: "React AI Chatbot",
-        images: ["/images/react-ai/ra1.webp"],
-      },
-    ],
+//     preview: [
+//       {
+//         title: "React AI Chatbot",
+//         images: ["/images/react-ai/reactai1.webp"],
+//       },
+//       {
+//         title: "React AI Chatbot",
+//         images: ["/images/react-ai/ra1.webp"],
+//       },
+//     ],
 
-    features: [
-      "Chat with multiple AI models (Google AI, OpenAI, DeepSeek AI, Anthropic AI, and xAI) in one platform.",
-      "You can choose and switch AI models based on your needs.",
-      "Conversation history is saved.",
-    ],
+//     features: [
+//       "Chat with multiple AI models (Google AI, OpenAI, DeepSeek AI, Anthropic AI, and xAI) in one platform.",
+//       "You can choose and switch AI models based on your needs.",
+//       "Conversation history is saved.",
+//     ],
 
-    details: [
-      { icon: "calendar", text: "2025" },
-      { icon: "project", text: "Personal Project" },
-    ],
+//     details: [
+//       { icon: "calendar", text: "2025" },
+//       { icon: "project", text: "Personal Project" },
+//     ],
 
-    tech: [{ icon: "code", text: "React Js" }],
-  },
+//     tech: [{ icon: "code", text: "React Js" }],
+//   },
 
   {
     id: 3,
-    year: "2024",
+    year: "2025",
     title: "Faza Frame",
     subtitle: "E-Commerce Platform for Art and Frames",
     category: "Web Development",
