@@ -27,7 +27,7 @@ const AboutMe = () => {
         <div className="gap-y-7 md:mt-0 flex-col flex w-full">
           <div className="border bg-[#f5f5f5] text-[#3d3d3d]  px-4 py-5 rounded-3xl text-[15px] md:text-[15px] 2xl:text-lg font-normal w-fit">
             <h1 className="mb-2 text-lg md:text-xl  ">Front-end</h1>
-            <span className="">Javascript / React / Redux Toolkit</span>
+            <span className="">Javascript / React.js</span>
           </div>
 
           <div className="flex items-center justify-between md:gap-16 xl:gap-28 text-[15px] md:text-[15px] 2xl:text-lg font-normal">
